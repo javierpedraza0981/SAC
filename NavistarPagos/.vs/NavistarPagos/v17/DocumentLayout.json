@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NS-656\\Downloads\\NavistarPagos (2)\\ServicioConsolaEstadosCuenta\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\controllers\\clientestadoscuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:controllers\\clientestadoscuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\models\\filebase64result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:models\\filebase64result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\views\\clientestadoscuenta\\clientestadoscuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:views\\clientestadoscuenta\\clientestadoscuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\controllers\\clientfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:controllers\\clientfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\views\\clientfiles\\clientfiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:views\\clientfiles\\clientfiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\models\\contracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:models\\contracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\accountcore\\resumen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82BFD3F5-C360-4320-9039-EA8CECD1B937}|NavistarPagos.csproj|solutionrelative:accountcore\\resumen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\NS-656\\Downloads\\NavistarPagos (2)\\ServicioConsolaEstadosCuenta\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\NS-656\\Downloads\\NavistarPagos (2)\\ServicioConsolaEstadosCuenta\\Program.cs",
+              "ToolTip": "C:\\Users\\NS-656\\Downloads\\NavistarPagos (2)\\ServicioConsolaEstadosCuenta\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\NS-656\\Downloads\\NavistarPagos (2)\\ServicioConsolaEstadosCuenta\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T19:08:49.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientFiles.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Views\\ClientFiles\\ClientFiles.cshtml",
+              "RelativeDocumentMoniker": "Views\\ClientFiles\\ClientFiles.cshtml",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Views\\ClientFiles\\ClientFiles.cshtml",
+              "RelativeToolTip": "Views\\ClientFiles\\ClientFiles.cshtml",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAowIMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-01-31T17:06:37.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientEstadosCuentaController.cs",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Controllers\\ClientEstadosCuentaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientEstadosCuentaController.cs",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Controllers\\ClientEstadosCuentaController.cs",
+              "RelativeToolTip": "Controllers\\ClientEstadosCuentaController.cs",
+              "ViewState": "AQIAAMIBAAAAAAAAAAAgwNQBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-10T03:28:31.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientEstadosCuenta.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Views\\ClientEstadosCuenta\\ClientEstadosCuenta.cshtml",
+              "RelativeDocumentMoniker": "Views\\ClientEstadosCuenta\\ClientEstadosCuenta.cshtml",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Views\\ClientEstadosCuenta\\ClientEstadosCuenta.cshtml",
+              "RelativeToolTip": "Views\\ClientEstadosCuenta\\ClientEstadosCuenta.cshtml",
+              "ViewState": "AQIAANAAAAAAAAAAAAAYwOsAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-11-10T03:29:20.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwDMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T04:54:13.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-01-16T18:48:34.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAawB0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-01-16T05:09:49.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "resumen.aspx.cs",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\AccountCore\\resumen.aspx.cs",
+              "RelativeDocumentMoniker": "AccountCore\\resumen.aspx.cs",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\AccountCore\\resumen.aspx.cs",
+              "RelativeToolTip": "AccountCore\\resumen.aspx.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAgwH8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T16:39:30.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contracts.cs",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Models\\Contracts.cs",
+              "RelativeDocumentMoniker": "Models\\Contracts.cs",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Models\\Contracts.cs",
+              "RelativeToolTip": "Models\\Contracts.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAuwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T21:05:57.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientFilesController.cs",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Controllers\\ClientFilesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientFilesController.cs",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Controllers\\ClientFilesController.cs",
+              "RelativeToolTip": "Controllers\\ClientFilesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T04:54:13.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileBase64Result.cs",
+              "DocumentMoniker": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Models\\FileBase64Result.cs",
+              "RelativeDocumentMoniker": "Models\\FileBase64Result.cs",
+              "ToolTip": "C:\\Proyectos\\NavistarPagos19032024\\NavistarPagos\\Models\\FileBase64Result.cs",
+              "RelativeToolTip": "Models\\FileBase64Result.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-10T03:32:57.134Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

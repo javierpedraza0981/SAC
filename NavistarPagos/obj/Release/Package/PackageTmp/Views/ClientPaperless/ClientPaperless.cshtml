@@ -1,0 +1,381 @@
+﻿@{
+    ViewBag.Title = "Paperless";
+}
+
+<div class="container text-center" style="margin-top:5px;margin-bottom:5px;">
+    <h1 class="AccountName">Bienvenido @ViewBag.Name</h1>
+</div>
+
+@*<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-color: #03345F; max-width: 100%; height: 3px; margin-top: 0px;"></div>
+        <div class="col-md-1"></div>
+    </div>*@
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="background-color: #03345F; max-width: 100%; height: 3px; margin-top: 0px;"></div>
+    <div class="col-md-3"></div>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center" style="padding-left: 0px; padding-right: 0px;">
+        <label style="padding-top: 20px; padding-bottom: 10px; font-size: x-large">Contratos</label>
+        <div class="text-left" style="width: 100%">
+            <table class="table text-left">
+                <tbody style="font-size:small;" class="scrollbar">
+                    <tr>
+                        <td style="width: 135px; color: white; background-color: #03345F; border-top: 0px; font-size: small;">Fecha de solicitud:</td>
+                        <td style="color: black; border-top: 0px;">@DateTime.Now.ToString("dd MMM yyyy HH:mm").Replace(".", "")</td>
+                        <td style="width: 50px; border-top: 0px;"></td>
+                        <td style="width: 250px; color:black; border-top: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 135px; color: white; background-color: #03345F; border-top: 0px;">Cliente:</td>
+                        <td style="color: black; border-top: 0px;">@ViewBag.Name</td>
+                        <td style="width: 50px; color: white; background-color: #03345F; border-top: 0px;">RFC:</td>
+                        <td style="width: 250px; color:black; border-top: 0px;">@ViewBag.RFC</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 135px; color: white; background-color: #03345F; border-top: 0px;">Id Cliente:</td>
+                        <td style="color: black; border-top: 0px;">@ViewBag.CveCliente</td>
+                        <td style="width: 50px; color: white; background-color: #03345F; border-top: 0px;">Email:</td>
+                        <td style="width: 250px; color:black; border-top: 0px;">@ViewBag.Correo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="scrollable-table-wrapper" style="width: 50%; max-height: 500px;">
+            <table id="tbDatos" class="table text-left">
+                <thead style="color: white; background-color: #03345F; text-align: center;">
+                    <tr style="text-align: center;">
+                        <th>Contrato</th>
+                        <th>                            
+                            <div style="align-items: center;">
+                                <input type="checkbox" id="chkPaperless" name="Paperless" style="cursor: pointer; margin-right: 5px" href="javascript" onclick="selectAll(this)">
+                                <label for="chkPaperless" style="margin: 0">Paperless</label>
+                            </div>
+                        </th>
+                        <th>
+                            <div style="align-items: center;">
+                                <input type="checkbox" id="chkNoPaperless" name="NoPaperless" style="cursor: pointer; margin-right: 5px" href="javascript" onclick="selectAll(this)">
+                                <label for="chkNoPaperless" style="margin: 0">Envio Físico</label>
+                            </div>
+                        </th>
+                        <th style="display: none">Paperless</th>
+                    </tr>
+                </thead>
+                <tbody style="color: black; font-size:small;">
+                    @foreach (var contract in ViewBag.Contracts)
+                    {
+                        var idPaperless = @contract.Contrato + "_1";
+                        var idNoPaperless = contract.Contrato + "_2";
+
+                        <tr>
+                            <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.Contrato</td>
+                            <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">
+                                <div class="tooltip" style="position: absolute; width: 20px; height: 16px; margin-top: -2px;">
+                                    <img src="~/img/question_32.png" style="width: 20px;" />
+                                    <span class="tooltiptext">Al marcar PaperLess se acepta que el envio del estado de cuenta sea por medio de correo electrónico</span>
+                                </div>
+                                @if (contract.Paperless == "1")
+                                {
+                                    <input id="@idPaperless" name="chkPaperless" type="checkbox" value="" checked="checked" onchange="checking(this)">
+                                }
+                                else
+                                {
+                                    <input id="@idPaperless" name="chkPaperless" type="checkbox" value="" onchange="checking(this)">
+                                }
+                            </td>
+                            <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">                                
+                                @if (contract.Paperless == "0")
+                                {
+                                    <input id="@idNoPaperless" name="chkNoPaperless" type="checkbox" value="" checked="checked" onchange="checking(this)">
+                                }
+                                else
+                                {
+                                    <input id="@idNoPaperless" name="chkNoPaperless" type="checkbox" value="" onchange="checking(this)">
+                                }
+                            </td>
+                            <td style="display: none">@contract.Paperless</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div id="divFinalizar" class="form-group row" style="margin-top: 50px; margin-right: -15px;">
+            <div class="col-md-12" style="margin-top: 0px;">
+                <div id="dAjaxLoader" class="form-group row" style="margin-top: 0px; height: 30px; display:flex; justify-content: center;">
+                    <img id="AjaxLoader" alt="Cargando..." style="display: none" src="~/img/spin.gif" />
+                </div>
+                <button type="submit" id="btnFinalizar" class="btn-primary-NFCx" style="width: 150px; height: 50px;" onclick="Guardar()">Guardar</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+<div id="ModalResetContrasena" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bs-example-modal-lg" aria-modal="true" style="display: none;" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <input type="hidden" id="empleadoID" name="empleadoID" value="0" />
+                <h4 id="lblAccion" class="swal-title"><span style="font-weight:bold"> Navistar Financial</span></h4>
+                <input type="hidden" id="hfAccionID" name="hfAccionID" value="" />
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div id="add_to_me" class="swal-text" style="margin-top:5px;">
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2"> </div>
+                    <div class="col-md-6" style="text-align:right;">
+                        <button type="button" class="btn btn-success" id="btnGuardar" onclick="CerrarModal()">Aceptar</button>
+                        <button type="button" class="btn btn-danger" id="btnCancelar" onclick="ReturnPageInit()">Cancelar</button>
+                        <br />
+                    </div>
+                    <div class="col-md-1"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><br /> </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //seleccionarPopupMessage();
+    });
+
+    $('input[type="checkbox"]').mouseover(function () {
+        let $this = $(this),
+            message = "Al marcar PaperLess se acepta que el envio del estado de cuenta sea por medio de correo electrónico",
+            br = "\r\n";
+        $(this).attr("title", message + br);
+    });
+
+    // #region PopupMessage
+
+    function seleccionarPopupMessage() {
+        var action = '@ViewBag.Action';
+
+        $("#AjaxLoader").show("fast");
+        $.ajax({
+            url: "@Url.Action("SeleccionarPopMessage", "Home")",
+            data: { psAction: action },
+            type: 'GET',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (data) {
+                var bSuccess = data.success;
+                var lst = data.lstPop;
+                if (bSuccess) {
+                    $('#add_to_me').empty();
+                    for (const i of lst) {
+                        if (i.Texto !== undefined) {
+                            //$('#cboColonia').append(`<option value="${i.value}">${i.text}</option>`);
+                            $('#add_to_me').append(`${i.Texto} <a class = 'btn-link' href="${i.Url}"> Terminos y condiciones </a> ${i.Texto2} `)
+                        }
+                    }
+                    $('#ModalResetContrasena').modal('show');
+                } else {
+                    sweetalerts('Navistar', 'Error al obtener los términos y condiciones', 'error', '');
+                    ReturnPageInit();
+                }
+
+                $("#AjaxLoader").hide("slow");
+            },
+            error: function (xhr, status, error) {
+                var errorText = xhr.responseText.toString();
+
+                $("#AjaxLoader").hide("slow");
+            },
+        });
+    }
+
+    function CerrarModal() {
+        RegistraBitacoraMessagePop();
+        $('#ModalResetContrasena').modal('hide');
+    }
+
+    function ReturnPageInit() {
+        var sessionToken = '@Session["tokenUsr_1"]';
+        var urlRef = "/Home/Index" + '?ntoken=' + sessionToken + "&psAction=ClientPaperless" ;
+        window.location.href = urlRef;
+        $('#ModalResetContrasena').modal('hide');
+    }
+
+    function RegistraBitacoraMessagePop() {
+        var psVista = 'ClientPaperless';
+
+        $.ajax({
+            url: "@Url.Action("RegistraBitacoraPM", "Home")",
+            type: 'POST',
+            data: { psVista: psVista },
+            success: function (data) {
+                var bSuccess = data.success;
+                if (bSuccess) {
+                } else {
+                }
+            },
+            error: function (xhr, status, error) {
+                alert('Error al enviar la solicitud');
+                $("#AjaxLoader").hide("slow");
+            },
+        });
+    }
+
+    // #endregion
+
+    async function checking(checkEvent) {
+        var elementTd = checkEvent.parentElement.parentElement.getElementsByTagName("td")
+        var contrato = elementTd[0].textContent;
+        var paperless = elementTd[1].lastElementChild.checked;
+        var noPaperless = elementTd[2].lastElementChild.checked;
+        var check = checkEvent.name;
+        var result = false;
+
+        if (check == "chkPaperless" && paperless == true) {
+            result = await sweetAlertConfirm("Navistar", "Acepta que se le envié por correo electrónico el estado de cuenta del contrato: " + contrato, "info", false, true)
+            if (result == false || result == null) {
+                elementTd[1].lastElementChild.checked = false;
+                elementTd[2].lastElementChild.checked = true;
+                return;
+            }
+        }
+
+        if (check == "chkPaperless" && (paperless == true && noPaperless == true)) {
+            elementTd[2].lastElementChild.checked = false;
+        } else if (check == "chkNoPaperless" && (paperless == true && noPaperless == true)) {
+            elementTd[1].lastElementChild.checked = false;
+        }
+    }
+
+    async function selectAll(check) {
+        var chkId = check.id;
+        var chkValue = $('#' + chkId).is(":checked");
+        var result = false;
+
+        if (chkId == "chkPaperless" && chkValue) {
+            result = await sweetAlertConfirm("Navistar", "Acepta que se le envié por correo electrónico el estado de cuenta de los contratos seleccionados", "info", false, true)
+
+            if (result == false || result == null) {
+                $("#chkPaperless")[0].checked = false;
+                return;
+            }
+            $("#chkNoPaperless")[0].checked = false;
+        }
+        if (chkId == "chkNoPaperless" && chkValue) { $("#chkPaperless")[0].checked = false; }
+
+        $('#tbDatos > tbody > tr').each(function (index, tr) {
+            var td = tr.getElementsByTagName("td");
+
+            td[1].lastElementChild.checked = false;     // Check Autorizar
+            td[2].lastElementChild.checked = false;     // Check Cancelar
+            if (chkId == "chkPaperless") { td[1].lastElementChild.checked = chkValue; }
+            if (chkId == "chkNoPaperless") { td[2].lastElementChild.checked = chkValue; }
+        });
+    }
+
+    function Guardar() {
+        var formData = new FormData();
+        var contratos = [];
+
+        $('#tbDatos > tbody > tr').each(function (index, tr) {
+            var td = tr.getElementsByTagName("td");
+            var paperless = 0;
+            var contrato = td[0].textContent;
+            var checkPaperless = td[1].lastElementChild.checked
+            var indPaperless = parseInt(td[3].textContent);
+
+            if (checkPaperless == true) { paperless = 1; }
+            if (paperless != indPaperless) {
+                contratos.push({ "Contrato": contrato, "Paperless": paperless });
+            }
+        });
+
+        if (contratos.length <= 0) {
+            sweetalerts('Navistar', 'No se tienen cambios de solicitud en los contratos', 'warning', '');
+            return;
+        }
+
+        formData.append('piCveCliente', '@ViewBag.CveCliente');
+        formData.append('psCorreo', '@ViewBag.Correo');
+        formData.append('psContratos', JSON.stringify(contratos));
+
+        $("#AjaxLoader").show("fast");
+        $.ajax({
+            url: "@Url.Action("RegistraContratoPaperless", "ClientPaperless")",
+            type: 'POST',
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                var bSuccess = data.success;
+                var result = data.result;
+
+                if (bSuccess) {                    
+                    Finalizar(result);
+                } else {
+                    sweetalerts('Navistar', 'Error al registrar la solicitud, favor de intentarlo nuevamente', 'error', '');
+                }
+
+                $("#AjaxLoader").hide("slow");
+            },
+            error: function (xhr, status, error) {
+                alert('Error al enviar la solicitud');
+                $("#AjaxLoader").hide("slow");
+            },
+        });
+    }
+
+    async function Finalizar(message) {
+        if (message == "") {
+            await sweetalertsAsync("Navistar", "Se registro correctamente la solicitud", "success", false);
+        } else {
+            await sweetalertsAsync("Navistar", "Error al registrar la solicitud de los contratos: " + message, "warning", false);
+        }
+        ReturnPageInit();
+    }
+
+</script>
+
+
+<style>
+
+    body {
+        min-height: 99%;
+    }
+
+    div.scrollable-table-wrapper {
+        /*max-height: 150px;*/
+        overflow: auto;
+    }
+
+        div.scrollable-table-wrapper thead tr th {
+            position: sticky;
+            top: 0;
+            background: #03345F;
+            text-align: center;
+            vertical-align: top;
+        }
+</style>

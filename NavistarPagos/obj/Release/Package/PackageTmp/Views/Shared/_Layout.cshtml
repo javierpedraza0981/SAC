@@ -1,0 +1,165 @@
+﻿@using System.Web.Configuration;
+@{
+    string rutaAccount = WebConfigurationManager.AppSettings["rutaAccount"].ToString();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00355f" />
+    <title>@ViewBag.Title - Navistar Financial</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <!-- Awesome Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- FAB -->
+    <link rel="stylesheet" href="~/src/css/index.css">
+    <link rel="stylesheet" href="~/Content/detallePago.css">    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/detallePago.css">
+
+    <link href="~/Content/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <!--MDL-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js"></script>
+    <script type="text/javascript">
+        var rutaAccount = "@rutaAccount";
+    </script>
+    <script charset="UTF-8" src="~/Scripts/fnglobales.js"></script>
+    <script charset="UTF-8" src="~/Scripts/detallePago.js"></script>
+</head>
+<body>
+    <!--<div class="navbar navbar-default" role="navigation" id="PageTop">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/img/logo_navistar.png" class="img-responsive" alt="Navistar Logo" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="centerednav">
+                <ul class="nav navbar-nav">
+                    <li class="img-li"><a href="@Url.Action("Index", "Home")"><img src="~/img/logo_navistar.png" alt="Navistar Logo" /></a></li>
+                    <li>@Html.ActionLink("INICIO", "Index", "Home", null, null)</li>
+                    <li><a href="http://www.navistar-financial.com/NavistarHome#MenuQuoter" target="_blank">COTIZAR</a></li>
+                    <li><a href="http://www.navistar-financial.com/NavistarHome/Home/Insurance" target="_blank">SEGUROS</a></li>
+                    <li><a href="http://www.navistar-financial.com/NavistarInversionistas" target="_blank" class="relation">RELACIÓN CON INVERSIONISTAS</a></li>
+                    <li><a href="@Url.Action("Logout", "Home")" class="loginNav"><button>SALIR</button></a></li>
+                </ul>
+            </div>-->
+    <!--/.nav-collapse -->
+    <!--</div>-->
+    </div>
+
+    @*<div id="IndexTop" class="col-md-12" style="background-color: #fff; max-width: 100%; height: 3px;"></div>*@
+    @RenderBody()
+
+    <!--div class="bc-contenedor-certificados-der">
+        <img src="~/img/certificado/certificado.png" alt="Cerficado 2019" />
+        <img src="~/img/certificado/greatPlace.png" alt="Mejor lugar para trabajar." />
+    </div-->
+
+    <div id="PopupPagos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="width:100%;margin-left:0;background-color:#FFFF !important;">
+                <div class="modal-header" style="border-bottom: none;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body" style="padding:0px;">
+                    <div id="divPagos" style="padding:0px;"></div>
+                    <div id="bloqueModalDetallePagos" style="display:none; margin-top:0px; margin-bottom:0px; padding-top:2px; padding-bottom:2px;">
+                        <h4 style="margin-top:5px;margin-bottom:5px;">Detalle de saldo</h4>
+                        <table class="table table-striped table-bordered table-condensed">
+                            <tbody style="color:#000 !important;">
+                                <tr>
+                                    <td class="bc-bold">Contrato</td>
+                                    <td id="lblDetallePagoContrato"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bc-bold">Nombre del Cliente</td>
+                                    <td id="lblDetallePagoNombreCliente"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bc-bold">
+                                        <div class="checkbox" style="margin:0px;">
+                                            <label>
+                                                <input id="optMontoPagar" name="chkTipoMonto" type="radio" checked /> Monto Total a Pagar <label id="lblFechaCorte"></label>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td id="lblMontoPagar" class="text-right">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="bc-bold">
+                                        <div class="checkbox" style="margin:0px;">
+                                            <label>
+                                                <input id="optMontoOtro" name="chkTipoMonto" type="radio" /> Otro Monto
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <input id="txtMontoOtro" class="form-control text-right" type="text" disabled />
+                                    </td>
+                                </tr>
+                                <tr id="bloqueExcedente" style="display: none;background-color:#d9edf7;color:#31708f;">
+                                    <td colspan="2" class="text-right">
+                                        <label id="lblMontoExcedente">0.00</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="well well-sm text-right">
+                            <button id="btnDetallePagoResumen" class="btn-primary-NFCx" style="width:150px">Continuar <span class="glyphicon glyphicon-chevron-right"></span></button>
+                        </div>
+                        <div class="well well-sm text-left">
+                            <label id="lblLeyendaPendiente"></label>
+                        </div>
+                        <div id="bloqueDetallePagoCalculos" class="table-responsive" style="margin-top:2px;overflow-y:scroll;height:300px;">
+                            <table class="table table-hover table-bordered table-condensed">
+                                <thead>
+                                <th class="bc-head">No</th>
+                                <th class="bc-head">&nbsp;</th>
+                                <th class="bc-head">Tipo de Cargo</th>
+                                <th class="bc-head">Monto a Pagar</th>
+                                <th class="bc-head">Pago Parcial</th>
+                                </thead>
+                                <tbody id="tbdDetallePagos" style="color:#000 !important;"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/scripts")
+    <!--FAB Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="~/src/js/index.js"></script>
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Scripts/sweetalert.min.js"></script>
+    <script src="~/Scripts/bootstrap-select.min.js"></script>
+    <script src="~/Scripts/bootstrap-multiselect.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="~/Scripts/site.js"></script>    
+
+
+</body>
+</html>

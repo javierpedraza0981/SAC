@@ -1,0 +1,683 @@
+﻿
+@{
+    ViewBag.Title = "Actualizar Datos";
+}
+
+<style>
+
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #ffffff;
+        background-color: #03345F;
+        border-color: #03345F #03345F #03345F;
+    }
+
+    #tabServ .nav-item:not(:last-child) {
+        border-bottom: solid 1px #dee2e6;
+    }   
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; /* Apparently some margin are still there even though it's hidden */
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: #03345F;
+    }
+
+    div.scrollable-table-wrapper {
+        /*max-height: 150px;*/
+        overflow: auto;
+    }
+
+        div.scrollable-table-wrapper thead tr th {
+            position: sticky;
+            top: 0;
+            background: #03345F;
+            text-align: center;
+            vertical-align: top;
+        }
+
+</style>
+
+
+
+<div class="container text-center" style="margin-top:10px;margin-bottom:5px;">
+    <h1 class="AccountName" style="font-size: 34px;">Bienvenido @ViewBag.Name</h1>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" style="background-color: #03345F; height: 3px; margin-top: 0px;"></div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center" style="padding-left: 0px; padding-right: 0px;">
+        <label style="padding-top: 20px; padding-bottom: 10px; font-size: x-large; font-weight: bold;">Actualización de datos</label>
+        <div class="text-left" style="width: 100%">
+            <table class="table text-left">
+                <tbody style="font-size:small;" class="scrollbar">
+                    <tr>
+                        <td style="width: 135px; color: white; background-color: #03345F; border-top: 0px; font-size: small;">Fecha de emisión:</td>
+                        <td style="color: black; border-top: 0px;">@DateTime.Now.ToString("dd MMM yyyy HH:mm").Replace(".", "")</td>
+                        <td style="width: 50px; border-top: 0px;"></td>
+                        <td style="width: 250px; color:black; border-top: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 135px; color: white; background-color: #03345F; border-top: 0px;">Cliente:</td>
+                        <td style="color: black; border-top: 0px;">@ViewBag.Name</td>
+                        <td style="width: 50px; color: white; background-color: #03345F; border-top: 0px;">RFC:</td>
+                        <td style="width: 250px; color:black; border-top: 0px;">@ViewBag.RFC</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 135px; color: white; background-color: #03345F; border-top: 0px;">Id Cliente:</td>
+                        <td style="color: black; border-top: 0px;">@ViewBag.CveCliente</td>
+                        <td style="width: 50px; color: white; background-color: #03345F; border-top: 0px;">Email:</td>
+                        <td style="width: 250px; color:black; border-top: 0px;">@ViewBag.Correo</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+
+            <ul class="nav nav-tabs" id="tabServ" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="domicilio-tab" data-toggle="tab" href="#domicilio" role="tab" aria-controls="domicilio" aria-selected="true">
+                        Domicilio
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="telefono-tab" data-toggle="tab" href="#telefono" role="tab" aria-controls="telefono" aria-selected="false">
+                        Teléfono
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="mytabServ">
+                @* TAP DOMICILIO *@
+                <div id="domicilio" class="tab-pane fade show active " role="tabpanel" aria-labelledby="domicilio-tab">
+                    <div class="card-body">                        
+                        <div class="scrollable-table-wrapper" style="width: 100%; max-height: 200px;">
+                            <table class="table text-left">
+                                <thead style="color: white; background-color: #03345F; text-align: center;">
+                                    <tr>
+                                        <th>Tipo Domicilio</th>
+                                        <th>Calle</th>
+                                        <th>No. Ext.</th>
+                                        <th>No. Int.</th>
+                                        <th>Colonia</th>
+                                        <th>Delegación/Municipio</th>
+                                        <th>Ciudad</th>
+                                        <th>Entidad</th>
+                                        <th>CP.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in ViewBag.DomicilioCliente)
+                                    {
+                                        <tr style="color: black;">
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.TipoDomicilio</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.Calle</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.NoInt</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.NoExt</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.Colonia</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.DelMun</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.Ciudad</td>
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.Entidad</td>                                            
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">@item.CP</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                @* TAP TELEFONO *@
+                <div id="telefono" class="tab-pane fade " role="tabpanel" aria-labelledby="telefono-tab">
+                    <div class="card-body">
+                        <div class="scrollable-table-wrapper" style="width: 500px; max-height: 200px;">
+                            <table class="table text-left">
+                                <thead style="color: white; background-color: #03345F; text-align: center;">
+                                    <tr>
+                                        <th>Descripción</th>
+                                        <th>Teléfono</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in ViewBag.TelefonoCliente)
+                                    {
+                                        <tr style="color: black;">
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@item.TipoTelefono</td>                                            
+                                            <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">@item.Telefono</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="row" style="margin:0!important; padding:0 !important; width:100%;">
+            <div class="col-md-12" style="background-color: #03345F; width: 100%; height: 3px; margin-top: 0px;"></div>
+        </div>
+
+        <div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+            <div class="card-body" style="padding-left: 15px; padding-right: 15px; font-size: 16px;">
+                <div class="form-group row" style="margin-bottom: 40px; margin-right: -15px;">
+                    <div style="position: absolute; height: 36px;">
+                        <label class="col-form-label" style="padding-left: 20px">Datos por actualizar:</label>
+                    </div>
+                    <div style="padding-top: 1px; padding-bottom: 1px; position: relative; left: 190px; width: 100%; margin-right: 205px;">
+                        <select id="ddlOpcUpdate" name="ddlOpcUpdate" multiple="multiple" title="Seleccionar..." class="form-control selectpicker" style="height: 34px;">
+                            @foreach (var dr in ViewBag.DatosActualizar)
+                            {
+                                <option value="@dr.Value">@dr.Text</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                @*Telefono*@
+                <div id="divTelefono" class="form-group row" style="margin-bottom: 30px; margin-right: -15px; display: none;">
+                    <div>
+                        <label class="col-form-label" style="padding-left: 20px">Teléfono:</label>
+                    </div>
+                    <div class="col-md-6" style="padding-top: 2px; max-width: 200px;">
+                        <input type="number" class="form-control" id="txtNumTel" name="txtNumTel" placeholder="Teléfono" maxlength="10">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <input type="checkbox" id="chkTelFijo" name="chkTelFijo" value="Bike">
+                        <label class="col-form-label" for="chkTelFijo">Fijo</label><br>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <input type="checkbox" id="chkTelMovil" name="chkTelMovil" value="Car">
+                        <label class="col-form-label" for="chkTelMovil">Móvil</label><br>
+                    </div>
+                </div>
+
+                @*Domicilio Fiscal*@
+                <div id="divDomFis" class="form-group row" style="margin-bottom: 30px; margin-right: -15px; display: none;">
+                    <div>
+                        <label class="col-form-label" style="padding-left: 20px">Domicilio Fiscal:</label>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 2px;">
+                        <div class="form-group row" style="padding-left: 20px; margin-right: 0px; margin-bottom: 5px;">
+                            <input type="text" class="form-control" id="txtCalleF" name="txtCalleF" placeholder="Calle" maxlength="100" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtNoExtF" name="txtNoExtF" placeholder="No. Ext." maxlength="20" style="width: 75px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtNoIntF" name="txtNoIntF" placeholder="No. Int." maxlength="20" style="width: 75px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtColoniaF" name="txtColoniaF" placeholder="Colonia" maxlength="100" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtDelMunF" name="txtDelMunF" placeholder="Delegación/Municipio" maxlength="50" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtCiudadF" name="txtCiudadF" placeholder="Ciudad" maxlength="30" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtEntidadF" name="txtEntidadF" placeholder="Entidad" maxlength="30" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="number" class="form-control" id="txtCPF" name="txtCPF" placeholder="CP." maxlength="5" style="width: 75px; margin-right: 10px; margin-bottom: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 0px;">
+                        <div>
+                            <div class="tooltip" style="position: absolute; width: 40px; height: 32px;">
+                                <img src="~/img/question_32.png" />
+                                <span class="tooltiptext" style="width: 220px;">Cargar Constancia de situación fiscal actualizada (Formato PDF Max. 2Mb)</span>
+                            </div>
+                            <div style="position:relative; left: 40px; margin-right: 40px;">
+                                <input type="file" id="txtDomFisPdf" name="txtDomFisPdf" accept=".pdf" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*Domicilio Administrativo*@
+                <div id="divDomAdm" class="form-group row" style="margin-bottom: 40px; margin-right: -15px; display: none;">
+                    <div>
+                        <label class="col-form-label" style="padding-left: 20px">Domicilio Administrativo:</label>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 2px;">
+                        <div class="form-group row" style="padding-left: 20px; margin-right: 0px; margin-bottom: 5px;">
+                            <input type="text" class="form-control" id="txtCalleA" name="txtCalleA" placeholder="Calle" maxlength="100" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtNoExtA" name="txtNoExtA" placeholder="No. Ext." maxlength="20" style="width: 75px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtNoIntA" name="txtNoIntA" placeholder="No. Int." maxlength="20" style="width: 75px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtColoniaA" name="txtColoniaA" placeholder="Colonia" maxlength="100" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtDelMunA" name="txtDelMunA" placeholder="Delegación/Municipio" maxlength="50" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtCiudadA" name="txtCiudadA" placeholder="Ciudad" maxlength="30" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="text" class="form-control" id="txtEntidadA" name="txtEntidadA" placeholder="Entidad" maxlength="30" style="width: 250px; margin-right: 10px; margin-bottom: 10px; text-transform: uppercase;">
+                            <input type="number" class="form-control" id="txtCPA" name="txtCPA" placeholder="CP." maxlength="5" style="width: 75px; margin-right: 10px; margin-bottom: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 0px;">
+                        <div>
+                            <div class="tooltip" style="position: absolute; width: 40px; height: 32px;">
+                                <img src="~/img/question_32.png" />
+                                <span class="tooltiptext" style="width: 220px;">Cargar comprobante de domicilio con máximo 3 meses de antiguedad, puede ser comprobante de luz, agua, teléfono o estado de cuenta bancario (Formato PDF Max. 2Mb)</span>
+                            </div>
+                            <div style="position:relative; left: 40px; margin-right: 40px;">
+                                <input type="file" id="txtDomAdminPdf" name="txtDomAdminPdf" accept=".pdf" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*Correo electrónico*@
+                <div id="divCorreo" class="form-group row" style="margin-right: -15px; display: none;">
+                    <br />
+                    <br />
+                    <div>
+                        <label class="col-form-label" style="padding-left: 20px">Correo electrónico:</label>
+                    </div>
+                    <div class="col-md-4" style="padding-top: 2px;">
+                        <input type="email" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Correo electrónico" maxlength="70">
+                    </div>
+                </div>
+
+                @*Comentarios adicionales*@
+                <div id="ComAdic" class="form-group row" style="margin-right: -15px; display: none;">
+                    <div>
+                        <label class="col-form-label" style="padding-left: 20px">Comentarios adicionales:</label>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 2px;">
+                        <textarea class="form-control" id="txtComentario" placeholder="Comentarios adicionales" maxlength="250" style="height: 75px; text-transform: uppercase;"></textarea>
+                    </div>
+                </div>
+
+                @*Terminos y Condiciones*@
+                <div id="divFinalizar" class="form-group row" style="margin-top: 50px; margin-right: -15px; display: none;">
+                    <div class="col-md-12">
+                        <input type="checkbox" id="chkTC" name="chkTC" value="Bike">
+                        <label class="col-form-label" for="chkTC">Acepto que he leído, entiendo y estoy de acuerdo con los <a class="btn-link" href="http://www.navistar-financial.com/NavistarHome/Home/Legals">Términos y Condiciones</a> por lo que solicito la actualización de los datos anteriormente detallados.</label><br>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 0px;">
+                        <div id="dAjaxLoader" class="form-group row" style="margin-top: 0px; height: 30px; display:flex; justify-content: center;">
+                            <img id="AjaxLoader" alt="Cargando..." style="display: none" src="~/img/spin.gif" />
+                        </div>
+                        <button type="submit" id="btnFinalizar" class="" style="width: 150px; height: 50px;" disabled="disabled" onclick="finalizar()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<style>
+
+    body {
+        min-height: 99%;
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    document.querySelectorAll('input[type="number"]').forEach(input => {
+        input.oninput = () => {
+            if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+        };
+    });
+
+    $("#chkTelFijo").change(function (e) {
+        if (e.currentTarget.checked) {
+            $("#chkTelMovil")[0].checked = false;
+        }
+    });
+
+    $("#chkTelMovil").change(function (e) {
+        if (e.currentTarget.checked) {
+            $("#chkTelFijo")[0].checked = false;
+        }
+    });
+
+    $("#chkTC").change(function (e) {
+        if (e.currentTarget.checked) {
+            $("#btnFinalizar").prop("disabled", false);
+            $("#btnFinalizar").addClass("btn-primary-NFCx")
+        } else {
+            $("#btnFinalizar").prop("disabled", true);
+            $("#btnFinalizar").removeClass("btn-primary-NFCx")
+        }
+    });
+
+    $("#ddlOpcUpdate").change(function () {
+        var selectedText = $(this).find("option:selected").text();
+        var selectedValue = $(this).val();
+
+        activaDiv(selectedValue);
+    });
+
+    function activaDiv(divs) {
+        if (divs == null || divs.count == 0) {
+            $("#divTelefono").hide();
+            $("#divDomFis").hide();
+            $("#divDomAdm").hide();
+            $("#divCorreo").hide();
+            $("#ComAdic").hide();
+            $("#divFinalizar").hide();
+            return;
+        }
+
+        $("#divTelefono").hide();
+        $("#divDomFis").hide();
+        $("#divDomAdm").hide();
+        $("#divCorreo").hide();
+        divs.forEach(item => {
+            if (item == 1) { $("#divTelefono").show(); }
+            if (item == 2) { $("#divDomFis").show(); }
+            if (item == 3) { $("#divDomAdm").show(); }
+            if (item == 4) { $("#divCorreo").show(); }
+        });
+
+        $("#ComAdic").show();
+        $("#divFinalizar").show();
+    }
+
+    async function finalizar() {
+        var formData = new FormData();
+        var OpcUpdate = $("#ddlOpcUpdate").val();
+        var sTelefono = "";
+        var sTipoTel = "";
+        var domicilioF = {};
+        var fileF;
+        var domicilioA = {};
+        var fileA;
+        var sCorreo = "";
+        var sComAdic = $("#txtComentario").val();
+        var update = true;
+
+        await OpcUpdate.reduce(async (promise, item, index) => {
+            await promise;
+
+            if (update == false) { return; }
+            if (item == "1") {
+                sTelefono = $("#txtNumTel").val();
+                if ($("#chkTelFijo").is(":checked")) { sTipoTel = "1"; }
+                if ($("#chkTelMovil").is(":checked")) { sTipoTel = "2"; }
+
+                update = await validaCampos(item, "");
+            } else if (item == "2") {
+                domicilioF.Calle = $("#txtCalleF").val();
+                domicilioF.NoExt = $("#txtNoExtF").val();
+                domicilioF.NoInt = $("#txtNoIntF").val();
+                domicilioF.Colonia = $("#txtColoniaF").val();
+                domicilioF.DelMun = $("#txtDelMunF").val();
+                domicilioF.Ciudad = $("#txtCiudadF").val();
+                domicilioF.Entidad = $("#txtEntidadF").val();
+                domicilioF.CP = $("#txtCPF").val();
+                domicilioF.TipoDomicilio = "";
+                fileF = $('#txtDomFisPdf').prop('files')[0];
+
+                update = await validaCampos(item, domicilioF);
+            } else if (item == "3") {
+                domicilioA.Calle = $("#txtCalleA").val();
+                domicilioA.NoExt = $("#txtNoExtA").val();
+                domicilioA.NoInt = $("#txtNoIntA").val();
+                domicilioA.Colonia = $("#txtColoniaA").val();
+                domicilioA.DelMun = $("#txtDelMunA").val();
+                domicilioA.Ciudad = $("#txtCiudadA").val();
+                domicilioA.Entidad = $("#txtEntidadA").val();
+                domicilioA.CP = $("#txtCPA").val();
+                domicilioA.TipoDomicilio = "";
+                fileA = $('#txtDomAdminPdf').prop('files')[0];
+
+                update = await validaCampos(item, domicilioA);
+            } else if (item == "4") {
+                sCorreo = $("#txtCorreo").val();
+
+                update = await validaCampos(item, "");
+            }
+        }, Promise.resolve());
+
+        if (update == false) { return; }
+        formData.append('piCveCliente', '@ViewBag.CveCliente');
+        formData.append('psCliente', '@ViewBag.Name');
+        formData.append('psCorreoCliente', '@ViewBag.Correo');
+        formData.append('psOpcUpdate', JSON.stringify(OpcUpdate));
+        formData.append('psTelefono', sTelefono);
+        formData.append('psTipoTel', sTipoTel);
+        formData.append('psDomicilioFModel', JSON.stringify(domicilioF));
+        formData.append('fileF', fileF);
+        formData.append('psDomicilioAModel', JSON.stringify(domicilioA));
+        formData.append('fileA', fileA);
+        formData.append('psCorreo', sCorreo);
+        formData.append('psComAdic', sComAdic);
+
+        $("#AjaxLoader").show("fast");
+        $.ajax({
+            url: "@Url.Action("ActualizarDatosCliente", "Home")",
+            type: 'POST',
+            /*data: '{clientModel: ' + dModel + '}',*/
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                var bSuccess = data.success;
+
+                if (bSuccess) {                    
+                    sweetalerts('Navistar', 'Se registro correctamente la solicitud', 'success', '');
+                    limpiarDatos();
+                } else {
+                    sweetalerts('Navistar', 'Error al registrar la solicitud, favor de intentarlo nuevamente', 'error', '');
+                }
+
+                $("#AjaxLoader").hide("slow");
+            },
+            error: function (xhr, status, error) {                
+                alert('Error al enviar la solicitud');
+                $("#AjaxLoader").hide("slow");
+            },
+        });
+    }
+
+    function validaCampos(opcUpd, modelo) {
+        return new Promise(async resolve => {
+            if (opcUpd == "1") {
+                var sTelefono = $("#txtNumTel").val();
+                var sTipoTel = "";
+
+                if ($("#chkTelFijo").is(":checked")) { sTipoTel = "1"; }
+                if ($("#chkTelMovil").is(":checked")) { sTipoTel = "2"; }
+                if (sTelefono == null || sTelefono == "") {
+                    await sweetalertsAsync('Navistar Financial', 'Favor de capturar el número de teléfono', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (sTelefono.length < 10) {
+                    await sweetalertsAsync('Navistar Financial', 'Favor de capturar el número de teléfono a 10 dígitos', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (sTipoTel == "") {
+                    await sweetalertsAsync('Navistar Financial', 'Favor de seleccionar el tipo de teléfono', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+            } else if (opcUpd == "2") {
+                var myFile = $('#txtDomFisPdf').prop('files')[0];
+
+                if (modelo.Calle == null || modelo.Calle == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la calle del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.NoExt == null || modelo.NoExt == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar el No. Ext. del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.Colonia == null || modelo.Colonia == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la colonia del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.DelMun == null || modelo.DelMun == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la delegación/municipio del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.Ciudad == null || modelo.Ciudad == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la ciudad del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.Entidad == null || modelo.Entidad == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la entidad del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.CP == null || modelo.CP == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar el código postal del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.CP.length < 5) {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar el código postal a 5 dígitos del domicilio fiscal', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (myFile == null || myFile == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de cargar un comprobante del domicilio fiscal en formato pdf', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (myFile.type == null || myFile.type == "" || myFile.type != "application/pdf") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de cargar un comprobante del domicilio fiscal en formato pdf', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+            } else if (opcUpd == "3") {
+                var myFile = $('#txtDomAdminPdf').prop('files')[0];
+
+                if (modelo.Calle == null || modelo.Calle == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la calle del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.NoExt == null || modelo.NoExt == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar el No. Ext. del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.Colonia == null || modelo.Colonia == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la colonia del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.DelMun == null || modelo.DelMun == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la delegación/municipio del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.Ciudad == null || modelo.Ciudad == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la ciudad del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.Entidad == null || modelo.Entidad == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar la entidad del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.CP == null || modelo.CP == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar el código postal del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (modelo.CP.length < 5) {
+                    sweetalertsAsync('Navistar Financial', 'Favor de capturar el código postal a 5 dígitos del domicilio administrativo', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (myFile == null || myFile == "") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de cargar un comprobante del domicilio administrativo en formato pdf', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+                if (myFile.type == null || myFile.type == "" || myFile.type != "application/pdf") {
+                    sweetalertsAsync('Navistar Financial', 'Favor de cargar un comprobante del domicilio administrativo en formato pdf', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+            } else if (opcUpd == "4") {
+                var sCorreo = $("#txtCorreo").val();
+
+                if (sCorreo == null || sCorreo == "") {
+                    await sweetalertsAsync('Navistar Financial', 'Favor de capturar el correo electrónico', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+
+                var update = validaEmail();
+                if (update == false) {
+                    await sweetalertsAsync('Navistar Financial', 'Correo inválido', 'warning', true);
+                    resolve(false);
+                    return;
+                }
+            }
+
+            resolve(true);
+        });
+    }
+
+    function validaEmail() {
+        var email = $("#txtCorreo").val();
+        var validEmail = /^(([^<>()[\]\\.,;:\s@@\"]+(\.[^<>()[\]\\.,;:\s@@\"]+)*)|(\".+\"))@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if (!validEmail.test(email)) {
+		    return false;
+        }
+
+        return true;
+    }
+
+    function limpiarDatos() {
+        $('#ddlOpcUpdate').val('').trigger("change");
+
+        // Telefono
+        $("#txtNumTel").val("");
+        $("#chkTelFijo")[0].checked = false;
+        $("#chkTelMovil")[0].checked = false;
+
+        // Domicilio Fiscal
+        $("#txtCalleF").val("");
+        $("#txtNoExtF").val("");
+        $("#txtNoIntF").val("");
+        $("#txtColoniaF").val("");
+        $("#txtDelMunF").val("");
+        $("#txtCiudadF").val("");
+        $("#txtEntidadF").val("");
+        $("#txtCPF").val("");
+        $("#txtDomFisPdf").val("");
+
+        // Domicilio Administrativo
+        $("#txtCalleA").val("");
+        $("#txtNoExtA").val("");
+        $("#txtNoIntA").val("");
+        $("#txtColoniaA").val("");
+        $("#txtDelMunA").val("");
+        $("#txtCiudadA").val("");
+        $("#txtEntidadA").val("");
+        $("#txtCPA").val("");
+        $("#txtDomAdminPdf").val("");
+
+        // Correo electrónico
+        $("#txtCorreo").val("");
+
+        // Comentarios adicionales
+        $("#txtComentario").val("");
+
+        // Terminos y Condiciones
+        $("#chkTC")[0].checked = false;
+    }
+
+</script>

@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sfiinternationalModelStoreContainer" CdmEntityContainer="sfiinternationalEntities">
+    <EntitySetMapping Name="cat_Families">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Families">
+        <MappingFragment StoreEntitySet="cat_Families">
+          <ScalarProperty Name="Family_Id" ColumnName="Family_Id" />
+          <ScalarProperty Name="Family_Name" ColumnName="Family_Name" />
+          <ScalarProperty Name="Family_Image" ColumnName="Family_Image" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Informative_PDF">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Informative_PDF">
+        <MappingFragment StoreEntitySet="cat_Informative_PDF">
+          <ScalarProperty Name="Informative_PDF_Id" ColumnName="Informative_PDF_Id" />
+          <ScalarProperty Name="Informative_PDF_Name" ColumnName="Informative_PDF_Name" />
+          <ScalarProperty Name="Informative_PDF_Binary" ColumnName="Informative_PDF_Binary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Interest_Financial_Leasing">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Interest_Financial_Leasing">
+        <MappingFragment StoreEntitySet="cat_Interest_Financial_Leasing">
+          <ScalarProperty Name="Interest_Financial_Leasing_Id" ColumnName="Interest_Financial_Leasing_Id" />
+          <ScalarProperty Name="Interest_Financial_Leasing_Term" ColumnName="Interest_Financial_Leasing_Term" />
+          <ScalarProperty Name="Interest_Financial_Leasing_Value" ColumnName="Interest_Financial_Leasing_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Interest_Rent">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Interest_Rent">
+        <MappingFragment StoreEntitySet="cat_Interest_Rent">
+          <ScalarProperty Name="Interest_Rent_Id" ColumnName="Interest_Rent_Id" />
+          <ScalarProperty Name="Interest_Rent_Term" ColumnName="Interest_Rent_Term" />
+          <ScalarProperty Name="Interest_Rent_Value" ColumnName="Interest_Rent_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Interest_Simple_Credit">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Interest_Simple_Credit">
+        <MappingFragment StoreEntitySet="cat_Interest_Simple_Credit">
+          <ScalarProperty Name="Interest_Simple_Credit_Id" ColumnName="Interest_Simple_Credit_Id" />
+          <ScalarProperty Name="Interest_Simple_Credit_Term" ColumnName="Interest_Simple_Credit_Term" />
+          <ScalarProperty Name="Interest_Simple_Credit_Value" ColumnName="Interest_Simple_Credit_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Mail_Config">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Mail_Config">
+        <MappingFragment StoreEntitySet="cat_Mail_Config">
+          <ScalarProperty Name="Mail_Config_Id" ColumnName="Mail_Config_Id" />
+          <ScalarProperty Name="Mail_Config_Port" ColumnName="Mail_Config_Port" />
+          <ScalarProperty Name="Mail_Config_Host" ColumnName="Mail_Config_Host" />
+          <ScalarProperty Name="Mail_Config_Timeout" ColumnName="Mail_Config_Timeout" />
+          <ScalarProperty Name="Mail_Config_Username" ColumnName="Mail_Config_Username" />
+          <ScalarProperty Name="Mail_Config_Password" ColumnName="Mail_Config_Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Models">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Models">
+        <MappingFragment StoreEntitySet="cat_Models">
+          <ScalarProperty Name="Model_Id" ColumnName="Model_Id" />
+          <ScalarProperty Name="Family_Id" ColumnName="Family_Id" />
+          <ScalarProperty Name="Model_Description" ColumnName="Model_Description" />
+          <ScalarProperty Name="Model_Price" ColumnName="Model_Price" />
+          <ScalarProperty Name="Model_Factor" ColumnName="Model_Factor" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+          <ScalarProperty Name="Model_Image" ColumnName="Model_Image" />
+          <ScalarProperty Name="Model_CAT" ColumnName="Model_CAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Slider_Text">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Slider_Text">
+        <MappingFragment StoreEntitySet="cat_Slider_Text">
+          <ScalarProperty Name="Slider_Text_Id" ColumnName="Slider_Text_Id" />
+          <ScalarProperty Name="Slider_Text_Content" ColumnName="Slider_Text_Content" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Step_Section">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Step_Section">
+        <MappingFragment StoreEntitySet="cat_Step_Section">
+          <ScalarProperty Name="Step_Section_Id" ColumnName="Step_Section_Id" />
+          <ScalarProperty Name="Step_Section_Title" ColumnName="Step_Section_Title" />
+          <ScalarProperty Name="Step_Section_Content" ColumnName="Step_Section_Content" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_Web_Snippets">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_Web_Snippets">
+        <MappingFragment StoreEntitySet="cat_Web_Snippets">
+          <ScalarProperty Name="Web_Snippet_Id" ColumnName="Web_Snippet_Id" />
+          <ScalarProperty Name="Web_Snippet_Element_Id" ColumnName="Web_Snippet_Element_Id" />
+          <ScalarProperty Name="Web_Snippet_Code" ColumnName="Web_Snippet_Code" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cat_WebAdministrators">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cat_WebAdministrators">
+        <MappingFragment StoreEntitySet="cat_WebAdministrators">
+          <ScalarProperty Name="WebAdministratorId" ColumnName="WebAdministratorId" />
+          <ScalarProperty Name="WebAdministratorUsername" ColumnName="WebAdministratorUsername" />
+          <ScalarProperty Name="WebAdministratorPassword" ColumnName="WebAdministratorPassword" />
+          <ScalarProperty Name="WebAdministratorName" ColumnName="WebAdministratorName" />
+          <ScalarProperty Name="WebAdministratorRole" ColumnName="WebAdministratorRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="info_CAT">
+      <EntityTypeMapping TypeName="sfiinternationalModel.info_CAT">
+        <MappingFragment StoreEntitySet="info_CAT">
+          <ScalarProperty Name="info_CAT_Id" ColumnName="info_CAT_Id" />
+          <ScalarProperty Name="info_CAT_Value" ColumnName="info_CAT_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebAdministratorRoles">
+      <EntityTypeMapping TypeName="sfiinternationalModel.WebAdministratorRole">
+        <MappingFragment StoreEntitySet="WebAdministratorRoles">
+          <ScalarProperty Name="WebAdministratorRoleId" ColumnName="WebAdministratorRoleId" />
+          <ScalarProperty Name="WebAdministratorRoleName" ColumnName="WebAdministratorRoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="campanias">
+      <EntityTypeMapping TypeName="sfiinternationalModel.campania">
+        <MappingFragment StoreEntitySet="campanias">
+          <ScalarProperty Name="idcampania" ColumnName="idcampania" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="objetivo" ColumnName="objetivo" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="archivo" ColumnName="archivo" />
+          <ScalarProperty Name="fInicio" ColumnName="fInicio" />
+          <ScalarProperty Name="fFinal" ColumnName="fFinal" />
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="usuarioAlta" ColumnName="usuarioAlta" />
+          <ScalarProperty Name="usuarioModifica" ColumnName="usuarioModifica" />
+          <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+          <ScalarProperty Name="fModifica" ColumnName="fModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Solicitudes_PaperLess">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Solicitudes_PaperLess">
+        <MappingFragment StoreEntitySet="Solicitudes_PaperLess">
+          <ScalarProperty Name="eSolicitud" ColumnName="eSolicitud" />
+          <ScalarProperty Name="eCliente" ColumnName="eCliente" />
+          <ScalarProperty Name="vCorreo" ColumnName="vCorreo" />
+          <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+          <ScalarProperty Name="fActualiza" ColumnName="fActualiza" />
+          <ScalarProperty Name="eEstatus" ColumnName="eEstatus" />
+          <ScalarProperty Name="BIT_FL_CVE" ColumnName="BIT_FL_CVE" />
+          <ScalarProperty Name="eGestion" ColumnName="eGestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aclaracionStatus">
+      <EntityTypeMapping TypeName="sfiinternationalModel.aclaracionStatu">
+        <MappingFragment StoreEntitySet="aclaracionStatus">
+          <ScalarProperty Name="id_aStatus" ColumnName="id_aStatus" />
+          <ScalarProperty Name="str_dStatus" ColumnName="str_dStatus" />
+          <ScalarProperty Name="id_sStatus" ColumnName="id_sStatus" />
+          <ScalarProperty Name="str_dColor" ColumnName="str_dColor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bases_Historicas">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Bases_Historicas">
+        <MappingFragment StoreEntitySet="Bases_Historicas">
+          <ScalarProperty Name="id_base" ColumnName="id_base" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="nombrebd" ColumnName="nombrebd" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="fInicioTarjeta" ColumnName="fInicioTarjeta" />
+          <ScalarProperty Name="fFinalTarjeta" ColumnName="fFinalTarjeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cliente">
+        <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="rfc" ColumnName="rfc" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="colonia" ColumnName="colonia" />
+          <ScalarProperty Name="codigoPostal" ColumnName="codigoPostal" />
+          <ScalarProperty Name="poblacion" ColumnName="poblacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="remindMe" ColumnName="remindMe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientes_adicional">
+      <EntityTypeMapping TypeName="sfiinternationalModel.clientes_adicional">
+        <MappingFragment StoreEntitySet="clientes_adicional">
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
+          <ScalarProperty Name="respuesta" ColumnName="respuesta" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Confirmacions">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Confirmacion">
+        <MappingFragment StoreEntitySet="Confirmacion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Campos" ColumnName="Campos" />
+          <ScalarProperty Name="Banco" ColumnName="Banco" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contenidos">
+      <EntityTypeMapping TypeName="sfiinternationalModel.contenido">
+        <MappingFragment StoreEntitySet="contenidos">
+          <ScalarProperty Name="id_contenido" ColumnName="id_contenido" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="contenido1" ColumnName="contenido" />
+          <ScalarProperty Name="pagina" ColumnName="pagina" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTRL_BITACORA_GRAL">
+      <EntityTypeMapping TypeName="sfiinternationalModel.CTRL_BITACORA_GRAL">
+        <MappingFragment StoreEntitySet="CTRL_BITACORA_GRAL">
+          <ScalarProperty Name="CONS" ColumnName="CONS" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+          <ScalarProperty Name="PNA_FL_PERSONA" ColumnName="PNA_FL_PERSONA" />
+          <ScalarProperty Name="CTO_FL_CVE" ColumnName="CTO_FL_CVE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="error_log">
+      <EntityTypeMapping TypeName="sfiinternationalModel.error_log">
+        <MappingFragment StoreEntitySet="error_log">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="faqs">
+      <EntityTypeMapping TypeName="sfiinternationalModel.faq">
+        <MappingFragment StoreEntitySet="faq">
+          <ScalarProperty Name="id_faq" ColumnName="id_faq" />
+          <ScalarProperty Name="pregunta" ColumnName="pregunta" />
+          <ScalarProperty Name="respuesta" ColumnName="respuesta" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="movimientos">
+      <EntityTypeMapping TypeName="sfiinternationalModel.movimiento">
+        <MappingFragment StoreEntitySet="movimientos">
+          <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="banco" ColumnName="banco" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="movimientos_190814">
+      <EntityTypeMapping TypeName="sfiinternationalModel.movimientos_190814">
+        <MappingFragment StoreEntitySet="movimientos_190814">
+          <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="banco" ColumnName="banco" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="operadores">
+      <EntityTypeMapping TypeName="sfiinternationalModel.operadore">
+        <MappingFragment StoreEntitySet="operadores">
+          <ScalarProperty Name="id_oper" ColumnName="id_oper" />
+          <ScalarProperty Name="operador" ColumnName="operador" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pagosBanamexes">
+      <EntityTypeMapping TypeName="sfiinternationalModel.pagosBanamex">
+        <MappingFragment StoreEntitySet="pagosBanamex">
+          <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+          <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="Operacion" ColumnName="Operacion" />
+          <ScalarProperty Name="CTE" ColumnName="CTE" />
+          <ScalarProperty Name="REFER_PGO" ColumnName="REFER_PGO" />
+          <ScalarProperty Name="Importe" ColumnName="Importe" />
+          <ScalarProperty Name="Concepto" ColumnName="Concepto" />
+          <ScalarProperty Name="TPO_ABO" ColumnName="TPO_ABO" />
+          <ScalarProperty Name="AUTORIZA" ColumnName="AUTORIZA" />
+          <ScalarProperty Name="AUTORIZA2" ColumnName="AUTORIZA2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pagosBanamex_190814">
+      <EntityTypeMapping TypeName="sfiinternationalModel.pagosBanamex_190814">
+        <MappingFragment StoreEntitySet="pagosBanamex_190814">
+          <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+          <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="Operacion" ColumnName="Operacion" />
+          <ScalarProperty Name="CTE" ColumnName="CTE" />
+          <ScalarProperty Name="REFER_PGO" ColumnName="REFER_PGO" />
+          <ScalarProperty Name="Importe" ColumnName="Importe" />
+          <ScalarProperty Name="Concepto" ColumnName="Concepto" />
+          <ScalarProperty Name="TPO_ABO" ColumnName="TPO_ABO" />
+          <ScalarProperty Name="AUTORIZA" ColumnName="AUTORIZA" />
+          <ScalarProperty Name="AUTORIZA2" ColumnName="AUTORIZA2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pagosHSBCs">
+      <EntityTypeMapping TypeName="sfiinternationalModel.pagosHSBC">
+        <MappingFragment StoreEntitySet="pagosHSBC">
+          <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+          <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+          <ScalarProperty Name="Operacion" ColumnName="Operacion" />
+          <ScalarProperty Name="StatusBital" ColumnName="StatusBital" />
+          <ScalarProperty Name="MensajeBital" ColumnName="MensajeBital" />
+          <ScalarProperty Name="FolioBital" ColumnName="FolioBital" />
+          <ScalarProperty Name="FRef1" ColumnName="FRef1" />
+          <ScalarProperty Name="FRef2" ColumnName="FRef2" />
+          <ScalarProperty Name="FRef3" ColumnName="FRef3" />
+          <ScalarProperty Name="URLrespuesta" ColumnName="URLrespuesta" />
+          <ScalarProperty Name="FImporte" ColumnName="FImporte" />
+          <ScalarProperty Name="tccmcend" ColumnName="tccmcend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="parametros">
+      <EntityTypeMapping TypeName="sfiinternationalModel.parametro">
+        <MappingFragment StoreEntitySet="parametros">
+          <ScalarProperty Name="id_con" ColumnName="id_con" />
+          <ScalarProperty Name="parametro1" ColumnName="parametro" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="preguntas">
+      <EntityTypeMapping TypeName="sfiinternationalModel.pregunta">
+        <MappingFragment StoreEntitySet="preguntas">
+          <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
+          <ScalarProperty Name="pregunta1" ColumnName="pregunta" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="formato" ColumnName="formato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reportes">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Reporte">
+        <MappingFragment StoreEntitySet="Reportes">
+          <ScalarProperty Name="id_reporte" ColumnName="id_reporte" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_servicio" ColumnName="id_servicio" />
+          <ScalarProperty Name="id_subservicio" ColumnName="id_subservicio" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_contrato" ColumnName="id_contrato" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="f_alta" ColumnName="f_alta" />
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="f_compromiso" ColumnName="f_compromiso" />
+          <ScalarProperty Name="archivos" ColumnName="archivos" />
+          <ScalarProperty Name="f_cierre" ColumnName="f_cierre" />
+          <ScalarProperty Name="comentarioCierre" ColumnName="comentarioCierre" />
+          <ScalarProperty Name="campo1" ColumnName="campo1" />
+          <ScalarProperty Name="campo2" ColumnName="campo2" />
+          <ScalarProperty Name="campo3" ColumnName="campo3" />
+          <ScalarProperty Name="campo4" ColumnName="campo4" />
+          <ScalarProperty Name="campo5" ColumnName="campo5" />
+          <ScalarProperty Name="campo6" ColumnName="campo6" />
+          <ScalarProperty Name="campo7" ColumnName="campo7" />
+          <ScalarProperty Name="campo8" ColumnName="campo8" />
+          <ScalarProperty Name="campo9" ColumnName="campo9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicios">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Servicio">
+        <MappingFragment StoreEntitySet="Servicios">
+          <ScalarProperty Name="id_servicio" ColumnName="id_servicio" />
+          <ScalarProperty Name="Servicio1" ColumnName="Servicio" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="dias" ColumnName="dias" />
+          <ScalarProperty Name="id_padre" ColumnName="id_padre" />
+          <ScalarProperty Name="Servicio_Internet" ColumnName="Servicio_Internet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="status1" ColumnName="status" />
+          <ScalarProperty Name="id_actividad" ColumnName="id_actividad" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="Status_Internet" ColumnName="Status_Internet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="eArea" ColumnName="eArea" />
+          <ScalarProperty Name="eAreaPadre" ColumnName="eAreaPadre" />
+          <ScalarProperty Name="eTipoArea" ColumnName="eTipoArea" />
+          <ScalarProperty Name="eOrden" ColumnName="eOrden" />
+          <ScalarProperty Name="vDsccArea" ColumnName="vDsccArea" />
+          <ScalarProperty Name="vDscArea" ColumnName="vDscArea" />
+          <ScalarProperty Name="eEstatus" ColumnName="eEstatus" />
+          <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+          <ScalarProperty Name="fModifica" ColumnName="fModifica" />
+          <ScalarProperty Name="vUsuarioAlta" ColumnName="vUsuarioAlta" />
+          <ScalarProperty Name="vUsuarioModifica" ColumnName="vUsuarioModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kcontratoes">
+      <EntityTypeMapping TypeName="sfiinternationalModel.kcontrato">
+        <MappingFragment StoreEntitySet="kcontrato">
+          <ScalarProperty Name="CTO_FG_STATUS" ColumnName="CTO_FG_STATUS" />
+          <ScalarProperty Name="CTO_FL_CVE" ColumnName="CTO_FL_CVE" />
+          <ScalarProperty Name="PNA_FL_PERSONA" ColumnName="PNA_FL_PERSONA" />
+          <ScalarProperty Name="TOP_CL_CVE" ColumnName="TOP_CL_CVE" />
+          <ScalarProperty Name="EMP_FL_CVE" ColumnName="EMP_FL_CVE" />
+          <ScalarProperty Name="CTO_CL_MONEDA" ColumnName="CTO_CL_MONEDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TContratoes">
+      <EntityTypeMapping TypeName="sfiinternationalModel.TContrato">
+        <MappingFragment StoreEntitySet="TContrato">
+          <ScalarProperty Name="IdContrato" ColumnName="IdContrato" />
+          <ScalarProperty Name="Contrato" ColumnName="Contrato" />
+          <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+          <ScalarProperty Name="IdTipoCredito" ColumnName="IdTipoCredito" />
+          <ScalarProperty Name="IdEstatusContrato" ColumnName="IdEstatusContrato" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="PorcEnganche" ColumnName="PorcEnganche" />
+          <ScalarProperty Name="Enganche" ColumnName="Enganche" />
+          <ScalarProperty Name="CapitalFinanciado" ColumnName="CapitalFinanciado" />
+          <ScalarProperty Name="IdPeriodicidad" ColumnName="IdPeriodicidad" />
+          <ScalarProperty Name="Plazo" ColumnName="Plazo" />
+          <ScalarProperty Name="IdMoneda" ColumnName="IdMoneda" />
+          <ScalarProperty Name="FecInicioContrato" ColumnName="FecInicioContrato" />
+          <ScalarProperty Name="FecPrimeraRenta" ColumnName="FecPrimeraRenta" />
+          <ScalarProperty Name="FecActivacion" ColumnName="FecActivacion" />
+          <ScalarProperty Name="FecFinContrato" ColumnName="FecFinContrato" />
+          <ScalarProperty Name="IdTasa" ColumnName="IdTasa" />
+          <ScalarProperty Name="TasaBase" ColumnName="TasaBase" />
+          <ScalarProperty Name="PuntosMas" ColumnName="PuntosMas" />
+          <ScalarProperty Name="PuntosPor" ColumnName="PuntosPor" />
+          <ScalarProperty Name="Tasa" ColumnName="Tasa" />
+          <ScalarProperty Name="TasaBaseMora" ColumnName="TasaBaseMora" />
+          <ScalarProperty Name="IdTasaMora" ColumnName="IdTasaMora" />
+          <ScalarProperty Name="PuntosMasMora" ColumnName="PuntosMasMora" />
+          <ScalarProperty Name="PuntosPorMora" ColumnName="PuntosPorMora" />
+          <ScalarProperty Name="FactorMora" ColumnName="FactorMora" />
+          <ScalarProperty Name="TasaMora" ColumnName="TasaMora" />
+          <ScalarProperty Name="SaldoInsoluto" ColumnName="SaldoInsoluto" />
+          <ScalarProperty Name="BallonPayment" ColumnName="BallonPayment" />
+          <ScalarProperty Name="PorcBallonPayment" ColumnName="PorcBallonPayment" />
+          <ScalarProperty Name="ValorResidual" ColumnName="ValorResidual" />
+          <ScalarProperty Name="PorcValorResidual" ColumnName="PorcValorResidual" />
+          <ScalarProperty Name="DepositoEnGarantia" ColumnName="DepositoEnGarantia" />
+          <ScalarProperty Name="PorcDepositoEnGarantia" ColumnName="PorcDepositoEnGarantia" />
+          <ScalarProperty Name="OpcionDeCompra" ColumnName="OpcionDeCompra" />
+          <ScalarProperty Name="PorcOpcionDeCompra" ColumnName="PorcOpcionDeCompra" />
+          <ScalarProperty Name="TasaIva" ColumnName="TasaIva" />
+          <ScalarProperty Name="VersionTabla" ColumnName="VersionTabla" />
+          <ScalarProperty Name="IdTipoCalculoTasaVariable" ColumnName="IdTipoCalculoTasaVariable" />
+          <ScalarProperty Name="DiaCorteDisposiciones" ColumnName="DiaCorteDisposiciones" />
+          <ScalarProperty Name="DiaPagoDisposiciones" ColumnName="DiaPagoDisposiciones" />
+          <ScalarProperty Name="IdPersonaTitular" ColumnName="IdPersonaTitular" />
+          <ScalarProperty Name="IdPersonaRepresentante" ColumnName="IdPersonaRepresentante" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_Operacion_Area">
+      <EntityTypeMapping TypeName="sfiinternationalModel.Tipo_Operacion_Area">
+        <MappingFragment StoreEntitySet="Tipo_Operacion_Area">
+          <ScalarProperty Name="vTipoOperacion" ColumnName="vTipoOperacion" />
+          <ScalarProperty Name="eArea" ColumnName="eArea" />
+          <ScalarProperty Name="eImprime" ColumnName="eImprime" />
+          <ScalarProperty Name="vEtiqueta" ColumnName="vEtiqueta" />
+          <ScalarProperty Name="eEstatus" ColumnName="eEstatus" />
+          <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+          <ScalarProperty Name="fModifica" ColumnName="fModifica" />
+          <ScalarProperty Name="vUsuarioAlta" ColumnName="vUsuarioAlta" />
+          <ScalarProperty Name="vUsuarioModifica" ColumnName="vUsuarioModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTarjetas">
+      <EntityTypeMapping TypeName="sfiinternationalModel.TTarjeta">
+        <MappingFragment StoreEntitySet="TTarjetas">
+          <ScalarProperty Name="IdTarjeta" ColumnName="IdTarjeta" />
+          <ScalarProperty Name="NumeroTarjeta" ColumnName="NumeroTarjeta" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NIP" ColumnName="NIP" />
+          <ScalarProperty Name="Vigencia" ColumnName="Vigencia" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="IdTipoEntregaTarjeta" ColumnName="IdTipoEntregaTarjeta" />
+          <ScalarProperty Name="CartaBienvenida" ColumnName="CartaBienvenida" />
+          <ScalarProperty Name="NombreImpresion" ColumnName="NombreImpresion" />
+          <ScalarProperty Name="IdContrato" ColumnName="IdContrato" />
+          <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+          <ScalarProperty Name="IdTipoRelacion" ColumnName="IdTipoRelacion" />
+          <ScalarProperty Name="IdEstatusTarjeta" ColumnName="IdEstatusTarjeta" />
+          <ScalarProperty Name="MotivoCancelacion" ColumnName="MotivoCancelacion" />
+          <ScalarProperty Name="FechaCancelacion" ColumnName="FechaCancelacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Menu_Has_Submenu">
+      <EntityTypeMapping TypeName="sfiinternationalModel.vw_Menu_Has_Submenu">
+        <MappingFragment StoreEntitySet="vw_Menu_Has_Submenu">
+          <ScalarProperty Name="Submenu_Id" ColumnName="Submenu_Id" />
+          <ScalarProperty Name="Submenu_Name" ColumnName="Submenu_Name" />
+          <ScalarProperty Name="Submenu_Name_English" ColumnName="Submenu_Name_English" />
+          <ScalarProperty Name="Submenu_Order" ColumnName="Submenu_Order" />
+          <ScalarProperty Name="Menu_Link" ColumnName="Menu_Link" />
+          <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+          <ScalarProperty Name="Menu_Name_English" ColumnName="Menu_Name_English" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+          <ScalarProperty Name="Submenu_PDF_Folder" ColumnName="Submenu_PDF_Folder" />
+          <ScalarProperty Name="Menu_Submenu" ColumnName="Menu_Submenu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Submenus">
+      <EntityTypeMapping TypeName="sfiinternationalModel.vw_Submenus">
+        <MappingFragment StoreEntitySet="vw_Submenus">
+          <ScalarProperty Name="Submenu_Id" ColumnName="Submenu_Id" />
+          <ScalarProperty Name="Submenu_Name" ColumnName="Submenu_Name" />
+          <ScalarProperty Name="Submenu_Name_English" ColumnName="Submenu_Name_English" />
+          <ScalarProperty Name="Submenu_Order" ColumnName="Submenu_Order" />
+          <ScalarProperty Name="Menu_Link" ColumnName="Menu_Link" />
+          <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+          <ScalarProperty Name="Submenu_PDF_Folder" ColumnName="Submenu_PDF_Folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cPersonas">
+      <EntityTypeMapping TypeName="sfiinternationalModel.cPersona">
+        <MappingFragment StoreEntitySet="cPersona">
+          <ScalarProperty Name="TelFijo" ColumnName="TelFijo" />
+          <ScalarProperty Name="Telcelular" ColumnName="Telcelular" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="PNA_FG_STATUS" ColumnName="PNA_FG_STATUS" />
+          <ScalarProperty Name="PNA_DS_EMAIL" ColumnName="PNA_DS_EMAIL" />
+          <ScalarProperty Name="PNA_DS_NOMBRE" ColumnName="PNA_DS_NOMBRE" />
+          <ScalarProperty Name="PNA_CL_RFC" ColumnName="PNA_CL_RFC" />
+          <ScalarProperty Name="PNA_FL_PERSONA" ColumnName="PNA_FL_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,251 @@
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\NavistarPagos.dll.config
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\NavistarPagos.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\NavistarPagos.pdb
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\csc.exe
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\csc.exe.config
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\csc.rsp
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\csi.exe
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\csi.rsp
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\System.AppContext.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\vbc.exe
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\vbc.exe.config
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\vbc.rsp
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\VBCSCompiler.exe
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Antlr3.Runtime.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Newtonsoft.Json.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Helpers.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Mvc.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Optimization.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Razor.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.WebPages.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.WebPages.Razor.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\WebGrease.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Helpers.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Mvc.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Optimization.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.Razor.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.WebPages.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\System.Web.WebPages.Razor.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Newtonsoft.Json.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Antlr3.Runtime.pdb
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.Razor.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\obj\Debug\NavistarPagos.csprojAssemblyReference.cache
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\obj\Debug\NavistarPagos.csproj.CoreCompileInputs.cache
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\obj\Debug\NavistarPagos.csproj.CopyComplete
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\obj\Debug\NavistarPagos.dll
+C:\Users\Guzmán\Documents\Proyectos\Neta\Navistar\Proyectos Git\NavistarPagos\obj\Debug\NavistarPagos.pdb
+C:\Proyectos\NavistarPagos\bin\NavistarPagos.dll.config
+C:\Proyectos\NavistarPagos\bin\NavistarPagos.dll
+C:\Proyectos\NavistarPagos\bin\NavistarPagos.pdb
+C:\Proyectos\NavistarPagos\bin\roslyn\csc.exe
+C:\Proyectos\NavistarPagos\bin\roslyn\csc.exe.config
+C:\Proyectos\NavistarPagos\bin\roslyn\csc.rsp
+C:\Proyectos\NavistarPagos\bin\roslyn\csi.exe
+C:\Proyectos\NavistarPagos\bin\roslyn\csi.rsp
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Proyectos\NavistarPagos\bin\roslyn\System.AppContext.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\System.Collections.Immutable.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\System.IO.FileSystem.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Proyectos\NavistarPagos\bin\roslyn\vbc.exe
+C:\Proyectos\NavistarPagos\bin\roslyn\vbc.exe.config
+C:\Proyectos\NavistarPagos\bin\roslyn\vbc.rsp
+C:\Proyectos\NavistarPagos\bin\roslyn\VBCSCompiler.exe
+C:\Proyectos\NavistarPagos\bin\roslyn\VBCSCompiler.exe.config
+C:\Proyectos\NavistarPagos\bin\Antlr3.Runtime.dll
+C:\Proyectos\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proyectos\NavistarPagos\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyectos\NavistarPagos\bin\Newtonsoft.Json.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.Helpers.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.Mvc.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.Optimization.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.Razor.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.WebPages.Deployment.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.WebPages.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.WebPages.Razor.dll
+C:\Proyectos\NavistarPagos\bin\WebGrease.dll
+C:\Proyectos\NavistarPagos\bin\System.Web.Helpers.xml
+C:\Proyectos\NavistarPagos\bin\System.Web.Mvc.xml
+C:\Proyectos\NavistarPagos\bin\System.Web.Optimization.xml
+C:\Proyectos\NavistarPagos\bin\System.Web.Razor.xml
+C:\Proyectos\NavistarPagos\bin\System.Web.WebPages.xml
+C:\Proyectos\NavistarPagos\bin\System.Web.WebPages.Deployment.xml
+C:\Proyectos\NavistarPagos\bin\System.Web.WebPages.Razor.xml
+C:\Proyectos\NavistarPagos\bin\Newtonsoft.Json.xml
+C:\Proyectos\NavistarPagos\bin\Antlr3.Runtime.pdb
+C:\Proyectos\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proyectos\NavistarPagos\bin\es\System.Web.Helpers.resources.dll
+C:\Proyectos\NavistarPagos\bin\es\System.Web.Mvc.resources.dll
+C:\Proyectos\NavistarPagos\bin\es\System.Web.Optimization.resources.dll
+C:\Proyectos\NavistarPagos\bin\es\System.Web.Razor.resources.dll
+C:\Proyectos\NavistarPagos\bin\es\System.Web.WebPages.resources.dll
+C:\Proyectos\NavistarPagos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proyectos\NavistarPagos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proyectos\NavistarPagos\obj\Debug\NavistarPagos.csproj.AssemblyReference.cache
+C:\Proyectos\NavistarPagos\obj\Debug\NavistarPagos.csproj.CoreCompileInputs.cache
+C:\Proyectos\NavistarPagos\obj\Debug\NavistarPagos.csproj.CopyComplete
+C:\Proyectos\NavistarPagos\obj\Debug\NavistarPagos.dll
+C:\Proyectos\NavistarPagos\obj\Debug\NavistarPagos.pdb
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\NavistarPagos.dll.config
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\NavistarPagos.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\NavistarPagos.pdb
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\csc.exe
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\csc.exe.config
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\csc.rsp
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\csi.exe
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\csi.rsp
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\System.AppContext.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\vbc.exe
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\vbc.exe.config
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\vbc.rsp
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\VBCSCompiler.exe
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Antlr3.Runtime.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Newtonsoft.Json.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Helpers.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Mvc.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Optimization.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Razor.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.WebPages.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.WebPages.Razor.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\WebGrease.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Helpers.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Mvc.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Optimization.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.Razor.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.WebPages.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\System.Web.WebPages.Razor.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Newtonsoft.Json.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Antlr3.Runtime.pdb
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.Razor.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\obj\Debug\NavistarPagos.csproj.AssemblyReference.cache
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\obj\Debug\NavistarPagos.csproj.CoreCompileInputs.cache
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\obj\Debug\NavistarPagos.dll
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\obj\Debug\NavistarPagos.pdb
+C:\Users\NS-656\Downloads\NavistarPagos (2)\NavistarPagos\obj\Debug\Navistar.0F38E93A.Up2Date
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\NavistarPagos.dll.config
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\NavistarPagos.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\NavistarPagos.pdb
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\csc.exe
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\csc.exe.config
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\csc.rsp
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\csi.exe
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\csi.rsp
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\System.AppContext.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\System.Collections.Immutable.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\System.IO.FileSystem.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\vbc.exe
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\vbc.exe.config
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\vbc.rsp
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\VBCSCompiler.exe
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\roslyn\VBCSCompiler.exe.config
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Antlr3.Runtime.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Newtonsoft.Json.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Helpers.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Mvc.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Optimization.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Razor.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.WebPages.Deployment.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.WebPages.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.WebPages.Razor.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\WebGrease.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Helpers.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Mvc.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Optimization.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.Razor.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.WebPages.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.WebPages.Deployment.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\System.Web.WebPages.Razor.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Newtonsoft.Json.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Antlr3.Runtime.pdb
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.Helpers.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.Mvc.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.Optimization.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.Razor.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.WebPages.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\obj\Debug\NavistarPagos.csproj.CoreCompileInputs.cache
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\obj\Debug\NavistarPagos.csproj.CopyComplete
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\obj\Debug\NavistarPagos.dll
+C:\Proyectos\NavistarPagos19032024\NavistarPagos\obj\Debug\NavistarPagos.pdb

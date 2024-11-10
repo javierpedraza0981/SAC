@@ -1,0 +1,271 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.footer {
+	background-color: #00355f;
+	color: #fff;
+}
+
+.social-footer {
+	background-color: #808080;
+}
+
+.social-footer>.social-text>a {
+	color: #fff !important;
+}
+
+.social-footer>.social-text>a>img {
+    width: 5%;
+    margin-right:20px;
+}
+
+.footer-infoText {
+	font-family: 'Roboto', sans-serif;
+}
+
+.footer-buttons>a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	border-style: none;
+    border-radius: 5px;
+    background: #f47820;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 200ms;
+}
+
+.footer-buttons>a:hover, .footer-buttons>a:focus {
+	background: #f47820;
+	color: #808080;
+	outline: 0;
+}
+
+.footer-buttons>.inverted {
+	background: #fff;
+	color: #00355f;
+}
+
+.footer-buttons>.inverted:hover, .footer-buttons>.inverted:focus {
+	background: #fff;
+	color: #808080;
+	outline: 0;
+}
+
+.footer-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Extra small devices*/
+@media (max-width: 320px) {
+    .social-footer {
+        padding-bottom: 38px;
+    }
+
+	.social-footer>.social-text>a i {
+		font-size: 1.7em;
+	}
+
+	.social-footer>.social-text>a:nth-child(-n+3) {
+		margin-right: 10px;
+	}
+
+	.zoom {
+    	bottom: 23px !important;
+	}
+
+	.zoom-btn-large {
+    	width: 48px !important;
+    	height: 48px !important;
+    	line-height: 48px !important;
+	}
+}
+
+/*Mobile S*/
+@media (min-width: 320px) {
+	.social-footer {
+		padding-bottom: 35px;
+	}
+
+	.social-footer>.social-text>a i{
+		font-size: 1.7em;
+	}
+
+	.social-footer>.social-text>a:nth-child(-n+3) {
+		margin-right: 10px;
+	}
+
+	.zoom {
+    	bottom: 23px !important;
+	}
+
+	.zoom-btn-large {
+    	width: 48px !important;
+    	height: 48px !important;
+    	line-height: 48px !important;
+	}
+}
+
+@media (min-width: 512px) {
+	.zoom {
+    	bottom: 50px !important;
+	}
+
+	.zoom-btn-large {
+    	width: 60px !important;
+    	height: 60px !important;
+    	line-height: 60px !important;
+	}
+}
+
+/*Tablet, Landscape, and up*/
+@media (min-width: 768px) {
+    .privacy-content {
+        font-size: 7px;
+    }
+
+	.footer {
+		display: all;
+		height: 75px;
+	}
+
+	.zoom {
+		display: none;
+	}
+
+	.footer-icons {
+		font-size: 11px;
+		margin-top: 24px;
+		margin-left: -40px;
+	}
+
+	.icon-f {
+		margin-right: 20px;
+	}
+
+	.footer-buttons>a {
+		margin-top: 10px;
+	}
+
+	.social-footer {
+		margin-bottom: 75px;
+	}
+
+	.social-footer>.social-text:nth-child(1) {
+		font-size: 11px;
+		margin-top: 7px;
+	}
+
+	.social-footer>.social-text:nth-child(2) {		
+    	margin-top: 6px;
+	}
+
+    .social-footer>.social-text:nth-child(3) {		
+    	margin-top: 6px;
+	}
+}
+
+@media (min-width: 800px) {
+    .privacy-content {
+        font-size: 9px;
+    }
+
+	.footer-icons {
+		font-size: 13px;
+		margin-top: 24px;
+		margin-left: -40px;
+	}
+
+	.icon-f {
+		margin-right: 20px;
+	}
+
+	.footer-buttons>a {
+		margin-top: 10px;
+		font-size: 13px;
+	}	
+}
+
+@media (min-width: 900px) {
+	.footer-buttons {
+		margin-left: 10%;
+	}
+
+	.social-footer>.social-text:nth-child(1) {
+		font-size: 13px;
+		
+	}
+
+	.social-footer>.social-text:nth-child(2) {
+		
+	}
+}
+
+@media (min-width: 1024px) {
+    .privacy-content {
+        font-size: 10px;
+    }
+
+	.footer-icons {
+		font-size: 15px;
+		margin-top: 24px;
+		margin-left: -40px;
+	}
+
+	.icon-f {
+		margin-right: 20px;
+	}
+
+	.footer-buttons {
+		margin-left: 12%;
+	}
+
+	.footer-buttons>a {
+		margin-top: 10px;
+		font-size: 15px;
+	}
+
+	.social-footer>.social-text:nth-child(1) {
+		
+	}
+
+	.social-footer>.social-text:nth-child(2) {
+		
+	}
+}
+
+@media (min-width: 1200px) {
+    .privacy-content {
+        font-size: 12px;
+    }
+
+	.social-footer>.social-text:nth-child(1) {
+		
+	}
+
+	.social-footer>.social-text:nth-child(2) {
+		margin-left: 0px;
+	}
+}
+
+@media (min-width: 1366px) {
+	.footer-icons {
+    	
+	}
+}
+
+/*Hide when collapse*/
+@media (max-width: 767px) {
+	.footer {
+		display: none;
+	}
+
+	.zoom {
+		display: all;
+	}
+}
+
+@media only screen and (max-device-width: 839px) and (min-width: 601px) {
+    #sp-root-container {
+        zoom: 1 !important;
+    }
+}

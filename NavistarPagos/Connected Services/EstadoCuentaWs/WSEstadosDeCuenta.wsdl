@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ObtenEstadoDeCuentaNavistarPagos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claveEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaInicioMovimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaFinalMovimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaInicioVencimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaFinalVencimientos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenEstadoDeCuentaNavistarPagosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenEstadoDeCuentaNavistarPagosResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ObtenEstadoDeCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claveEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaInicioMovimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaFinalMovimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaInicioVencimientos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaFinalVencimientos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenEstadoDeCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenEstadoDeCuentaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviaEstadoDeCuenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claveEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contratos" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaInicioMovimientos" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaFinalMovimientos" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaInicioVencimientos" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaFinalVencimientos" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="correoEnvio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnviaEstadoDeCuentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnviaEstadoDeCuentaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenEstadoDeCuentaInterno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claveEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlAcceso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenEstadoDeCuentaInternoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenEstadoDeCuentaInternoResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Respuesta">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ClaveError" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreArchivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JSON" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArchivoPDF" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Filepdf64" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ObtenEstadoDeCuentaInternoNavistarPagos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claveEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlAcceso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenEstadoDeCuentaInternoNavistarPagosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenEstadoDeCuentaInternoNavistarPagosResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnvioEstadoDeCuentaInterno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="claveEmpresa" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlAcceso" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fFinal" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fVencimientosDe" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fVencimientosA" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnvioEstadoDeCuentaInternoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnvioEstadoDeCuentaInternoResult" type="tns:Respuesta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObtenEstadoDeCuentaNavistarPagosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaNavistarPagos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaNavistarPagosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaNavistarPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuenta" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnviaEstadoDeCuentaSoapIn">
+    <wsdl:part name="parameters" element="tns:EnviaEstadoDeCuenta" />
+  </wsdl:message>
+  <wsdl:message name="EnviaEstadoDeCuentaSoapOut">
+    <wsdl:part name="parameters" element="tns:EnviaEstadoDeCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaInternoSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaInterno" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaInternoSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaInternoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaInternoNavistarPagosSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaInternoNavistarPagos" />
+  </wsdl:message>
+  <wsdl:message name="ObtenEstadoDeCuentaInternoNavistarPagosSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenEstadoDeCuentaInternoNavistarPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnvioEstadoDeCuentaInternoSoapIn">
+    <wsdl:part name="parameters" element="tns:EnvioEstadoDeCuentaInterno" />
+  </wsdl:message>
+  <wsdl:message name="EnvioEstadoDeCuentaInternoSoapOut">
+    <wsdl:part name="parameters" element="tns:EnvioEstadoDeCuentaInternoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSEstadosDeCuentaSoap">
+    <wsdl:operation name="ObtenEstadoDeCuentaNavistarPagos">
+      <wsdl:input message="tns:ObtenEstadoDeCuentaNavistarPagosSoapIn" />
+      <wsdl:output message="tns:ObtenEstadoDeCuentaNavistarPagosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuenta">
+      <wsdl:input message="tns:ObtenEstadoDeCuentaSoapIn" />
+      <wsdl:output message="tns:ObtenEstadoDeCuentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviaEstadoDeCuenta">
+      <wsdl:input message="tns:EnviaEstadoDeCuentaSoapIn" />
+      <wsdl:output message="tns:EnviaEstadoDeCuentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuentaInterno">
+      <wsdl:input message="tns:ObtenEstadoDeCuentaInternoSoapIn" />
+      <wsdl:output message="tns:ObtenEstadoDeCuentaInternoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuentaInternoNavistarPagos">
+      <wsdl:input message="tns:ObtenEstadoDeCuentaInternoNavistarPagosSoapIn" />
+      <wsdl:output message="tns:ObtenEstadoDeCuentaInternoNavistarPagosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnvioEstadoDeCuentaInterno">
+      <wsdl:input message="tns:EnvioEstadoDeCuentaInternoSoapIn" />
+      <wsdl:output message="tns:EnvioEstadoDeCuentaInternoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSEstadosDeCuentaSoap" type="tns:WSEstadosDeCuentaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenEstadoDeCuentaNavistarPagos">
+      <soap:operation soapAction="http://tempuri.org/ObtenEstadoDeCuentaNavistarPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuenta">
+      <soap:operation soapAction="http://tempuri.org/ObtenEstadoDeCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviaEstadoDeCuenta">
+      <soap:operation soapAction="http://tempuri.org/EnviaEstadoDeCuenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuentaInterno">
+      <soap:operation soapAction="http://tempuri.org/ObtenEstadoDeCuentaInterno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuentaInternoNavistarPagos">
+      <soap:operation soapAction="http://tempuri.org/ObtenEstadoDeCuentaInternoNavistarPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnvioEstadoDeCuentaInterno">
+      <soap:operation soapAction="http://tempuri.org/EnvioEstadoDeCuentaInterno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSEstadosDeCuentaSoap12" type="tns:WSEstadosDeCuentaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenEstadoDeCuentaNavistarPagos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenEstadoDeCuentaNavistarPagos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuenta">
+      <soap12:operation soapAction="http://tempuri.org/ObtenEstadoDeCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviaEstadoDeCuenta">
+      <soap12:operation soapAction="http://tempuri.org/EnviaEstadoDeCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuentaInterno">
+      <soap12:operation soapAction="http://tempuri.org/ObtenEstadoDeCuentaInterno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenEstadoDeCuentaInternoNavistarPagos">
+      <soap12:operation soapAction="http://tempuri.org/ObtenEstadoDeCuentaInternoNavistarPagos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnvioEstadoDeCuentaInterno">
+      <soap12:operation soapAction="http://tempuri.org/EnvioEstadoDeCuentaInterno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSEstadosDeCuenta">
+    <wsdl:port name="WSEstadosDeCuentaSoap" binding="tns:WSEstadosDeCuentaSoap">
+      <soap:address location="http://167.6.181.201:8762/WSEstadosCuentaSAC/WSEstadosDeCuenta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSEstadosDeCuentaSoap12" binding="tns:WSEstadosDeCuentaSoap12">
+      <soap12:address location="http://167.6.181.201:8762/WSEstadosCuentaSAC/WSEstadosDeCuenta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

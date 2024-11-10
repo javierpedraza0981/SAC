@@ -1,0 +1,737 @@
+﻿
+@{
+    ViewBag.Title = "Captura Información PF/PM";
+}
+
+<style>
+    #imagePreview {
+        max-width: 400px; /* Limita el ancho máximo a 400 px */
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: #ffffff;
+        background-color: #03345F;
+        border-color: #03345F #03345F #03345F;
+    }
+
+    #tabServ .nav-item:not(:last-child) {
+        border-bottom: solid 1px #dee2e6;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; /* Apparently some margin are still there even though it's hidden */
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: #03345F;
+    }
+
+    div.scrollable-table-wrapper {
+        /*max-height: 150px;*/
+        overflow: auto;
+    }
+
+        div.scrollable-table-wrapper thead tr th {
+            position: sticky;
+            top: 0;
+            background: #03345F;
+            text-align: center;
+            vertical-align: top;
+        }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+
+
+<div class="container text-center" style="margin-top:10px;margin-bottom:5px;">
+    <h1 class="AccountName" style="font-size: 34px;">Bienvenido @ViewBag.Name</h1>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" style="background-color: #03345F; height: 3px; margin-top: 0px;"></div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center" style="padding-left: 0px; padding-right: 0px;">
+
+
+        <div class="container mt-5">
+            <label style="padding-top: 20px; padding-bottom: 10px; font-size: x-large; font-weight: bold;">Actualización de datos Persona Física</label>
+
+            <!-- Lugar, Ciudad, Entidad, País -->
+            @*<div class="form-group row">
+                    <label for="txtLugarPF" class="col-md-3 col-form-label text-left">Lugar:</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="txtLugarPF" name="txtLugarPF" maxlength="30" style="text-transform: uppercase;">
+                    </div>
+
+                    <label for="txtCiudadPF" class="col-md-3 col-form-label text-left">Ciudad:</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="txtCiudadPF" name="txtCiudadF" maxlength="30" style="text-transform: uppercase;">
+                    </div>
+                </div>*@
+            <div class="form-group row">
+                <!-- Campo Lugar con checkbox después del texto -->
+                <label for="txtLugarPF" class="col-md-2 col-form-label text-left">Lugar:</label>
+                <div class="col-md-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkLugarPF" name="chkLugarPF">
+                        <label class="form-check-label" for="chkLugarPF"></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtLugarPF" name="txtLugarPF" maxlength="30" style="text-transform: uppercase;">
+                </div>
+
+
+                <!-- Campo Ciudad con checkbox después del texto -->
+                <label for="txtCiudadPF" class="col-md-2 col-form-label text-left">Ciudad:</label>
+                <div class="col-md-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkCiudadPF" name="chkCiudadPF">
+                        <label class="form-check-label" for="chkCiudadPF"></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtCiudadPF" name="txtCiudadPF" maxlength="30" style="text-transform: uppercase;">
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <!-- Campo Entidad con checkbox después del texto -->
+                <label for="txtEntidadPF" class="col-md-2 col-form-label text-left">Entidad:</label>
+                <div class="col-md-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkEntidadPF" name="chkEntidadPF">
+                        <label class="form-check-label" for="chkEntidadPF"></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtEntidadPF" name="txtEntidadPF" maxlength="30" style="text-transform: uppercase;">
+                </div>
+
+
+                <!-- Campo País con checkbox después del texto -->
+                <label for="txtPaisPF" class="col-md-2 col-form-label text-left">País:</label>
+                <div class="col-md-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkPaisPF" name="chkPaisPF">
+                        <label class="form-check-label" for="chkPaisPF"></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtPaisPF" name="txtPaisPF" maxlength="30" style="text-transform: uppercase;">
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label text-left">Fecha:</label>
+            </div>
+
+            <!-- Fecha, Día, Mes, Año -->
+            <div class="form-group row">
+
+                <label for="txtDiaPF" class="col-md-3 col-form-label text-left">Día (DD):</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="txtDiaPF" name="txtDiaPF">
+                        <option value="" disabled selected>Seleccione un día</option>
+                        <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                </div>
+
+                <label for="txtMesPF" class="col-md-3 col-form-label text-left">Mes (MM):</label>
+                <div class="col-md-3">
+                    <select class="form-control" id="txtMesPF" name="txtMesPF">
+                        <option value="" disabled selected>Seleccione un mes</option>
+                        <script>
+                            for (let i = 1; i <= 12; i++) {
+                                let month = i.toString().padStart(2, '0');
+                                document.write('<option value="' + month + '">' + month + '</option>');
+                            }
+                        </script>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="txtAnioPF" class="col-md-3 col-form-label text-left">Año (AAAA):</label>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtAnioPF" name="txtAnioPF" maxlength="4" style="text-transform: uppercase;" readonly>
+                    <script>
+                        document.getElementById('txtAnioPF').value = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+
+            <!-- Nombre Completo -->
+            <div class="form-group row">
+                <label for="txtNombrePF" class="col-md-3 col-form-label text-left">Nombre Completo <span style="font-size: smaller;">(Sin abreviatura)</span>:</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="txtNombrePF" name="txtNombrePF" maxlength="150" style="text-transform: uppercase;">
+                </div>
+            </div>
+
+            <!-- Correo electrónico y Teléfono -->
+            <div class="form-group row">
+                <!-- Campo Teléfono con botón Agregar y checkbox -->
+                <label for="telefonoInput" class="col-md-2 col-form-label text-left">Teléfono:</label>
+                <div class="col-md-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkTelefono" name="chkTelefono">
+                        <label class="form-check-label" for="chkTelefono"></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="telefonoInput" name="telefonoInput" maxlength="10" placeholder="Ingrese teléfono">
+                        <div class="input-group-append">
+                            <button type="button" id="addPhoneBtn" class="btn btn-primary" style="background-color: #03345F;">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Campo Correo electrónico con checkbox -->
+                <label for="txtEmailPF" class="col-md-2 col-form-label text-left">Correo electrónico:</label>
+                <div class="col-md-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkEmail" name="chkEmail">
+                        <label class="form-check-label" for="chkEmail"></label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <input type="email" class="form-control" id="txtEmailPF" name="txtEmailPF" maxlength="70" style="text-transform: uppercase;">
+                </div>
+
+            </div>
+
+
+            <!-- Tabla de Teléfonos -->
+            <div class="form-group row">
+                <div class="col-md-3 offset-md-3">
+                    <table id="phoneTable" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="background-color: #03345F; color: white; text-align: center; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                    Teléfono
+                                </th>
+                                <th style="background-color: #03345F; color: white; text-align: center; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                    Acción
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Las filas se agregarán aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Domicilio Administrativo -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container mt-6">
+                    <label style="padding-top: 20px; padding-bottom: 10px; font-size: x-large; font-weight: bold;">Domicilio Administrativo</label>
+                    <form>
+                        <div class="form-group row">
+                            <label for="calle" class="col-sm-2 col-form-label">Calle:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxCalle" name="checkboxCalle">
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="calle" name="calle" placeholder="Ingrese la calle">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="numeroExterior" class="col-sm-2 col-form-label">Número exterior:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxNumeroExterior" name="checkboxNumeroExterior">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="numeroExterior" name="numeroExterior" placeholder="Ingrese el número exterior">
+                            </div>
+                            <label for="numeroInterior" class="col-sm-2 col-form-label">Número interior:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxNumeroInterior" name="checkboxNumeroInterior">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="numeroInterior" name="numeroInterior" placeholder="Ingrese el número interior">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colonia" class="col-sm-2 col-form-label">Colonia:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxColonia" name="checkboxColonia">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="colonia" name="colonia" placeholder="Ingrese la colonia">
+                            </div>
+                            <label for="codigoPostal" class="col-sm-2 col-form-label">Código Postal:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxCodigoPostal" name="checkboxCodigoPostal">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" placeholder="Ingrese el código postal">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="municipio" class="col-sm-2 col-form-label">Municipio:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxMunicipio" name="checkboxMunicipio">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Ingrese el municipio">
+                            </div>
+                            <label for="estado" class="col-sm-2 col-form-label">Estado:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxEstado" name="checkboxEstado">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="estado" name="estado" placeholder="Ingrese el estado">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="paisSecundario" class="col-sm-2 col-form-label">País:</label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxPaisSecundario" name="checkboxPaisSecundario">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="paisSecundario" name="paisSecundario" placeholder="Ingrese el país">
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="paisCheckbox">
+                                Dir. Fiscal diferente
+                            </label>
+                            <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="paisCheckbox" name="paisCheckbox">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Domicilio Fiscal-->
+        <div id="pnlDirFiscal" style="display:none;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container mt-6">
+                        <label style="padding-top: 20px; padding-bottom: 10px; font-size: x-large; font-weight: bold;">Domicilio Fiscal</label>
+                        <form>
+                            <div class="form-group row">
+                                <label for="calleSecundario" class="col-sm-2 col-form-label">Calle:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxCalleSecundario" name="checkboxCalleSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="calleSecundario" name="calleSecundario" placeholder="Ingrese la calle">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="numeroExteriorSecundario" class="col-sm-2 col-form-label">Número exterior:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNumeroExteriorSecundario" name="checkboxNumeroExteriorSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="numeroExteriorSecundario" name="numeroExteriorSecundario" placeholder="Ingrese el número exterior">
+                                </div>
+                                <label for="numeroInteriorSecundario" class="col-sm-2 col-form-label">Número interior:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxNumeroInteriorSecundario" name="checkboxNumeroInteriorSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="numeroInteriorSecundario" name="numeroInteriorSecundario" placeholder="Ingrese el número interior">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="coloniaSecundario" class="col-sm-2 col-form-label">Colonia:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxColoniaSecundario" name="checkboxColoniaSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="coloniaSecundario" name="coloniaSecundario" placeholder="Ingrese la colonia">
+                                </div>
+                                <label for="codigoPostalSecundario" class="col-sm-2 col-form-label">Código Postal:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxCodigoPostalSecundario" name="checkboxCodigoPostalSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="codigoPostalSecundario" name="codigoPostalSecundario" placeholder="Ingrese el código postal">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="municipioSecundario" class="col-sm-2 col-form-label">Municipio:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxMunicipioSecundario" name="checkboxMunicipioSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="municipioSecundario" name="municipioSecundario" placeholder="Ingrese el municipio">
+                                </div>
+                                <label for="estadoSecundario" class="col-sm-2 col-form-label">Estado:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxEstadoSecundario" name="checkboxEstadoSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="estadoSecundario" name="estadoSecundario" placeholder="Ingrese el estado">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="paisSecundario" class="col-sm-2 col-form-label">País:</label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkboxPaisSecundario" name="checkboxPaisSecundario">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" id="paisSecundario" name="paisSecundario" placeholder="Ingrese el país">
+                                </div>
+                                <label class="col-sm-2 col-form-label" for="paisCheckboxIgual">
+                                    Dirección fiscal es igual:
+                                </label>
+                                <div class="col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="paisCheckboxIgual" name="paisCheckboxIgual">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FIRMA -->
+        <div class="row">
+            <div class="col-md-12">
+                <label style="padding-top: 20px; padding-bottom: 10px; font-size: x-large; font-weight: bold;">Firma</label>
+            </div>
+        </div>
+        <div class="container mt-5 d-block">
+            <form class="text-center">
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <select class="form-control" id="signatureSelect" name="txtSignatureSelect">
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="upload">Cargar Firma</option>
+                                <option value="capture">Capturar Firma</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="container mt-5 d-none" id="uploadSignatureInput">
+            <form class="text-center">
+                <div class="mb-4">
+                    <label for="imageInput" class="form-label">Seleccione una imagen:</label>
+                    <input class="form-control mx-auto" style="max-width: 400px;" type="file" id="imageInput" accept=".jpg, .jpeg, .png">
+                </div>
+            </form>
+            <div>
+                <img id="imagePreview" src="" alt="Vista previa de la imagen" class="d-none mx-auto">
+            </div>
+            <div id="error" class="text-danger mt-3"></div>
+        </div>
+
+
+
+
+        <div class="container mt-5" id="captureSignatureArea">
+            <div class="centered-input mb-4">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <!-- Campo de entrada -->
+                        <label for="txtNombreFirmaPF" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="txtNombreFirmaPF" name="txtNombreFirmaPF" maxlength="100" style="text-align: center;">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12 text-center">
+                        <!-- Label que reflejará el texto del input -->
+                        <label id="reflectedText" class="form-label" style="font-weight: bold; font-style:oblique"></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="height:150px;"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <style>
+
+        body {
+            min-height: 99%;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+
+
+        //Datos al firmar capturando nombre INICIO
+        function getCurrentDateTime() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0'); // Mes de 0-11, se ajusta a 1-12
+            const day = String(now.getDate()).padStart(2, '0');
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day} ${hours}:${minutes}`;
+        }
+        // Captura el input y el label para reflejar el texto
+        const inputField = document.getElementById('txtNombreFirmaPF');
+        const reflectedLabel = document.getElementById('reflectedText');
+
+        // Escucha el evento de entrada (input) para actualizar el label
+        inputField.addEventListener('input', function () {
+            const currentDateTime = getCurrentDateTime();
+            reflectedLabel.textContent = `${inputField.value} - ${currentDateTime}`;
+        });
+
+
+        //Datos al firmar capturando nombre FIN
+
+        function validaEmail() {
+            var email = $("#txtCorreo").val();
+            var validEmail = /^(([^<>()[\]\\.,;:\s@@\"]+(\.[^<>()[\]\\.,;:\s@@\"]+)*)|(\".+\"))@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+            if (!validEmail.test(email)) {
+                return false;
+            }
+
+            return true;
+        }
+
+
+
+
+        const telefonoInput = document.getElementById('telefonoInput');
+
+        // Agregar un evento input para permitir solo números
+        telefonoInput.addEventListener('input', function () {
+            // Eliminar cualquier carácter que no sea un número
+            telefonoInput.value = telefonoInput.value.replace(/[^0-9]/g, '');
+        });
+
+        // Obtener el botón de agregar teléfono
+        const addPhoneBtn = document.getElementById('addPhoneBtn');
+
+        // Agregar un evento click al botón de agregar teléfono
+        addPhoneBtn.addEventListener('click', function () {
+            // Obtener el valor del input
+            const telefono = telefonoInput.value;
+
+            // Verificar si el input tiene exactamente 10 dígitos
+            const phoneRegex = /^\d{10}$/; // Regex to check for exactly 10 digits
+
+            if (telefono.trim() !== '' && phoneRegex.test(telefono)) {
+                // Obtener la tabla y el cuerpo de la tabla
+                const table = document.getElementById('phoneTable').getElementsByTagName('tbody')[0];
+                const rowCount = table.rows.length;
+
+                if (rowCount < 3) {
+                    // Crear una nueva fila
+                    const newRow = table.insertRow();
+
+                    // Crear las celdas
+                    const cell1 = newRow.insertCell(0);
+                    const cell2 = newRow.insertCell(1);
+
+                    // Insertar el valor del teléfono en la primera celda
+                    cell1.style.textAlign = 'center';
+                    cell1.style.verticalAlign = 'middle';
+                    cell1.textContent = telefono;
+                    cell1.style.color = '#03345F';
+                    cell1.style.fontWeight = 'bold';
+                    cell1.style.border = 'none';
+
+                    // Estilo para centrar el contenido de la segunda celda
+                    cell2.style.textAlign = 'center';
+                    cell2.style.verticalAlign = 'middle';
+                    cell2.style.border = 'none';
+
+                    // Crear un botón de eliminar en la segunda celda
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.innerHTML = '<i class="fa fa-trash-o" style="font-size:18px; color:#03345F;"></i>';
+                    deleteBtn.style.backgroundColor = 'white';
+                    deleteBtn.style.border = 'none';
+                    deleteBtn.style.cursor = 'pointer'; // Optional: change cursor to pointer to indicate it's clickable
+                    deleteBtn.style.padding = '5px'; // Optional: add some padding to the button
+                    deleteBtn.style.borderRadius = '4px'; // Optional: add rounded corners
+                    deleteBtn.style.textAlign = 'center';
+                    deleteBtn.addEventListener('click', function () {
+                        // Eliminar la fila al hacer clic en el botón de eliminar
+                        table.deleteRow(newRow.rowIndex - 1);
+                    });
+
+                    cell2.appendChild(deleteBtn);
+
+                    // Limpiar el input después de agregar el teléfono
+                    telefonoInput.value = '';
+                }
+                else {
+                    alert('Maximo de numeros telefonicos superado. Solo se permiten 3.');
+                    telefonoInput.value = '';
+                }
+
+            } else {
+                alert('Por favor, ingrese un número de teléfono válido de 10 dígitos.');
+            }
+        });
+
+        //pnl dir fiscal
+
+        document.getElementById('paisCheckbox').addEventListener('change', function () {
+            var panel = document.getElementById('pnlDirFiscal');
+            if (this.checked) {
+                panel.style.display = 'block';
+            } else {
+                panel.style.display = 'none';
+            }
+        });
+
+        // Firma
+
+        //mostrar carga o captura de firma
+        document.getElementById('signatureSelect').addEventListener('change', function () {
+            const selectedValue = this.value;
+
+            // Show/hide sections based on the selected value
+            if (selectedValue === 'upload') {
+                document.getElementById('uploadSignatureInput').classList.remove('d-none');
+                document.getElementById('captureSignatureArea').classList.add('d-none');
+            } else if (selectedValue === 'capture') {
+                document.getElementById('uploadSignatureInput').classList.add('d-none');
+                document.getElementById('captureSignatureArea').classList.remove('d-none');
+            } else {
+                document.getElementById('uploadSignatureInput').classList.add('d-none');
+                document.getElementById('captureSignatureArea').classList.add('d-none');
+            }
+        });
+
+
+        //carga de la firma validaciones
+
+        document.getElementById('imageInput').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const maxSize = 2 * 1024 * 1024; // 2 MB en bytes
+            const errorDiv = document.getElementById('error');
+
+
+            if (file) {
+                //validacion de tamaño de img 5 MB
+                if (file.size > maxSize) {
+                    errorDiv.textContent = 'El archivo es demasiado grande. El tamaño máximo permitido es 5 MB.';
+                    event.target.value = ''; // Limpiar el input
+                    return;
+                } else {
+                    errorDiv.textContent = ''; // Limpiar mensajes de error anteriores
+                }
+
+                //Carga de imagen
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imagePreview = document.getElementById('imagePreview');
+                    imagePreview.src = e.target.result;
+                    imagePreview.classList.remove('d-none');
+                }
+                reader.readAsDataURL(file);
+            }
+
+
+
+        });
+
+
+
+    </script>

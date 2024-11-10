@@ -1,0 +1,462 @@
+﻿++Solución "NavistarPagos" ‎(1 de 1 proyecto)
+i:{00000000-0000-0000-0000-000000000000}:NavistarPagos.sln
+++NavistarPagos
+i:{00000000-0000-0000-0000-000000000000}:NavistarPagos
+++Properties
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\properties\
+++Referencias
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++AccountCore
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\
+++App_Start
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\app_start\
+++Content
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\
+++Controllers
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\
+++Data
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\data\
+++Entity
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\
+++fonts
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\fonts\
+++img
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\
+++Models
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\models\
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\models\
+++Scripts
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\
+++src
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\
+++Views
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\
+++favicon.ico
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\favicon.ico
+++Global.asax
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\global.asax
+++packages.config
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\packages.config
+++Web.config
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\web.config
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\web.config
+++AssemblyInfo.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\properties\assemblyinfo.cs
+++Antlr3.Runtime
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++EntityFramework
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++EntityFramework.SqlServer
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++EPPlus
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++itextsharp
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Microsoft.CSharp
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Microsoft.IdentityModel.JsonWebTokens
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Microsoft.IdentityModel.Logging
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Microsoft.IdentityModel.Tokens
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Microsoft.Web.Infrastructure
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Newtonsoft.Json
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++office
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++ServiciosCorporativosNfc
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.ComponentModel.DataAnnotations
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Configuration
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Data
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Data.DataSetExtensions
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Drawing
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.EnterpriseServices
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.IdentityModel.Tokens.Jwt
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.IO.Compression.FileSystem
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Net.Http
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Net.Http.WebRequest
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Abstractions
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.ApplicationServices
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.DynamicData
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Entity
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Extensions
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Helpers
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Mvc
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Optimization
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Razor
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Routing
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.Services
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.WebPages
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.WebPages.Deployment
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Web.WebPages.Razor
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Xml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++System.Xml.Linq
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++WebGrease
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:
+++Managers
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\managers\
+++pdf
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\pdf\
+++AppEncriptaJWT.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\appencriptajwt.cs
+++AppExcel.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\appexcel.cs
+++BDatos.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\bdatos.cs
+++CollectionBaseBSC.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\collectionbasebsc.cs
+++DataBase.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\database.cs
+++PagoEnLinea.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\pagoenlinea.cs
+++pdfPago.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\pdfpago.cs
+++resumen.aspx
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\resumen.aspx
+++BundleConfig.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\app_start\bundleconfig.cs
+++FilterConfig.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\app_start\filterconfig.cs
+++RouteConfig.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\app_start\routeconfig.cs
+++Account.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\account.css
+++bootstrap-select.min.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\bootstrap-select.min.css
+++bootstrap.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\bootstrap.css
+++bootstrap.min.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\bootstrap.min.css
+++detallePago.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\detallepago.css
+++Footer.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\footer.css
+++Insurance.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\insurance.css
+++Legals.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\legals.css
+++Navs.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\navs.css
+++Quoter.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\quoter.css
+++Range.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\range.css
+++Site.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\content\site.css
+++ClientConsController.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\clientconscontroller.cs
+++ClientEstadosCuentaController.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\clientestadoscuentacontroller.cs
+++ClientFilesController.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\clientfilescontroller.cs
+++ClientPaperlessController.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\clientpaperlesscontroller.cs
+++ClientUpdateController.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\clientupdatecontroller.cs
+++Extentsion.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\extentsion.cs
+++HomeConfiguracion.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\homeconfiguracion.cs
+++HomeController.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\controllers\homecontroller.cs
+++Validaciones.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\data\validaciones.cs
+++NavistarEntity.Context.tt
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.context.tt
+++NavistarEntity.edmx
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.edmx
+++NavistarEntity.tt
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.tt
+++glyphicons-halflings-regular.eot
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\fonts\glyphicons-halflings-regular.woff
+++account_c1.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\account_c1.png
+++account_c2.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\account_c2.png
+++account_f1.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\account_f1.png
+++caret-down-solid.svg
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\caret-down-solid.svg
+++favicon.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\favicon.png
+++loading.gif
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\loading.gif
+++LOGO.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\logo.png
+++logo_navistar.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\logo_navistar.png
+++logonavistar.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\logonavistar.png
+++navistar.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\navistar.png
+++Navistar2.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\navistar2.png
+++NavistarATC.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\navistaratc.png
+++question.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\question.png
+++question_32.png
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\question_32.png
+++spin.gif
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\img\spin.gif
+++ClientModelcs.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\models\clientmodelcs.cs
+++ComboBoxSencillo.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\models\comboboxsencillo.cs
+++Contracts.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\models\contracts.cs
+++FileBase64Result.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\models\filebase64result.cs
+++Account.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\account.js
+++bootstrap-multiselect.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\bootstrap-multiselect.js
+++bootstrap-select.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\bootstrap-select.min.js
+++bootstrap.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\bootstrap.js
+++bootstrap.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\bootstrap.min.js
+++detallePago.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\detallepago.js
+++Facturation.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\facturation.js
+++fnglobales.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\fnglobales.js
+++jquery-1.10.2.intellisense.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery-1.10.2.intellisense.js
+++jquery-1.10.2.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery-1.10.2.js
+++jquery-1.10.2.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery-1.10.2.min.js
+++jquery-1.10.2.min.map
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery-1.10.2.min.map
+++jquery.validate-vsdoc.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery.validate-vsdoc.js
+++jquery.validate.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery.validate.js
+++jquery.validate.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery.validate.min.js
+++jquery.validate.unobtrusive.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\jquery.validate.unobtrusive.min.js
+++Main.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\main.js
+++modernizr-2.6.2.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\modernizr-2.6.2.js
+++respond.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\respond.js
+++respond.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\respond.min.js
+++site.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\site.js
+++sweetalert.min.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\scripts\sweetalert.min.js
+++css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\css\
+++js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\js\
+++scss
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\scss\
+++ClientCons
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientcons\
+++ClientEstadosCuenta
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientestadoscuenta\
+++ClientFiles
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientfiles\
+++ClientPaperless
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientpaperless\
+++ClientUpdate
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientupdate\
+++Home
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\home\
+++HomeConfiguracion
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\homeconfiguracion\
+++Shared
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\shared\
+++_ViewStart.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\_viewstart.cshtml
+++Global.asax.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\global.asax.cs
+++Web.Debug.config
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\web.debug.config
+++Web.Release.config
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\web.release.config
+++IAuthService.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\managers\iauthservice.cs
+++JWTService.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\managers\jwtservice.cs
+++IAuthContainerModel.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\models\iauthcontainermodel.cs
+++JWTContainerModel.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\models\jwtcontainermodel.cs
+++resumen.aspx.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\accountcore\resumen.aspx.cs
+++NavistarEntity.Context.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.context.cs
+++NavistarEntity.Designer.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.designer.cs
+++NavistarEntity.edmx.diagram
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.edmx.diagram
+++aclaracionStatu.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\aclaracionstatu.cs
+++Area.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\area.cs
+++Bases_Historicas.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\bases_historicas.cs
+++campania.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\campania.cs
+++cat_Families.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_families.cs
+++cat_Informative_PDF.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_informative_pdf.cs
+++cat_Interest_Financial_Leasing.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_interest_financial_leasing.cs
+++cat_Interest_Rent.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_interest_rent.cs
+++cat_Interest_Simple_Credit.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_interest_simple_credit.cs
+++cat_Mail_Config.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_mail_config.cs
+++cat_Models.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_models.cs
+++cat_Slider_Text.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_slider_text.cs
+++cat_Step_Section.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_step_section.cs
+++cat_Web_Snippets.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_web_snippets.cs
+++cat_WebAdministrators.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cat_webadministrators.cs
+++cliente.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cliente.cs
+++clientes_adicional.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\clientes_adicional.cs
+++Confirmacion.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\confirmacion.cs
+++contenido.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\contenido.cs
+++cPersona.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\cpersona.cs
+++CTRL_BITACORA_GRAL.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\ctrl_bitacora_gral.cs
+++error_log.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\error_log.cs
+++faq.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\faq.cs
+++info_CAT.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\info_cat.cs
+++kcontrato.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\kcontrato.cs
+++movimiento.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\movimiento.cs
+++movimientos_190814.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\movimientos_190814.cs
+++NavistarEntity.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\navistarentity.cs
+++operadore.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\operadore.cs
+++pagosBanamex.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\pagosbanamex.cs
+++pagosBanamex_190814.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\pagosbanamex_190814.cs
+++pagosHSBC.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\pagoshsbc.cs
+++parametro.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\parametro.cs
+++pregunta.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\pregunta.cs
+++Reporte.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\reporte.cs
+++Servicio.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\servicio.cs
+++Solicitudes_PaperLess.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\solicitudes_paperless.cs
+++Status.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\status.cs
+++TContrato.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\tcontrato.cs
+++Tipo_Operacion_Area.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\tipo_operacion_area.cs
+++TTarjeta.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\ttarjeta.cs
+++vw_Menu_Has_Submenu.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\vw_menu_has_submenu.cs
+++vw_Submenus.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\vw_submenus.cs
+++WebAdministratorRole.cs
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\entity\webadministratorrole.cs
+++index.css
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\css\index.css
+++index.js
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\js\index.js
+++index.scss
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\src\scss\index.scss
+++ClientCons.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientcons\clientcons.cshtml
+++Index.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientcons\index.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientfiles\index.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientpaperless\index.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientupdate\index.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\home\index.cshtml
+++ClientEstadosCuenta.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientestadoscuenta\clientestadoscuenta.cshtml
+++ClientFiles.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientfiles\clientfiles.cshtml
+++ClientPaperless.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientpaperless\clientpaperless.cshtml
+++ClientUpdate.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\clientupdate\clientupdate.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\home\clientupdate.cshtml
+++Contracts.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\home\contracts.cshtml
+++DLAccountStatements.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\home\dlaccountstatements.cshtml
+++Error.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\home\error.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\shared\error.cshtml
+++_Layout.cshtml
+i:{82bfd3f5-c360-4320-9039-ea8cecd1b937}:c:\users\ns-656\downloads\navistarpagos (2)\navistarpagos\views\shared\_layout.cshtml

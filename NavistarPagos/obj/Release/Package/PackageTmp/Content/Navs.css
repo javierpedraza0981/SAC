@@ -1,0 +1,217 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.navbar {
+    background: #00355f !important;
+    margin-bottom: 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+    border: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #818285 !important;
+}
+
+.navbar-default .navbar-nav>li>.loginNav:hover {
+	color: #fff !important;
+}
+
+.navbar .navbar-nav>.img-li>a>img {
+	margin-left: -30%;
+}
+
+.navbar-default .navbar-nav>li>.loginNav>button {
+	background: #fff;
+    border-style: none;
+    border-radius: 5px;
+    color: #00355f;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 200ms;
+}
+
+.navbar-default .navbar-nav>li>.loginNav>button:hover {
+	color: #818285;
+}
+
+/*S Mobile*/
+@media(min-width: 320px){
+	
+}
+
+/*M Mobile*/
+@media(min-width: 375px){
+	
+}
+
+/*L Mobile*/
+@media(min-width: 425px){
+	
+}
+
+/*Tablet*/
+@media (min-width:768px) { 
+	.navbar {
+		height: 110px;
+	}
+	.navbar > .container {
+	    text-align: center;
+	}
+	.navbar-header {
+	    float: none;
+	    display: inline-block;	    
+	}
+	.navbar-brand {
+	    float: none;
+	    display: inline-block;
+	    height: 100%;
+	    padding: 7px 7px;
+	    display: none;
+	}
+	.navbar-brand img {
+		width: 70%;
+	}
+	.navbar .navbar-nav {
+	    float: none;
+	    display: inline-block;
+	    clear: none;
+	}
+	.navbar .navbar-nav > li {
+	    float: none;
+	    display: inline-block;
+	}
+	.navbar .navbar-nav > li li {
+	    text-align: center;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		padding-bottom: 0px;
+		transform:translate(0,7%);
+		width: 140px;
+	}
+
+	.navbar-default .navbar-nav>li>a:nth-child(4) {
+		transform:translate(0,7%);
+	}
+
+	.navbar-default .navbar-nav>li>a>img {
+		width: 50%;
+	}
+
+	.navbar .navbar-nav>.img-li {
+		display: all;
+	}
+
+	.navbar .navbar-nav>.img-li>a img {
+		width: 140px;
+	}
+
+	.collapse.navbar-collapse#centerednav {
+	    float: none;
+	    display: inline-block!important;
+	    width: auto;
+	    clear: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar .navbar-nav>.img-li {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar .navbar-brand { 
+		padding: 5px 5px;
+		height: 100%;
+    	width: 70%;
+    	display: all;
+	}
+
+	.navbar-brand img {
+		width: 70%;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 768px){
+	.navbar-brand img {
+		width: 100%;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		transform:translate(0,-40%);
+	}
+
+	.navbar-default .navbar-nav>li>.relation {
+		transform:translate(0, -5%) !important;
+	}
+
+	.navbar-default .navbar-nav>li>.loginNav {
+		transform:translate(0, 5%) !important;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.navbar-default .navbar-nav>li>a, .navbar .navbar-nav>.img-li>a img {
+		width: 111px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		transform:translate(0,-40%);
+	}
+
+	.navbar-default .navbar-nav>li>.relation {
+		transform:translate(0, -5%) !important;
+	}
+
+	.navbar-default .navbar-nav>li>.loginNav {
+		transform:translate(0, 5%) !important;
+	}
+}
+
+@media (min-width: 991px) {
+	.navbar-default .navbar-nav>li>.relation {
+		transform:translate(0, 25%) !important;
+	}
+
+	.navbar-default .navbar-nav>li>.loginNav {
+		transform:translate(0, 20%) !important;
+	}
+}
+
+@media (min-width: 1120px) and (max-width: 1200px) {
+	.navbar-default .navbar-nav>li>a, .navbar .navbar-nav>.img-li>a img {
+		width: 145px;
+	}
+	
+	.navbar-default .navbar-nav>li>a {
+		transform:translate(0, 5%);
+	}
+
+	.navbar-default .navbar-nav>li>.relation {
+		transform:translate(0, 25%) !important;
+	}
+
+	.navbar-default .navbar-nav>li>.loginNav {
+		transform:translate(0, 20%) !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navbar-default .navbar-nav>li>a, .navbar .navbar-nav>.img-li>a img {
+		width: 160px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.navbar-default .navbar-nav>li>a, .navbar .navbar-nav>.img-li>a img {
+		width: 180px;
+	}
+}

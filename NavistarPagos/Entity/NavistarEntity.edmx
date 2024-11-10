@@ -1,0 +1,2419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="sfiinternationalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="cat_Families">
+          <Key>
+            <PropertyRef Name="Family_Id" />
+          </Key>
+          <Property Name="Family_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Family_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Family_Image" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Informative_PDF">
+          <Key>
+            <PropertyRef Name="Informative_PDF_Id" />
+          </Key>
+          <Property Name="Informative_PDF_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Informative_PDF_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Informative_PDF_Binary" Type="varbinary(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Interest_Financial_Leasing">
+          <Key>
+            <PropertyRef Name="Interest_Financial_Leasing_Id" />
+          </Key>
+          <Property Name="Interest_Financial_Leasing_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Interest_Financial_Leasing_Term" Type="int" Nullable="false" />
+          <Property Name="Interest_Financial_Leasing_Value" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Interest_Rent">
+          <Key>
+            <PropertyRef Name="Interest_Rent_Id" />
+          </Key>
+          <Property Name="Interest_Rent_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Interest_Rent_Term" Type="int" Nullable="false" />
+          <Property Name="Interest_Rent_Value" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Interest_Simple_Credit">
+          <Key>
+            <PropertyRef Name="Interest_Simple_Credit_Id" />
+          </Key>
+          <Property Name="Interest_Simple_Credit_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Interest_Simple_Credit_Term" Type="int" Nullable="false" />
+          <Property Name="Interest_Simple_Credit_Value" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Mail_Config">
+          <Key>
+            <PropertyRef Name="Mail_Config_Id" />
+          </Key>
+          <Property Name="Mail_Config_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Mail_Config_Port" Type="int" Nullable="false" />
+          <Property Name="Mail_Config_Host" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Mail_Config_Timeout" Type="int" Nullable="false" />
+          <Property Name="Mail_Config_Username" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Mail_Config_Password" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Models">
+          <Key>
+            <PropertyRef Name="Model_Id" />
+          </Key>
+          <Property Name="Model_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Family_Id" Type="int" Nullable="false" />
+          <Property Name="Model_Description" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Model_Price" Type="float" Nullable="false" />
+          <Property Name="Model_Factor" Type="float" Nullable="false" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+          <Property Name="Model_Image" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Model_CAT" Type="float" />
+        </EntityType>
+        <EntityType Name="cat_Slider_Text">
+          <Key>
+            <PropertyRef Name="Slider_Text_Id" />
+          </Key>
+          <Property Name="Slider_Text_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Slider_Text_Content" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Step_Section">
+          <Key>
+            <PropertyRef Name="Step_Section_Id" />
+          </Key>
+          <Property Name="Step_Section_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Step_Section_Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Step_Section_Content" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Web_Snippets">
+          <Key>
+            <PropertyRef Name="Web_Snippet_Id" />
+          </Key>
+          <Property Name="Web_Snippet_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Web_Snippet_Element_Id" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Web_Snippet_Code" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_WebAdministrators">
+          <Key>
+            <PropertyRef Name="WebAdministratorId" />
+          </Key>
+          <Property Name="WebAdministratorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WebAdministratorUsername" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="WebAdministratorPassword" Type="varbinary(max)" Nullable="false" />
+          <Property Name="WebAdministratorName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="WebAdministratorRole" Type="int" />
+        </EntityType>
+        <EntityType Name="info_CAT">
+          <Key>
+            <PropertyRef Name="info_CAT_Id" />
+          </Key>
+          <Property Name="info_CAT_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="info_CAT_Value" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WebAdministratorRoles">
+          <Key>
+            <PropertyRef Name="WebAdministratorRoleId" />
+          </Key>
+          <Property Name="WebAdministratorRoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WebAdministratorRoleName" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.aclaracionStatus' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="aclaracionStatus">
+          <Key>
+            <PropertyRef Name="id_aStatus" />
+            <PropertyRef Name="str_dStatus" />
+            <PropertyRef Name="id_sStatus" />
+          </Key>
+          <Property Name="id_aStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="str_dStatus" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="id_sStatus" Type="int" Nullable="false" />
+          <Property Name="str_dColor" Type="char" MaxLength="15" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Bases_Historicas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Bases_Historicas">
+          <Key>
+            <PropertyRef Name="id_base" />
+            <PropertyRef Name="descripcion" />
+            <PropertyRef Name="mes" />
+            <PropertyRef Name="anio" />
+            <PropertyRef Name="nombrebd" />
+            <PropertyRef Name="activo" />
+          </Key>
+          <Property Name="id_base" Type="int" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="mes" Type="int" Nullable="false" />
+          <Property Name="anio" Type="int" Nullable="false" />
+          <Property Name="nombrebd" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="activo" Type="int" Nullable="false" />
+          <Property Name="fInicioTarjeta" Type="datetime" />
+          <Property Name="fFinalTarjeta" Type="datetime" />
+        </EntityType>
+        <EntityType Name="campanias">
+          <Key>
+            <PropertyRef Name="idcampania" />
+          </Key>
+          <Property Name="idcampania" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="titulo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="objetivo" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="link" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="archivo" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="fInicio" Type="datetime" Nullable="false" />
+          <Property Name="fFinal" Type="datetime" Nullable="false" />
+          <Property Name="id_status" Type="int" Nullable="false" />
+          <Property Name="usuarioAlta" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="usuarioModifica" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="fAlta" Type="datetime" Nullable="false" />
+          <Property Name="fModifica" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.clientes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="clientes">
+          <Key>
+            <PropertyRef Name="cveCliente" />
+            <PropertyRef Name="nombre" />
+            <PropertyRef Name="status" />
+            <PropertyRef Name="remindMe" />
+          </Key>
+          <Property Name="cveCliente" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="pass" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="tinyint" Nullable="false" />
+          <Property Name="rfc" Type="varchar" MaxLength="15" />
+          <Property Name="email" Type="varchar" MaxLength="300" />
+          <Property Name="calle" Type="varchar" MaxLength="100" />
+          <Property Name="colonia" Type="varchar" MaxLength="100" />
+          <Property Name="codigoPostal" Type="varchar" MaxLength="10" />
+          <Property Name="poblacion" Type="varchar" MaxLength="100" />
+          <Property Name="estado" Type="varchar" MaxLength="100" />
+          <Property Name="remindMe" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.clientes_adicional' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="clientes_adicional">
+          <Key>
+            <PropertyRef Name="cveCliente" />
+          </Key>
+          <Property Name="cveCliente" Type="bigint" Nullable="false" />
+          <Property Name="id_pregunta" Type="int" />
+          <Property Name="respuesta" Type="varchar" MaxLength="250" />
+          <Property Name="correo" Type="varchar" MaxLength="250" />
+          <Property Name="fecha" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Confirmacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Confirmacion">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Campos" />
+            <PropertyRef Name="Banco" />
+            <PropertyRef Name="Fecha" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Campos" Type="varchar" MaxLength="8000" Nullable="false" />
+          <Property Name="Banco" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.contenidos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="contenidos">
+          <Key>
+            <PropertyRef Name="id_contenido" />
+          </Key>
+          <Property Name="id_contenido" Type="bigint" Nullable="false" />
+          <Property Name="detalle" Type="varchar" MaxLength="200" />
+          <Property Name="contenido" Type="text" />
+          <Property Name="pagina" Type="varchar" MaxLength="50" />
+          <Property Name="orden" Type="int" />
+          <Property Name="url" Type="varchar" MaxLength="100" />
+          <Property Name="tipo" Type="char" MaxLength="1" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.CTRL_BITACORA_GRAL' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="CTRL_BITACORA_GRAL">
+          <Key>
+            <PropertyRef Name="CONS" />
+          </Key>
+          <Property Name="CONS" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FECHA" Type="datetime" />
+          <Property Name="ACCION" Type="varchar" MaxLength="1000" />
+          <Property Name="PNA_FL_PERSONA" Type="int" />
+          <Property Name="CTO_FL_CVE" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.error_log' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="error_log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="path" Type="varchar" MaxLength="250" />
+          <Property Name="fecha" Type="smalldatetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.faq' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="faq">
+          <Key>
+            <PropertyRef Name="id_faq" />
+          </Key>
+          <Property Name="id_faq" Type="bigint" Nullable="false" />
+          <Property Name="pregunta" Type="varchar" MaxLength="500" />
+          <Property Name="respuesta" Type="text" />
+          <Property Name="categoria" Type="varchar" MaxLength="50" />
+          <Property Name="activo" Type="int" />
+          <Property Name="orden" Type="int" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.movimientos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="movimientos">
+          <Key>
+            <PropertyRef Name="id_movimiento" />
+          </Key>
+          <Property Name="id_movimiento" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cveCliente" Type="varchar" MaxLength="50" />
+          <Property Name="fecha" Type="smalldatetime" />
+          <Property Name="banco" Type="varchar" MaxLength="20" />
+          <Property Name="cantidad" Type="float" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.movimientos_190814' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="movimientos_190814">
+          <Key>
+            <PropertyRef Name="id_movimiento" />
+          </Key>
+          <Property Name="id_movimiento" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cveCliente" Type="varchar" MaxLength="50" />
+          <Property Name="fecha" Type="smalldatetime" />
+          <Property Name="banco" Type="varchar" MaxLength="20" />
+          <Property Name="cantidad" Type="float" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.operadores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="operadores">
+          <Key>
+            <PropertyRef Name="id_oper" />
+          </Key>
+          <Property Name="id_oper" Type="int" Nullable="false" />
+          <Property Name="operador" Type="varchar" MaxLength="12" />
+          <Property Name="pass" Type="varchar" MaxLength="20" />
+          <Property Name="activo" Type="int" />
+          <Property Name="nombre" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.pagosBanamex' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="pagosBanamex">
+          <Key>
+            <PropertyRef Name="id_pago" />
+          </Key>
+          <Property Name="id_pago" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_movimiento" Type="bigint" />
+          <Property Name="fecha" Type="smalldatetime" />
+          <Property Name="cveCliente" Type="int" />
+          <Property Name="Operacion" Type="varchar" MaxLength="10" />
+          <Property Name="CTE" Type="varchar" MaxLength="50" />
+          <Property Name="REFER_PGO" Type="varchar" MaxLength="50" />
+          <Property Name="Importe" Type="varchar" MaxLength="50" />
+          <Property Name="Concepto" Type="varchar" MaxLength="100" />
+          <Property Name="TPO_ABO" Type="varchar" MaxLength="50" />
+          <Property Name="AUTORIZA" Type="varchar" MaxLength="50" />
+          <Property Name="AUTORIZA2" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.pagosBanamex_190814' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="pagosBanamex_190814">
+          <Key>
+            <PropertyRef Name="id_pago" />
+          </Key>
+          <Property Name="id_pago" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_movimiento" Type="bigint" />
+          <Property Name="fecha" Type="smalldatetime" />
+          <Property Name="cveCliente" Type="int" />
+          <Property Name="Operacion" Type="varchar" MaxLength="10" />
+          <Property Name="CTE" Type="varchar" MaxLength="50" />
+          <Property Name="REFER_PGO" Type="varchar" MaxLength="50" />
+          <Property Name="Importe" Type="varchar" MaxLength="50" />
+          <Property Name="Concepto" Type="varchar" MaxLength="100" />
+          <Property Name="TPO_ABO" Type="varchar" MaxLength="50" />
+          <Property Name="AUTORIZA" Type="varchar" MaxLength="50" />
+          <Property Name="AUTORIZA2" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.pagosHSBC' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="pagosHSBC">
+          <Key>
+            <PropertyRef Name="id_pago" />
+          </Key>
+          <Property Name="id_pago" Type="bigint" Nullable="false" />
+          <Property Name="id_movimiento" Type="bigint" />
+          <Property Name="fecha" Type="smalldatetime" />
+          <Property Name="cveCliente" Type="int" />
+          <Property Name="Operacion" Type="varchar" MaxLength="10" />
+          <Property Name="StatusBital" Type="varchar" MaxLength="100" />
+          <Property Name="MensajeBital" Type="varchar" MaxLength="100" />
+          <Property Name="FolioBital" Type="varchar" MaxLength="50" />
+          <Property Name="FRef1" Type="varchar" MaxLength="50" />
+          <Property Name="FRef2" Type="varchar" MaxLength="50" />
+          <Property Name="FRef3" Type="varchar" MaxLength="50" />
+          <Property Name="URLrespuesta" Type="varchar" MaxLength="100" />
+          <Property Name="FImporte" Type="varchar" MaxLength="50" />
+          <Property Name="tccmcend" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.parametros' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="parametros">
+          <Key>
+            <PropertyRef Name="id_con" />
+          </Key>
+          <Property Name="id_con" Type="int" Nullable="false" />
+          <Property Name="parametro" Type="varchar" MaxLength="50" />
+          <Property Name="valor" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.preguntas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="preguntas">
+          <Key>
+            <PropertyRef Name="id_pregunta" />
+          </Key>
+          <Property Name="id_pregunta" Type="int" Nullable="false" />
+          <Property Name="pregunta" Type="varchar" MaxLength="100" />
+          <Property Name="activo" Type="int" />
+          <Property Name="orden" Type="int" />
+          <Property Name="formato" Type="char" MaxLength="1" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Reportes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Reportes">
+          <Key>
+            <PropertyRef Name="id_reporte" />
+          </Key>
+          <Property Name="id_reporte" Type="bigint" Nullable="false" />
+          <Property Name="id_usuario" Type="varchar" MaxLength="10" />
+          <Property Name="id_servicio" Type="bigint" />
+          <Property Name="id_subservicio" Type="bigint" />
+          <Property Name="id_cliente" Type="bigint" />
+          <Property Name="id_contrato" Type="nvarchar" MaxLength="20" />
+          <Property Name="descripcion" Type="text" />
+          <Property Name="f_alta" Type="smalldatetime" />
+          <Property Name="id_status" Type="bigint" />
+          <Property Name="f_compromiso" Type="smalldatetime" />
+          <Property Name="archivos" Type="text" />
+          <Property Name="f_cierre" Type="smalldatetime" />
+          <Property Name="comentarioCierre" Type="text" />
+          <Property Name="campo1" Type="varchar" MaxLength="200" />
+          <Property Name="campo2" Type="varchar" MaxLength="200" />
+          <Property Name="campo3" Type="varchar" MaxLength="200" />
+          <Property Name="campo4" Type="varchar" MaxLength="200" />
+          <Property Name="campo5" Type="varchar" MaxLength="200" />
+          <Property Name="campo6" Type="varchar" MaxLength="200" />
+          <Property Name="campo7" Type="varchar" MaxLength="200" />
+          <Property Name="campo8" Type="varchar" MaxLength="200" />
+          <Property Name="campo9" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Servicios' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="id_servicio" />
+          </Key>
+          <Property Name="id_servicio" Type="bigint" Nullable="false" />
+          <Property Name="Servicio" Type="varchar" MaxLength="100" />
+          <Property Name="activo" Type="char" MaxLength="1" />
+          <Property Name="correo" Type="int" />
+          <Property Name="dias" Type="float" />
+          <Property Name="id_padre" Type="bigint" />
+          <Property Name="Servicio_Internet" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Solicitudes_PaperLess">
+          <Key>
+            <PropertyRef Name="eSolicitud" />
+          </Key>
+          <Property Name="eSolicitud" Type="int" Nullable="false" />
+          <Property Name="eCliente" Type="int" Nullable="false" />
+          <Property Name="vCorreo" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="fAlta" Type="datetime" Nullable="false" />
+          <Property Name="fActualiza" Type="datetime" Nullable="false" />
+          <Property Name="eEstatus" Type="tinyint" Nullable="false" />
+          <Property Name="BIT_FL_CVE" Type="int" Nullable="false" />
+          <Property Name="eGestion" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Status' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="id_status" />
+          </Key>
+          <Property Name="id_status" Type="bigint" Nullable="false" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+          <Property Name="id_actividad" Type="int" />
+          <Property Name="color" Type="varchar" MaxLength="30" />
+          <Property Name="orden" Type="int" />
+          <Property Name="activo" Type="int" />
+          <Property Name="correo" Type="int" />
+          <Property Name="Status_Internet" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Area' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="eArea" />
+            <PropertyRef Name="eAreaPadre" />
+            <PropertyRef Name="eTipoArea" />
+            <PropertyRef Name="eOrden" />
+            <PropertyRef Name="vDsccArea" />
+            <PropertyRef Name="vDscArea" />
+            <PropertyRef Name="eEstatus" />
+            <PropertyRef Name="fAlta" />
+            <PropertyRef Name="fModifica" />
+            <PropertyRef Name="vUsuarioAlta" />
+            <PropertyRef Name="vUsuarioModifica" />
+          </Key>
+          <Property Name="eArea" Type="smallint" Nullable="false" />
+          <Property Name="eAreaPadre" Type="smallint" Nullable="false" />
+          <Property Name="eTipoArea" Type="tinyint" Nullable="false" />
+          <Property Name="eOrden" Type="tinyint" Nullable="false" />
+          <Property Name="vDsccArea" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="vDscArea" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="eEstatus" Type="tinyint" Nullable="false" />
+          <Property Name="fAlta" Type="datetime" Nullable="false" />
+          <Property Name="fModifica" Type="datetime" Nullable="false" />
+          <Property Name="vUsuarioAlta" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="vUsuarioModifica" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.cPersona' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="cPersona">
+          <Key>
+            <PropertyRef Name="PNA_FL_PERSONA" />
+            <PropertyRef Name="PNA_CL_RFC" />
+            <PropertyRef Name="PNA_DS_NOMBRE" />
+            <PropertyRef Name="PNA_DS_EMAIL" />
+            <PropertyRef Name="PNA_FG_STATUS" />
+            <PropertyRef Name="Telcelular" />
+            <PropertyRef Name="TelFijo" />
+          </Key>
+          <Property Name="PNA_FL_PERSONA" Type="int" Nullable="false" />
+          <Property Name="PNA_CL_RFC" Type="char" MaxLength="13" Nullable="false" />
+          <Property Name="PNA_DS_NOMBRE" Type="char" MaxLength="200" Nullable="false" />
+          <Property Name="PNA_DS_EMAIL" Type="char" MaxLength="50" Nullable="false" />
+          <Property Name="PNA_FG_STATUS" Type="tinyint" Nullable="false" />
+          <Property Name="IdEstado" Type="int" />
+          <Property Name="Telcelular" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TelFijo" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.kcontrato' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="kcontrato">
+          <Key>
+            <PropertyRef Name="CTO_FL_CVE" />
+            <PropertyRef Name="PNA_FL_PERSONA" />
+            <PropertyRef Name="TOP_CL_CVE" />
+            <PropertyRef Name="EMP_FL_CVE" />
+            <PropertyRef Name="CTO_CL_MONEDA" />
+            <PropertyRef Name="CTO_FG_STATUS" />
+          </Key>
+          <Property Name="CTO_FL_CVE" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="PNA_FL_PERSONA" Type="int" Nullable="false" />
+          <Property Name="TOP_CL_CVE" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="EMP_FL_CVE" Type="tinyint" Nullable="false" />
+          <Property Name="CTO_CL_MONEDA" Type="tinyint" Nullable="false" />
+          <Property Name="CTO_FG_STATUS" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.TContrato' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="TContrato">
+          <Key>
+            <PropertyRef Name="IdContrato" />
+            <PropertyRef Name="IdPeriodicidad" />
+            <PropertyRef Name="IdMoneda" />
+            <PropertyRef Name="IdTasa" />
+            <PropertyRef Name="IdTasaMora" />
+          </Key>
+          <Property Name="IdContrato" Type="int" Nullable="false" />
+          <Property Name="Contrato" Type="varchar" MaxLength="15" />
+          <Property Name="IdPersona" Type="int" />
+          <Property Name="IdTipoCredito" Type="int" />
+          <Property Name="IdEstatusContrato" Type="int" />
+          <Property Name="Capital" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="PorcEnganche" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="Enganche" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="CapitalFinanciado" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="IdPeriodicidad" Type="int" Nullable="false" />
+          <Property Name="Plazo" Type="int" />
+          <Property Name="IdMoneda" Type="int" Nullable="false" />
+          <Property Name="FecInicioContrato" Type="datetime" />
+          <Property Name="FecPrimeraRenta" Type="datetime" />
+          <Property Name="FecActivacion" Type="datetime" />
+          <Property Name="FecFinContrato" Type="datetime" />
+          <Property Name="IdTasa" Type="int" Nullable="false" />
+          <Property Name="TasaBase" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="PuntosMas" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="PuntosPor" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="Tasa" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="TasaBaseMora" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="IdTasaMora" Type="int" Nullable="false" />
+          <Property Name="PuntosMasMora" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="PuntosPorMora" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="FactorMora" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="TasaMora" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="SaldoInsoluto" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="BallonPayment" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="PorcBallonPayment" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="ValorResidual" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="PorcValorResidual" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="DepositoEnGarantia" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="PorcDepositoEnGarantia" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="OpcionDeCompra" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="PorcOpcionDeCompra" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="TasaIva" Type="decimal" Precision="7" Scale="4" />
+          <Property Name="VersionTabla" Type="int" />
+          <Property Name="IdTipoCalculoTasaVariable" Type="int" />
+          <Property Name="DiaCorteDisposiciones" Type="int" />
+          <Property Name="DiaPagoDisposiciones" Type="int" />
+          <Property Name="IdPersonaTitular" Type="int" />
+          <Property Name="IdPersonaRepresentante" Type="int" />
+          <Property Name="CAT" Type="decimal" Precision="8" Scale="6" />
+          <Property Name="FechaCierre" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Tipo_Operacion_Area' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="Tipo_Operacion_Area">
+          <Key>
+            <PropertyRef Name="vTipoOperacion" />
+            <PropertyRef Name="eArea" />
+            <PropertyRef Name="eImprime" />
+            <PropertyRef Name="vEtiqueta" />
+            <PropertyRef Name="eEstatus" />
+            <PropertyRef Name="fAlta" />
+            <PropertyRef Name="fModifica" />
+            <PropertyRef Name="vUsuarioAlta" />
+            <PropertyRef Name="vUsuarioModifica" />
+          </Key>
+          <Property Name="vTipoOperacion" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="eArea" Type="smallint" Nullable="false" />
+          <Property Name="eImprime" Type="tinyint" Nullable="false" />
+          <Property Name="vEtiqueta" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="eEstatus" Type="tinyint" Nullable="false" />
+          <Property Name="fAlta" Type="datetime" Nullable="false" />
+          <Property Name="fModifica" Type="datetime" Nullable="false" />
+          <Property Name="vUsuarioAlta" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="vUsuarioModifica" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.TTarjetas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="TTarjetas">
+          <Key>
+            <PropertyRef Name="IdTarjeta" />
+            <PropertyRef Name="NumeroTarjeta" />
+            <PropertyRef Name="Descripcion" />
+            <PropertyRef Name="Activo" />
+            <PropertyRef Name="IdTipoEntregaTarjeta" />
+          </Key>
+          <Property Name="IdTarjeta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumeroTarjeta" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Activo" Type="bit" Nullable="false" />
+          <Property Name="NIP" Type="varchar" MaxLength="10" />
+          <Property Name="Vigencia" Type="varchar" MaxLength="10" />
+          <Property Name="FechaRegistro" Type="datetime" />
+          <Property Name="IdTipoEntregaTarjeta" Type="int" Nullable="false" />
+          <Property Name="CartaBienvenida" Type="bit" />
+          <Property Name="NombreImpresion" Type="varchar" MaxLength="100" />
+          <Property Name="IdContrato" Type="int" />
+          <Property Name="IdPersona" Type="int" />
+          <Property Name="IdTipoRelacion" Type="int" />
+          <Property Name="IdEstatusTarjeta" Type="int" />
+          <Property Name="MotivoCancelacion" Type="varchar" MaxLength="250" />
+          <Property Name="FechaCancelacion" Type="datetime" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.rel.vw_Menu_Has_Submenu' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="vw_Menu_Has_Submenu">
+          <Key>
+            <PropertyRef Name="Submenu_Id" />
+            <PropertyRef Name="Submenu_Name" />
+            <PropertyRef Name="Submenu_Order" />
+            <PropertyRef Name="Menu_Link" />
+            <PropertyRef Name="Menu_Name" />
+            <PropertyRef Name="Is_Active" />
+            <PropertyRef Name="Menu_Submenu" />
+          </Key>
+          <Property Name="Submenu_Id" Type="int" Nullable="false" />
+          <Property Name="Submenu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Submenu_Name_English" Type="nvarchar" MaxLength="255" />
+          <Property Name="Submenu_Order" Type="int" Nullable="false" />
+          <Property Name="Menu_Link" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Menu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Menu_Name_English" Type="nvarchar" MaxLength="255" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+          <Property Name="Submenu_PDF_Folder" Type="nvarchar(max)" />
+          <Property Name="Menu_Submenu" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.rel.vw_Submenus' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="vw_Submenus">
+          <Key>
+            <PropertyRef Name="Submenu_Id" />
+            <PropertyRef Name="Submenu_Name" />
+            <PropertyRef Name="Submenu_Order" />
+            <PropertyRef Name="Menu_Link" />
+            <PropertyRef Name="Menu_Name" />
+            <PropertyRef Name="Is_Active" />
+          </Key>
+          <Property Name="Submenu_Id" Type="int" Nullable="false" />
+          <Property Name="Submenu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Submenu_Name_English" Type="nvarchar" MaxLength="255" />
+          <Property Name="Submenu_Order" Type="int" Nullable="false" />
+          <Property Name="Menu_Link" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Menu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Is_Active" Type="bit" Nullable="false" />
+          <Property Name="Submenu_PDF_Folder" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK__cat_Model__Famil__025D5595">
+          <End Role="cat_Families" Type="Self.cat_Families" Multiplicity="1" />
+          <End Role="cat_Models" Type="Self.cat_Models" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cat_Families">
+              <PropertyRef Name="Family_Id" />
+            </Principal>
+            <Dependent Role="cat_Models">
+              <PropertyRef Name="Family_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cat_WebAd__WebAd__1940BAED">
+          <End Role="WebAdministratorRoles" Type="Self.WebAdministratorRoles" Multiplicity="0..1" />
+          <End Role="cat_WebAdministrators" Type="Self.cat_WebAdministrators" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebAdministratorRoles">
+              <PropertyRef Name="WebAdministratorRoleId" />
+            </Principal>
+            <Dependent Role="cat_WebAdministrators">
+              <PropertyRef Name="WebAdministratorRole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sfiinternationalModelStoreContainer">
+          <EntitySet Name="cat_Families" EntityType="Self.cat_Families" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Informative_PDF" EntityType="Self.cat_Informative_PDF" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Interest_Financial_Leasing" EntityType="Self.cat_Interest_Financial_Leasing" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Interest_Rent" EntityType="Self.cat_Interest_Rent" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Interest_Simple_Credit" EntityType="Self.cat_Interest_Simple_Credit" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Mail_Config" EntityType="Self.cat_Mail_Config" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Models" EntityType="Self.cat_Models" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Slider_Text" EntityType="Self.cat_Slider_Text" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Step_Section" EntityType="Self.cat_Step_Section" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_Web_Snippets" EntityType="Self.cat_Web_Snippets" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="cat_WebAdministrators" EntityType="Self.cat_WebAdministrators" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="info_CAT" EntityType="Self.info_CAT" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="WebAdministratorRoles" EntityType="Self.WebAdministratorRoles" Schema="adm" store:Type="Tables" />
+          <EntitySet Name="campanias" EntityType="Self.campanias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Solicitudes_PaperLess" EntityType="Self.Solicitudes_PaperLess" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="aclaracionStatus" EntityType="Self.aclaracionStatus" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [aclaracionStatus].[id_aStatus] AS [id_aStatus], 
+    [aclaracionStatus].[str_dStatus] AS [str_dStatus], 
+    [aclaracionStatus].[id_sStatus] AS [id_sStatus], 
+    [aclaracionStatus].[str_dColor] AS [str_dColor]
+    FROM [dbo].[aclaracionStatus] AS [aclaracionStatus]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Bases_Historicas" EntityType="Self.Bases_Historicas" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Bases_Historicas].[id_base] AS [id_base], 
+    [Bases_Historicas].[descripcion] AS [descripcion], 
+    [Bases_Historicas].[mes] AS [mes], 
+    [Bases_Historicas].[anio] AS [anio], 
+    [Bases_Historicas].[nombrebd] AS [nombrebd], 
+    [Bases_Historicas].[activo] AS [activo], 
+    [Bases_Historicas].[fInicioTarjeta] AS [fInicioTarjeta], 
+    [Bases_Historicas].[fFinalTarjeta] AS [fFinalTarjeta]
+    FROM [dbo].[Bases_Historicas] AS [Bases_Historicas]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="clientes" EntityType="Self.clientes" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [clientes].[cveCliente] AS [cveCliente], 
+    [clientes].[nombre] AS [nombre], 
+    [clientes].[pass] AS [pass], 
+    [clientes].[status] AS [status], 
+    [clientes].[rfc] AS [rfc], 
+    [clientes].[email] AS [email], 
+    [clientes].[calle] AS [calle], 
+    [clientes].[colonia] AS [colonia], 
+    [clientes].[codigoPostal] AS [codigoPostal], 
+    [clientes].[poblacion] AS [poblacion], 
+    [clientes].[estado] AS [estado], 
+    [clientes].[remindMe] AS [remindMe]
+    FROM [dbo].[clientes] AS [clientes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="clientes_adicional" EntityType="Self.clientes_adicional" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [clientes_adicional].[cveCliente] AS [cveCliente], 
+    [clientes_adicional].[id_pregunta] AS [id_pregunta], 
+    [clientes_adicional].[respuesta] AS [respuesta], 
+    [clientes_adicional].[correo] AS [correo], 
+    [clientes_adicional].[fecha] AS [fecha]
+    FROM [dbo].[clientes_adicional] AS [clientes_adicional]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Confirmacion" EntityType="Self.Confirmacion" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Confirmacion].[Id] AS [Id], 
+    [Confirmacion].[Campos] AS [Campos], 
+    [Confirmacion].[Banco] AS [Banco], 
+    [Confirmacion].[Fecha] AS [Fecha]
+    FROM [dbo].[Confirmacion] AS [Confirmacion]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="contenidos" EntityType="Self.contenidos" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [contenidos].[id_contenido] AS [id_contenido], 
+    [contenidos].[detalle] AS [detalle], 
+    [contenidos].[contenido] AS [contenido], 
+    [contenidos].[pagina] AS [pagina], 
+    [contenidos].[orden] AS [orden], 
+    [contenidos].[url] AS [url], 
+    [contenidos].[tipo] AS [tipo]
+    FROM [dbo].[contenidos] AS [contenidos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CTRL_BITACORA_GRAL" EntityType="Self.CTRL_BITACORA_GRAL" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CTRL_BITACORA_GRAL].[CONS] AS [CONS], 
+    [CTRL_BITACORA_GRAL].[FECHA] AS [FECHA], 
+    [CTRL_BITACORA_GRAL].[ACCION] AS [ACCION], 
+    [CTRL_BITACORA_GRAL].[PNA_FL_PERSONA] AS [PNA_FL_PERSONA], 
+    [CTRL_BITACORA_GRAL].[CTO_FL_CVE] AS [CTO_FL_CVE]
+    FROM [dbo].[CTRL_BITACORA_GRAL] AS [CTRL_BITACORA_GRAL]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="error_log" EntityType="Self.error_log" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [error_log].[id] AS [id], 
+    [error_log].[path] AS [path], 
+    [error_log].[fecha] AS [fecha]
+    FROM [dbo].[error_log] AS [error_log]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="faq" EntityType="Self.faq" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [faq].[id_faq] AS [id_faq], 
+    [faq].[pregunta] AS [pregunta], 
+    [faq].[respuesta] AS [respuesta], 
+    [faq].[categoria] AS [categoria], 
+    [faq].[activo] AS [activo], 
+    [faq].[orden] AS [orden]
+    FROM [dbo].[faq] AS [faq]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="movimientos" EntityType="Self.movimientos" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [movimientos].[id_movimiento] AS [id_movimiento], 
+    [movimientos].[cveCliente] AS [cveCliente], 
+    [movimientos].[fecha] AS [fecha], 
+    [movimientos].[banco] AS [banco], 
+    [movimientos].[cantidad] AS [cantidad]
+    FROM [dbo].[movimientos] AS [movimientos]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="movimientos_190814" EntityType="Self.movimientos_190814" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [movimientos_190814].[id_movimiento] AS [id_movimiento], 
+    [movimientos_190814].[cveCliente] AS [cveCliente], 
+    [movimientos_190814].[fecha] AS [fecha], 
+    [movimientos_190814].[banco] AS [banco], 
+    [movimientos_190814].[cantidad] AS [cantidad]
+    FROM [dbo].[movimientos_190814] AS [movimientos_190814]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="operadores" EntityType="Self.operadores" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [operadores].[id_oper] AS [id_oper], 
+    [operadores].[operador] AS [operador], 
+    [operadores].[pass] AS [pass], 
+    [operadores].[activo] AS [activo], 
+    [operadores].[nombre] AS [nombre]
+    FROM [dbo].[operadores] AS [operadores]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="pagosBanamex" EntityType="Self.pagosBanamex" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [pagosBanamex].[id_pago] AS [id_pago], 
+    [pagosBanamex].[id_movimiento] AS [id_movimiento], 
+    [pagosBanamex].[fecha] AS [fecha], 
+    [pagosBanamex].[cveCliente] AS [cveCliente], 
+    [pagosBanamex].[Operacion] AS [Operacion], 
+    [pagosBanamex].[CTE] AS [CTE], 
+    [pagosBanamex].[REFER_PGO] AS [REFER_PGO], 
+    [pagosBanamex].[Importe] AS [Importe], 
+    [pagosBanamex].[Concepto] AS [Concepto], 
+    [pagosBanamex].[TPO_ABO] AS [TPO_ABO], 
+    [pagosBanamex].[AUTORIZA] AS [AUTORIZA], 
+    [pagosBanamex].[AUTORIZA2] AS [AUTORIZA2]
+    FROM [dbo].[pagosBanamex] AS [pagosBanamex]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="pagosBanamex_190814" EntityType="Self.pagosBanamex_190814" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [pagosBanamex_190814].[id_pago] AS [id_pago], 
+    [pagosBanamex_190814].[id_movimiento] AS [id_movimiento], 
+    [pagosBanamex_190814].[fecha] AS [fecha], 
+    [pagosBanamex_190814].[cveCliente] AS [cveCliente], 
+    [pagosBanamex_190814].[Operacion] AS [Operacion], 
+    [pagosBanamex_190814].[CTE] AS [CTE], 
+    [pagosBanamex_190814].[REFER_PGO] AS [REFER_PGO], 
+    [pagosBanamex_190814].[Importe] AS [Importe], 
+    [pagosBanamex_190814].[Concepto] AS [Concepto], 
+    [pagosBanamex_190814].[TPO_ABO] AS [TPO_ABO], 
+    [pagosBanamex_190814].[AUTORIZA] AS [AUTORIZA], 
+    [pagosBanamex_190814].[AUTORIZA2] AS [AUTORIZA2]
+    FROM [dbo].[pagosBanamex_190814] AS [pagosBanamex_190814]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="pagosHSBC" EntityType="Self.pagosHSBC" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [pagosHSBC].[id_pago] AS [id_pago], 
+    [pagosHSBC].[id_movimiento] AS [id_movimiento], 
+    [pagosHSBC].[fecha] AS [fecha], 
+    [pagosHSBC].[cveCliente] AS [cveCliente], 
+    [pagosHSBC].[Operacion] AS [Operacion], 
+    [pagosHSBC].[StatusBital] AS [StatusBital], 
+    [pagosHSBC].[MensajeBital] AS [MensajeBital], 
+    [pagosHSBC].[FolioBital] AS [FolioBital], 
+    [pagosHSBC].[FRef1] AS [FRef1], 
+    [pagosHSBC].[FRef2] AS [FRef2], 
+    [pagosHSBC].[FRef3] AS [FRef3], 
+    [pagosHSBC].[URLrespuesta] AS [URLrespuesta], 
+    [pagosHSBC].[FImporte] AS [FImporte], 
+    [pagosHSBC].[tccmcend] AS [tccmcend]
+    FROM [dbo].[pagosHSBC] AS [pagosHSBC]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="parametros" EntityType="Self.parametros" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [parametros].[id_con] AS [id_con], 
+    [parametros].[parametro] AS [parametro], 
+    [parametros].[valor] AS [valor]
+    FROM [dbo].[parametros] AS [parametros]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="preguntas" EntityType="Self.preguntas" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [preguntas].[id_pregunta] AS [id_pregunta], 
+    [preguntas].[pregunta] AS [pregunta], 
+    [preguntas].[activo] AS [activo], 
+    [preguntas].[orden] AS [orden], 
+    [preguntas].[formato] AS [formato]
+    FROM [dbo].[preguntas] AS [preguntas]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Reportes" EntityType="Self.Reportes" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Reportes].[id_reporte] AS [id_reporte], 
+    [Reportes].[id_usuario] AS [id_usuario], 
+    [Reportes].[id_servicio] AS [id_servicio], 
+    [Reportes].[id_subservicio] AS [id_subservicio], 
+    [Reportes].[id_cliente] AS [id_cliente], 
+    [Reportes].[id_contrato] AS [id_contrato], 
+    [Reportes].[descripcion] AS [descripcion], 
+    [Reportes].[f_alta] AS [f_alta], 
+    [Reportes].[id_status] AS [id_status], 
+    [Reportes].[f_compromiso] AS [f_compromiso], 
+    [Reportes].[archivos] AS [archivos], 
+    [Reportes].[f_cierre] AS [f_cierre], 
+    [Reportes].[comentarioCierre] AS [comentarioCierre], 
+    [Reportes].[campo1] AS [campo1], 
+    [Reportes].[campo2] AS [campo2], 
+    [Reportes].[campo3] AS [campo3], 
+    [Reportes].[campo4] AS [campo4], 
+    [Reportes].[campo5] AS [campo5], 
+    [Reportes].[campo6] AS [campo6], 
+    [Reportes].[campo7] AS [campo7], 
+    [Reportes].[campo8] AS [campo8], 
+    [Reportes].[campo9] AS [campo9]
+    FROM [dbo].[Reportes] AS [Reportes]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Servicios].[id_servicio] AS [id_servicio], 
+    [Servicios].[Servicio] AS [Servicio], 
+    [Servicios].[activo] AS [activo], 
+    [Servicios].[correo] AS [correo], 
+    [Servicios].[dias] AS [dias], 
+    [Servicios].[id_padre] AS [id_padre], 
+    [Servicios].[Servicio_Internet] AS [Servicio_Internet]
+    FROM [dbo].[Servicios] AS [Servicios]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Status" EntityType="Self.Status" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Status].[id_status] AS [id_status], 
+    [Status].[status] AS [status], 
+    [Status].[id_actividad] AS [id_actividad], 
+    [Status].[color] AS [color], 
+    [Status].[orden] AS [orden], 
+    [Status].[activo] AS [activo], 
+    [Status].[correo] AS [correo], 
+    [Status].[Status_Internet] AS [Status_Internet]
+    FROM [dbo].[Status] AS [Status]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Area" EntityType="Self.Area" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Area].[eArea] AS [eArea], 
+    [Area].[eAreaPadre] AS [eAreaPadre], 
+    [Area].[eTipoArea] AS [eTipoArea], 
+    [Area].[eOrden] AS [eOrden], 
+    [Area].[vDsccArea] AS [vDsccArea], 
+    [Area].[vDscArea] AS [vDscArea], 
+    [Area].[eEstatus] AS [eEstatus], 
+    [Area].[fAlta] AS [fAlta], 
+    [Area].[fModifica] AS [fModifica], 
+    [Area].[vUsuarioAlta] AS [vUsuarioAlta], 
+    [Area].[vUsuarioModifica] AS [vUsuarioModifica]
+    FROM [dbo].[Area] AS [Area]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="cPersona" EntityType="Self.cPersona" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [cPersona].[PNA_FL_PERSONA] AS [PNA_FL_PERSONA], 
+    [cPersona].[PNA_CL_RFC] AS [PNA_CL_RFC], 
+    [cPersona].[PNA_DS_NOMBRE] AS [PNA_DS_NOMBRE], 
+    [cPersona].[PNA_DS_EMAIL] AS [PNA_DS_EMAIL], 
+    [cPersona].[PNA_FG_STATUS] AS [PNA_FG_STATUS], 
+    [cPersona].[IdEstado] AS [IdEstado], 
+    [cPersona].[Telcelular] AS [Telcelular], 
+    [cPersona].[TelFijo] AS [TelFijo]
+    FROM [dbo].[cPersona] AS [cPersona]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="kcontrato" EntityType="Self.kcontrato" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [kcontrato].[CTO_FL_CVE] AS [CTO_FL_CVE], 
+    [kcontrato].[PNA_FL_PERSONA] AS [PNA_FL_PERSONA], 
+    [kcontrato].[TOP_CL_CVE] AS [TOP_CL_CVE], 
+    [kcontrato].[EMP_FL_CVE] AS [EMP_FL_CVE], 
+    [kcontrato].[CTO_CL_MONEDA] AS [CTO_CL_MONEDA], 
+    [kcontrato].[CTO_FG_STATUS] AS [CTO_FG_STATUS]
+    FROM [dbo].[kcontrato] AS [kcontrato]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TContrato" EntityType="Self.TContrato" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TContrato].[IdContrato] AS [IdContrato], 
+    [TContrato].[Contrato] AS [Contrato], 
+    [TContrato].[IdPersona] AS [IdPersona], 
+    [TContrato].[IdTipoCredito] AS [IdTipoCredito], 
+    [TContrato].[IdEstatusContrato] AS [IdEstatusContrato], 
+    [TContrato].[Capital] AS [Capital], 
+    [TContrato].[PorcEnganche] AS [PorcEnganche], 
+    [TContrato].[Enganche] AS [Enganche], 
+    [TContrato].[CapitalFinanciado] AS [CapitalFinanciado], 
+    [TContrato].[IdPeriodicidad] AS [IdPeriodicidad], 
+    [TContrato].[Plazo] AS [Plazo], 
+    [TContrato].[IdMoneda] AS [IdMoneda], 
+    [TContrato].[FecInicioContrato] AS [FecInicioContrato], 
+    [TContrato].[FecPrimeraRenta] AS [FecPrimeraRenta], 
+    [TContrato].[FecActivacion] AS [FecActivacion], 
+    [TContrato].[FecFinContrato] AS [FecFinContrato], 
+    [TContrato].[IdTasa] AS [IdTasa], 
+    [TContrato].[TasaBase] AS [TasaBase], 
+    [TContrato].[PuntosMas] AS [PuntosMas], 
+    [TContrato].[PuntosPor] AS [PuntosPor], 
+    [TContrato].[Tasa] AS [Tasa], 
+    [TContrato].[TasaBaseMora] AS [TasaBaseMora], 
+    [TContrato].[IdTasaMora] AS [IdTasaMora], 
+    [TContrato].[PuntosMasMora] AS [PuntosMasMora], 
+    [TContrato].[PuntosPorMora] AS [PuntosPorMora], 
+    [TContrato].[FactorMora] AS [FactorMora], 
+    [TContrato].[TasaMora] AS [TasaMora], 
+    [TContrato].[SaldoInsoluto] AS [SaldoInsoluto], 
+    [TContrato].[BallonPayment] AS [BallonPayment], 
+    [TContrato].[PorcBallonPayment] AS [PorcBallonPayment], 
+    [TContrato].[ValorResidual] AS [ValorResidual], 
+    [TContrato].[PorcValorResidual] AS [PorcValorResidual], 
+    [TContrato].[DepositoEnGarantia] AS [DepositoEnGarantia], 
+    [TContrato].[PorcDepositoEnGarantia] AS [PorcDepositoEnGarantia], 
+    [TContrato].[OpcionDeCompra] AS [OpcionDeCompra], 
+    [TContrato].[PorcOpcionDeCompra] AS [PorcOpcionDeCompra], 
+    [TContrato].[TasaIva] AS [TasaIva], 
+    [TContrato].[VersionTabla] AS [VersionTabla], 
+    [TContrato].[IdTipoCalculoTasaVariable] AS [IdTipoCalculoTasaVariable], 
+    [TContrato].[DiaCorteDisposiciones] AS [DiaCorteDisposiciones], 
+    [TContrato].[DiaPagoDisposiciones] AS [DiaPagoDisposiciones], 
+    [TContrato].[IdPersonaTitular] AS [IdPersonaTitular], 
+    [TContrato].[IdPersonaRepresentante] AS [IdPersonaRepresentante], 
+    [TContrato].[CAT] AS [CAT], 
+    [TContrato].[FechaCierre] AS [FechaCierre]
+    FROM [dbo].[TContrato] AS [TContrato]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Tipo_Operacion_Area" EntityType="Self.Tipo_Operacion_Area" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Tipo_Operacion_Area].[vTipoOperacion] AS [vTipoOperacion], 
+    [Tipo_Operacion_Area].[eArea] AS [eArea], 
+    [Tipo_Operacion_Area].[eImprime] AS [eImprime], 
+    [Tipo_Operacion_Area].[vEtiqueta] AS [vEtiqueta], 
+    [Tipo_Operacion_Area].[eEstatus] AS [eEstatus], 
+    [Tipo_Operacion_Area].[fAlta] AS [fAlta], 
+    [Tipo_Operacion_Area].[fModifica] AS [fModifica], 
+    [Tipo_Operacion_Area].[vUsuarioAlta] AS [vUsuarioAlta], 
+    [Tipo_Operacion_Area].[vUsuarioModifica] AS [vUsuarioModifica]
+    FROM [dbo].[Tipo_Operacion_Area] AS [Tipo_Operacion_Area]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TTarjetas" EntityType="Self.TTarjetas" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TTarjetas].[IdTarjeta] AS [IdTarjeta], 
+    [TTarjetas].[NumeroTarjeta] AS [NumeroTarjeta], 
+    [TTarjetas].[Descripcion] AS [Descripcion], 
+    [TTarjetas].[Activo] AS [Activo], 
+    [TTarjetas].[NIP] AS [NIP], 
+    [TTarjetas].[Vigencia] AS [Vigencia], 
+    [TTarjetas].[FechaRegistro] AS [FechaRegistro], 
+    [TTarjetas].[IdTipoEntregaTarjeta] AS [IdTipoEntregaTarjeta], 
+    [TTarjetas].[CartaBienvenida] AS [CartaBienvenida], 
+    [TTarjetas].[NombreImpresion] AS [NombreImpresion], 
+    [TTarjetas].[IdContrato] AS [IdContrato], 
+    [TTarjetas].[IdPersona] AS [IdPersona], 
+    [TTarjetas].[IdTipoRelacion] AS [IdTipoRelacion], 
+    [TTarjetas].[IdEstatusTarjeta] AS [IdEstatusTarjeta], 
+    [TTarjetas].[MotivoCancelacion] AS [MotivoCancelacion], 
+    [TTarjetas].[FechaCancelacion] AS [FechaCancelacion]
+    FROM [dbo].[TTarjetas] AS [TTarjetas]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_Menu_Has_Submenu" EntityType="Self.vw_Menu_Has_Submenu" store:Type="Views" store:Schema="rel">
+            <DefiningQuery>SELECT 
+    [vw_Menu_Has_Submenu].[Submenu_Id] AS [Submenu_Id], 
+    [vw_Menu_Has_Submenu].[Submenu_Name] AS [Submenu_Name], 
+    [vw_Menu_Has_Submenu].[Submenu_Name_English] AS [Submenu_Name_English], 
+    [vw_Menu_Has_Submenu].[Submenu_Order] AS [Submenu_Order], 
+    [vw_Menu_Has_Submenu].[Menu_Link] AS [Menu_Link], 
+    [vw_Menu_Has_Submenu].[Menu_Name] AS [Menu_Name], 
+    [vw_Menu_Has_Submenu].[Menu_Name_English] AS [Menu_Name_English], 
+    [vw_Menu_Has_Submenu].[Is_Active] AS [Is_Active], 
+    [vw_Menu_Has_Submenu].[Submenu_PDF_Folder] AS [Submenu_PDF_Folder], 
+    [vw_Menu_Has_Submenu].[Menu_Submenu] AS [Menu_Submenu]
+    FROM [rel].[vw_Menu_Has_Submenu] AS [vw_Menu_Has_Submenu]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_Submenus" EntityType="Self.vw_Submenus" store:Type="Views" store:Schema="rel">
+            <DefiningQuery>SELECT 
+    [vw_Submenus].[Submenu_Id] AS [Submenu_Id], 
+    [vw_Submenus].[Submenu_Name] AS [Submenu_Name], 
+    [vw_Submenus].[Submenu_Name_English] AS [Submenu_Name_English], 
+    [vw_Submenus].[Submenu_Order] AS [Submenu_Order], 
+    [vw_Submenus].[Menu_Link] AS [Menu_Link], 
+    [vw_Submenus].[Menu_Name] AS [Menu_Name], 
+    [vw_Submenus].[Is_Active] AS [Is_Active], 
+    [vw_Submenus].[Submenu_PDF_Folder] AS [Submenu_PDF_Folder]
+    FROM [rel].[vw_Submenus] AS [vw_Submenus]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__cat_Model__Famil__025D5595" Association="Self.FK__cat_Model__Famil__025D5595">
+            <End Role="cat_Families" EntitySet="cat_Families" />
+            <End Role="cat_Models" EntitySet="cat_Models" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cat_WebAd__WebAd__1940BAED" Association="Self.FK__cat_WebAd__WebAd__1940BAED">
+            <End Role="WebAdministratorRoles" EntitySet="WebAdministratorRoles" />
+            <End Role="cat_WebAdministrators" EntitySet="cat_WebAdministrators" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sfiinternationalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="cat_Families">
+          <Key>
+            <PropertyRef Name="Family_Id" />
+          </Key>
+          <Property Name="Family_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Family_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Family_Image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="cat_Models" Relationship="Self.FK__cat_Model__Famil__025D5595" FromRole="cat_Families" ToRole="cat_Models" />
+        </EntityType>
+        <EntityType Name="cat_Informative_PDF">
+          <Key>
+            <PropertyRef Name="Informative_PDF_Id" />
+          </Key>
+          <Property Name="Informative_PDF_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Informative_PDF_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Informative_PDF_Binary" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Interest_Financial_Leasing">
+          <Key>
+            <PropertyRef Name="Interest_Financial_Leasing_Id" />
+          </Key>
+          <Property Name="Interest_Financial_Leasing_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Interest_Financial_Leasing_Term" Type="Int32" Nullable="false" />
+          <Property Name="Interest_Financial_Leasing_Value" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Interest_Rent">
+          <Key>
+            <PropertyRef Name="Interest_Rent_Id" />
+          </Key>
+          <Property Name="Interest_Rent_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Interest_Rent_Term" Type="Int32" Nullable="false" />
+          <Property Name="Interest_Rent_Value" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Interest_Simple_Credit">
+          <Key>
+            <PropertyRef Name="Interest_Simple_Credit_Id" />
+          </Key>
+          <Property Name="Interest_Simple_Credit_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Interest_Simple_Credit_Term" Type="Int32" Nullable="false" />
+          <Property Name="Interest_Simple_Credit_Value" Type="Double" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Mail_Config">
+          <Key>
+            <PropertyRef Name="Mail_Config_Id" />
+          </Key>
+          <Property Name="Mail_Config_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mail_Config_Port" Type="Int32" Nullable="false" />
+          <Property Name="Mail_Config_Host" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mail_Config_Timeout" Type="Int32" Nullable="false" />
+          <Property Name="Mail_Config_Username" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mail_Config_Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Models">
+          <Key>
+            <PropertyRef Name="Model_Id" />
+          </Key>
+          <Property Name="Model_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Family_Id" Type="Int32" Nullable="false" />
+          <Property Name="Model_Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Model_Price" Type="Double" Nullable="false" />
+          <Property Name="Model_Factor" Type="Double" Nullable="false" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+          <Property Name="Model_Image" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="Model_CAT" Type="Double" />
+          <NavigationProperty Name="cat_Families" Relationship="Self.FK__cat_Model__Famil__025D5595" FromRole="cat_Models" ToRole="cat_Families" />
+        </EntityType>
+        <EntityType Name="cat_Slider_Text">
+          <Key>
+            <PropertyRef Name="Slider_Text_Id" />
+          </Key>
+          <Property Name="Slider_Text_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Slider_Text_Content" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Step_Section">
+          <Key>
+            <PropertyRef Name="Step_Section_Id" />
+          </Key>
+          <Property Name="Step_Section_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Step_Section_Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Step_Section_Content" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_Web_Snippets">
+          <Key>
+            <PropertyRef Name="Web_Snippet_Id" />
+          </Key>
+          <Property Name="Web_Snippet_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Web_Snippet_Element_Id" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Web_Snippet_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cat_WebAdministrators">
+          <Key>
+            <PropertyRef Name="WebAdministratorId" />
+          </Key>
+          <Property Name="WebAdministratorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WebAdministratorUsername" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="WebAdministratorPassword" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="WebAdministratorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="WebAdministratorRole" Type="Int32" />
+          <NavigationProperty Name="WebAdministratorRole1" Relationship="Self.FK__cat_WebAd__WebAd__1FEDB87C" FromRole="cat_WebAdministrators" ToRole="WebAdministratorRoles" />
+        </EntityType>
+        <EntityType Name="info_CAT">
+          <Key>
+            <PropertyRef Name="info_CAT_Id" />
+          </Key>
+          <Property Name="info_CAT_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="info_CAT_Value" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WebAdministratorRole">
+          <Key>
+            <PropertyRef Name="WebAdministratorRoleId" />
+          </Key>
+          <Property Name="WebAdministratorRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WebAdministratorRoleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="cat_WebAdministrators" Relationship="Self.FK__cat_WebAd__WebAd__1FEDB87C" FromRole="WebAdministratorRoles" ToRole="cat_WebAdministrators" />
+        </EntityType>
+        <EntityType Name="campania">
+          <Key>
+            <PropertyRef Name="idcampania" />
+          </Key>
+          <Property Name="idcampania" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="titulo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="objetivo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="link" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="archivo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fInicio" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fFinal" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="id_status" Type="Int32" Nullable="false" />
+          <Property Name="usuarioAlta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuarioModifica" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fModifica" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Solicitudes_PaperLess">
+          <Key>
+            <PropertyRef Name="eSolicitud" />
+          </Key>
+          <Property Name="eSolicitud" Type="Int32" Nullable="false" />
+          <Property Name="eCliente" Type="Int32" Nullable="false" />
+          <Property Name="vCorreo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fActualiza" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="eEstatus" Type="Byte" Nullable="false" />
+          <Property Name="BIT_FL_CVE" Type="Int32" Nullable="false" />
+          <Property Name="eGestion" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aclaracionStatu">
+          <Key>
+            <PropertyRef Name="id_aStatus" />
+            <PropertyRef Name="str_dStatus" />
+            <PropertyRef Name="id_sStatus" />
+          </Key>
+          <Property Name="id_aStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="str_dStatus" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="id_sStatus" Type="Int32" Nullable="false" />
+          <Property Name="str_dColor" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Bases_Historicas">
+          <Key>
+            <PropertyRef Name="id_base" />
+            <PropertyRef Name="descripcion" />
+            <PropertyRef Name="mes" />
+            <PropertyRef Name="anio" />
+            <PropertyRef Name="nombrebd" />
+            <PropertyRef Name="activo" />
+          </Key>
+          <Property Name="id_base" Type="Int32" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mes" Type="Int32" Nullable="false" />
+          <Property Name="anio" Type="Int32" Nullable="false" />
+          <Property Name="nombrebd" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="activo" Type="Int32" Nullable="false" />
+          <Property Name="fInicioTarjeta" Type="DateTime" Precision="3" />
+          <Property Name="fFinalTarjeta" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="cliente">
+          <Key>
+            <PropertyRef Name="cveCliente" />
+            <PropertyRef Name="nombre" />
+            <PropertyRef Name="status" />
+            <PropertyRef Name="remindMe" />
+          </Key>
+          <Property Name="cveCliente" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="Byte" Nullable="false" />
+          <Property Name="rfc" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="calle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="colonia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="codigoPostal" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="poblacion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="estado" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="remindMe" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="clientes_adicional">
+          <Key>
+            <PropertyRef Name="cveCliente" />
+          </Key>
+          <Property Name="cveCliente" Type="Int64" Nullable="false" />
+          <Property Name="id_pregunta" Type="Int32" />
+          <Property Name="respuesta" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="correo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Confirmacion">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Campos" />
+            <PropertyRef Name="Banco" />
+            <PropertyRef Name="Fecha" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Campos" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Banco" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="contenido">
+          <Key>
+            <PropertyRef Name="id_contenido" />
+          </Key>
+          <Property Name="id_contenido" Type="Int64" Nullable="false" />
+          <Property Name="detalle" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="contenido1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="pagina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="orden" Type="Int32" />
+          <Property Name="url" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="tipo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CTRL_BITACORA_GRAL">
+          <Key>
+            <PropertyRef Name="CONS" />
+          </Key>
+          <Property Name="CONS" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FECHA" Type="DateTime" Precision="3" />
+          <Property Name="ACCION" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="PNA_FL_PERSONA" Type="Int32" />
+          <Property Name="CTO_FL_CVE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="error_log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="path" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="faq">
+          <Key>
+            <PropertyRef Name="id_faq" />
+          </Key>
+          <Property Name="id_faq" Type="Int64" Nullable="false" />
+          <Property Name="pregunta" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="respuesta" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="activo" Type="Int32" />
+          <Property Name="orden" Type="Int32" />
+        </EntityType>
+        <EntityType Name="movimiento">
+          <Key>
+            <PropertyRef Name="id_movimiento" />
+          </Key>
+          <Property Name="id_movimiento" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cveCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="banco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cantidad" Type="Double" />
+        </EntityType>
+        <EntityType Name="movimientos_190814">
+          <Key>
+            <PropertyRef Name="id_movimiento" />
+          </Key>
+          <Property Name="id_movimiento" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cveCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="banco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="cantidad" Type="Double" />
+        </EntityType>
+        <EntityType Name="operadore">
+          <Key>
+            <PropertyRef Name="id_oper" />
+          </Key>
+          <Property Name="id_oper" Type="Int32" Nullable="false" />
+          <Property Name="operador" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="pass" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="activo" Type="Int32" />
+          <Property Name="nombre" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pagosBanamex">
+          <Key>
+            <PropertyRef Name="id_pago" />
+          </Key>
+          <Property Name="id_pago" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_movimiento" Type="Int64" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="cveCliente" Type="Int32" />
+          <Property Name="Operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REFER_PGO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Importe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Concepto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TPO_ABO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AUTORIZA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AUTORIZA2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pagosBanamex_190814">
+          <Key>
+            <PropertyRef Name="id_pago" />
+          </Key>
+          <Property Name="id_pago" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_movimiento" Type="Int64" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="cveCliente" Type="Int32" />
+          <Property Name="Operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REFER_PGO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Importe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Concepto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TPO_ABO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AUTORIZA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AUTORIZA2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pagosHSBC">
+          <Key>
+            <PropertyRef Name="id_pago" />
+          </Key>
+          <Property Name="id_pago" Type="Int64" Nullable="false" />
+          <Property Name="id_movimiento" Type="Int64" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="cveCliente" Type="Int32" />
+          <Property Name="Operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StatusBital" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MensajeBital" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FolioBital" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FRef1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FRef2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FRef3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="URLrespuesta" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FImporte" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tccmcend" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="parametro">
+          <Key>
+            <PropertyRef Name="id_con" />
+          </Key>
+          <Property Name="id_con" Type="Int32" Nullable="false" />
+          <Property Name="parametro1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="valor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="pregunta">
+          <Key>
+            <PropertyRef Name="id_pregunta" />
+          </Key>
+          <Property Name="id_pregunta" Type="Int32" Nullable="false" />
+          <Property Name="pregunta1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="activo" Type="Int32" />
+          <Property Name="orden" Type="Int32" />
+          <Property Name="formato" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Reporte">
+          <Key>
+            <PropertyRef Name="id_reporte" />
+          </Key>
+          <Property Name="id_reporte" Type="Int64" Nullable="false" />
+          <Property Name="id_usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="id_servicio" Type="Int64" />
+          <Property Name="id_subservicio" Type="Int64" />
+          <Property Name="id_cliente" Type="Int64" />
+          <Property Name="id_contrato" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="f_alta" Type="DateTime" Precision="0" />
+          <Property Name="id_status" Type="Int64" />
+          <Property Name="f_compromiso" Type="DateTime" Precision="0" />
+          <Property Name="archivos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="f_cierre" Type="DateTime" Precision="0" />
+          <Property Name="comentarioCierre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="campo1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo5" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo6" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo7" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo8" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="campo9" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Servicio">
+          <Key>
+            <PropertyRef Name="id_servicio" />
+          </Key>
+          <Property Name="id_servicio" Type="Int64" Nullable="false" />
+          <Property Name="Servicio1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="activo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="correo" Type="Int32" />
+          <Property Name="dias" Type="Double" />
+          <Property Name="id_padre" Type="Int64" />
+          <Property Name="Servicio_Internet" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="id_status" />
+          </Key>
+          <Property Name="id_status" Type="Int64" Nullable="false" />
+          <Property Name="status1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id_actividad" Type="Int32" />
+          <Property Name="color" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="orden" Type="Int32" />
+          <Property Name="activo" Type="Int32" />
+          <Property Name="correo" Type="Int32" />
+          <Property Name="Status_Internet" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="eArea" />
+            <PropertyRef Name="eAreaPadre" />
+            <PropertyRef Name="eTipoArea" />
+            <PropertyRef Name="eOrden" />
+            <PropertyRef Name="vDsccArea" />
+            <PropertyRef Name="vDscArea" />
+            <PropertyRef Name="eEstatus" />
+            <PropertyRef Name="fAlta" />
+            <PropertyRef Name="fModifica" />
+            <PropertyRef Name="vUsuarioAlta" />
+            <PropertyRef Name="vUsuarioModifica" />
+          </Key>
+          <Property Name="eArea" Type="Int16" Nullable="false" />
+          <Property Name="eAreaPadre" Type="Int16" Nullable="false" />
+          <Property Name="eTipoArea" Type="Byte" Nullable="false" />
+          <Property Name="eOrden" Type="Byte" Nullable="false" />
+          <Property Name="vDsccArea" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vDscArea" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eEstatus" Type="Byte" Nullable="false" />
+          <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fModifica" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="vUsuarioAlta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vUsuarioModifica" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="kcontrato">
+          <Key>
+            <PropertyRef Name="CTO_FL_CVE" />
+            <PropertyRef Name="PNA_FL_PERSONA" />
+            <PropertyRef Name="TOP_CL_CVE" />
+            <PropertyRef Name="EMP_FL_CVE" />
+            <PropertyRef Name="CTO_CL_MONEDA" />
+            <PropertyRef Name="CTO_FG_STATUS" />
+          </Key>
+          <Property Name="CTO_FL_CVE" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PNA_FL_PERSONA" Type="Int32" Nullable="false" />
+          <Property Name="TOP_CL_CVE" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="EMP_FL_CVE" Type="Byte" Nullable="false" />
+          <Property Name="CTO_CL_MONEDA" Type="Byte" Nullable="false" />
+          <Property Name="CTO_FG_STATUS" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TContrato">
+          <Key>
+            <PropertyRef Name="IdContrato" />
+            <PropertyRef Name="IdPeriodicidad" />
+            <PropertyRef Name="IdMoneda" />
+            <PropertyRef Name="IdTasa" />
+            <PropertyRef Name="IdTasaMora" />
+          </Key>
+          <Property Name="IdContrato" Type="Int32" Nullable="false" />
+          <Property Name="Contrato" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="IdPersona" Type="Int32" />
+          <Property Name="IdTipoCredito" Type="Int32" />
+          <Property Name="IdEstatusContrato" Type="Int32" />
+          <Property Name="Capital" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="PorcEnganche" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="Enganche" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="CapitalFinanciado" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="IdPeriodicidad" Type="Int32" Nullable="false" />
+          <Property Name="Plazo" Type="Int32" />
+          <Property Name="IdMoneda" Type="Int32" Nullable="false" />
+          <Property Name="FecInicioContrato" Type="DateTime" Precision="3" />
+          <Property Name="FecPrimeraRenta" Type="DateTime" Precision="3" />
+          <Property Name="FecActivacion" Type="DateTime" Precision="3" />
+          <Property Name="FecFinContrato" Type="DateTime" Precision="3" />
+          <Property Name="IdTasa" Type="Int32" Nullable="false" />
+          <Property Name="TasaBase" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="PuntosMas" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="PuntosPor" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="Tasa" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="TasaBaseMora" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="IdTasaMora" Type="Int32" Nullable="false" />
+          <Property Name="PuntosMasMora" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="PuntosPorMora" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="FactorMora" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="TasaMora" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="SaldoInsoluto" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="BallonPayment" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="PorcBallonPayment" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="ValorResidual" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="PorcValorResidual" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="DepositoEnGarantia" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="PorcDepositoEnGarantia" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="OpcionDeCompra" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="PorcOpcionDeCompra" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="TasaIva" Type="Decimal" Precision="7" Scale="4" />
+          <Property Name="VersionTabla" Type="Int32" />
+          <Property Name="IdTipoCalculoTasaVariable" Type="Int32" />
+          <Property Name="DiaCorteDisposiciones" Type="Int32" />
+          <Property Name="DiaPagoDisposiciones" Type="Int32" />
+          <Property Name="IdPersonaTitular" Type="Int32" />
+          <Property Name="IdPersonaRepresentante" Type="Int32" />
+          <Property Name="CAT" Type="Decimal" Precision="8" Scale="6" />
+          <Property Name="FechaCierre" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Tipo_Operacion_Area">
+          <Key>
+            <PropertyRef Name="vTipoOperacion" />
+            <PropertyRef Name="eArea" />
+            <PropertyRef Name="eImprime" />
+            <PropertyRef Name="vEtiqueta" />
+            <PropertyRef Name="eEstatus" />
+            <PropertyRef Name="fAlta" />
+            <PropertyRef Name="fModifica" />
+            <PropertyRef Name="vUsuarioAlta" />
+            <PropertyRef Name="vUsuarioModifica" />
+          </Key>
+          <Property Name="vTipoOperacion" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="eArea" Type="Int16" Nullable="false" />
+          <Property Name="eImprime" Type="Byte" Nullable="false" />
+          <Property Name="vEtiqueta" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eEstatus" Type="Byte" Nullable="false" />
+          <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="fModifica" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="vUsuarioAlta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vUsuarioModifica" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TTarjeta">
+          <Key>
+            <PropertyRef Name="IdTarjeta" />
+            <PropertyRef Name="NumeroTarjeta" />
+            <PropertyRef Name="Descripcion" />
+            <PropertyRef Name="Activo" />
+            <PropertyRef Name="IdTipoEntregaTarjeta" />
+          </Key>
+          <Property Name="IdTarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroTarjeta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
+          <Property Name="NIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Vigencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="FechaRegistro" Type="DateTime" Precision="3" />
+          <Property Name="IdTipoEntregaTarjeta" Type="Int32" Nullable="false" />
+          <Property Name="CartaBienvenida" Type="Boolean" />
+          <Property Name="NombreImpresion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IdContrato" Type="Int32" />
+          <Property Name="IdPersona" Type="Int32" />
+          <Property Name="IdTipoRelacion" Type="Int32" />
+          <Property Name="IdEstatusTarjeta" Type="Int32" />
+          <Property Name="MotivoCancelacion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCancelacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="vw_Menu_Has_Submenu">
+          <Key>
+            <PropertyRef Name="Submenu_Id" />
+            <PropertyRef Name="Submenu_Name" />
+            <PropertyRef Name="Submenu_Order" />
+            <PropertyRef Name="Menu_Link" />
+            <PropertyRef Name="Menu_Name" />
+            <PropertyRef Name="Is_Active" />
+            <PropertyRef Name="Menu_Submenu" />
+          </Key>
+          <Property Name="Submenu_Id" Type="Int32" Nullable="false" />
+          <Property Name="Submenu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Submenu_Name_English" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Submenu_Order" Type="Int32" Nullable="false" />
+          <Property Name="Menu_Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Menu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Menu_Name_English" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+          <Property Name="Submenu_PDF_Folder" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Menu_Submenu" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vw_Submenus">
+          <Key>
+            <PropertyRef Name="Submenu_Id" />
+            <PropertyRef Name="Submenu_Name" />
+            <PropertyRef Name="Submenu_Order" />
+            <PropertyRef Name="Menu_Link" />
+            <PropertyRef Name="Menu_Name" />
+            <PropertyRef Name="Is_Active" />
+          </Key>
+          <Property Name="Submenu_Id" Type="Int32" Nullable="false" />
+          <Property Name="Submenu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Submenu_Name_English" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Submenu_Order" Type="Int32" Nullable="false" />
+          <Property Name="Menu_Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Menu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+          <Property Name="Submenu_PDF_Folder" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK__cat_Model__Famil__025D5595">
+          <End Role="cat_Families" Type="Self.cat_Families" Multiplicity="1" />
+          <End Role="cat_Models" Type="Self.cat_Models" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cat_Families">
+              <PropertyRef Name="Family_Id" />
+            </Principal>
+            <Dependent Role="cat_Models">
+              <PropertyRef Name="Family_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cat_WebAd__WebAd__1FEDB87C">
+          <End Role="WebAdministratorRoles" Type="Self.WebAdministratorRole" Multiplicity="0..1" />
+          <End Role="cat_WebAdministrators" Type="Self.cat_WebAdministrators" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WebAdministratorRoles">
+              <PropertyRef Name="WebAdministratorRoleId" />
+            </Principal>
+            <Dependent Role="cat_WebAdministrators">
+              <PropertyRef Name="WebAdministratorRole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sfiinternationalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cat_Families" EntityType="Self.cat_Families" />
+          <EntitySet Name="cat_Informative_PDF" EntityType="Self.cat_Informative_PDF" />
+          <EntitySet Name="cat_Interest_Financial_Leasing" EntityType="Self.cat_Interest_Financial_Leasing" />
+          <EntitySet Name="cat_Interest_Rent" EntityType="Self.cat_Interest_Rent" />
+          <EntitySet Name="cat_Interest_Simple_Credit" EntityType="Self.cat_Interest_Simple_Credit" />
+          <EntitySet Name="cat_Mail_Config" EntityType="Self.cat_Mail_Config" />
+          <EntitySet Name="cat_Models" EntityType="Self.cat_Models" />
+          <EntitySet Name="cat_Slider_Text" EntityType="Self.cat_Slider_Text" />
+          <EntitySet Name="cat_Step_Section" EntityType="Self.cat_Step_Section" />
+          <EntitySet Name="cat_Web_Snippets" EntityType="Self.cat_Web_Snippets" />
+          <EntitySet Name="cat_WebAdministrators" EntityType="Self.cat_WebAdministrators" />
+          <EntitySet Name="info_CAT" EntityType="Self.info_CAT" />
+          <EntitySet Name="WebAdministratorRoles" EntityType="Self.WebAdministratorRole" />
+          <EntitySet Name="campanias" EntityType="Self.campania" />
+          <EntitySet Name="Solicitudes_PaperLess" EntityType="Self.Solicitudes_PaperLess" />
+          <EntitySet Name="aclaracionStatus" EntityType="Self.aclaracionStatu" />
+          <EntitySet Name="Bases_Historicas" EntityType="Self.Bases_Historicas" />
+          <EntitySet Name="clientes" EntityType="Self.cliente" />
+          <EntitySet Name="clientes_adicional" EntityType="Self.clientes_adicional" />
+          <EntitySet Name="Confirmacions" EntityType="Self.Confirmacion" />
+          <EntitySet Name="contenidos" EntityType="Self.contenido" />
+          <EntitySet Name="CTRL_BITACORA_GRAL" EntityType="Self.CTRL_BITACORA_GRAL" />
+          <EntitySet Name="error_log" EntityType="Self.error_log" />
+          <EntitySet Name="faqs" EntityType="Self.faq" />
+          <EntitySet Name="movimientos" EntityType="Self.movimiento" />
+          <EntitySet Name="movimientos_190814" EntityType="Self.movimientos_190814" />
+          <EntitySet Name="operadores" EntityType="Self.operadore" />
+          <EntitySet Name="pagosBanamexes" EntityType="Self.pagosBanamex" />
+          <EntitySet Name="pagosBanamex_190814" EntityType="Self.pagosBanamex_190814" />
+          <EntitySet Name="pagosHSBCs" EntityType="Self.pagosHSBC" />
+          <EntitySet Name="parametros" EntityType="Self.parametro" />
+          <EntitySet Name="preguntas" EntityType="Self.pregunta" />
+          <EntitySet Name="Reportes" EntityType="Self.Reporte" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicio" />
+          <EntitySet Name="Status" EntityType="Self.Status" />
+          <EntitySet Name="Areas" EntityType="Self.Area" />
+          <EntitySet Name="kcontratoes" EntityType="Self.kcontrato" />
+          <EntitySet Name="TContratoes" EntityType="Self.TContrato" />
+          <EntitySet Name="Tipo_Operacion_Area" EntityType="Self.Tipo_Operacion_Area" />
+          <EntitySet Name="TTarjetas" EntityType="Self.TTarjeta" />
+          <EntitySet Name="vw_Menu_Has_Submenu" EntityType="Self.vw_Menu_Has_Submenu" />
+          <EntitySet Name="vw_Submenus" EntityType="Self.vw_Submenus" />
+          <AssociationSet Name="FK__cat_Model__Famil__025D5595" Association="Self.FK__cat_Model__Famil__025D5595">
+            <End Role="cat_Families" EntitySet="cat_Families" />
+            <End Role="cat_Models" EntitySet="cat_Models" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cat_WebAd__WebAd__1FEDB87C" Association="Self.FK__cat_WebAd__WebAd__1FEDB87C">
+            <End Role="WebAdministratorRoles" EntitySet="WebAdministratorRoles" />
+            <End Role="cat_WebAdministrators" EntitySet="cat_WebAdministrators" />
+          </AssociationSet>
+          <EntitySet Name="cPersonas" EntityType="sfiinternationalModel.cPersona" />
+        </EntityContainer>
+        <EntityType Name="cPersona">
+          <Key>
+            <PropertyRef Name="PNA_FL_PERSONA" />
+            <PropertyRef Name="PNA_CL_RFC" />
+            <PropertyRef Name="PNA_DS_NOMBRE" />
+            <PropertyRef Name="PNA_DS_EMAIL" />
+            <PropertyRef Name="PNA_FG_STATUS" />
+            <PropertyRef Name="Telcelular" />
+            <PropertyRef Name="TelFijo" />
+          </Key>
+          <Property Name="PNA_FL_PERSONA" Type="Int32" Nullable="false" />
+          <Property Name="PNA_CL_RFC" Type="String" Nullable="false" MaxLength="13" FixedLength="true" Unicode="false" />
+          <Property Name="PNA_DS_NOMBRE" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="false" />
+          <Property Name="PNA_DS_EMAIL" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="PNA_FG_STATUS" Type="Byte" Nullable="false" />
+          <Property Name="IdEstado" Type="Int32" />
+          <Property Name="Telcelular" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TelFijo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sfiinternationalModelStoreContainer" CdmEntityContainer="sfiinternationalEntities">
+          <EntitySetMapping Name="cat_Families">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Families">
+              <MappingFragment StoreEntitySet="cat_Families">
+                <ScalarProperty Name="Family_Id" ColumnName="Family_Id" />
+                <ScalarProperty Name="Family_Name" ColumnName="Family_Name" />
+                <ScalarProperty Name="Family_Image" ColumnName="Family_Image" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Informative_PDF">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Informative_PDF">
+              <MappingFragment StoreEntitySet="cat_Informative_PDF">
+                <ScalarProperty Name="Informative_PDF_Id" ColumnName="Informative_PDF_Id" />
+                <ScalarProperty Name="Informative_PDF_Name" ColumnName="Informative_PDF_Name" />
+                <ScalarProperty Name="Informative_PDF_Binary" ColumnName="Informative_PDF_Binary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Interest_Financial_Leasing">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Interest_Financial_Leasing">
+              <MappingFragment StoreEntitySet="cat_Interest_Financial_Leasing">
+                <ScalarProperty Name="Interest_Financial_Leasing_Id" ColumnName="Interest_Financial_Leasing_Id" />
+                <ScalarProperty Name="Interest_Financial_Leasing_Term" ColumnName="Interest_Financial_Leasing_Term" />
+                <ScalarProperty Name="Interest_Financial_Leasing_Value" ColumnName="Interest_Financial_Leasing_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Interest_Rent">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Interest_Rent">
+              <MappingFragment StoreEntitySet="cat_Interest_Rent">
+                <ScalarProperty Name="Interest_Rent_Id" ColumnName="Interest_Rent_Id" />
+                <ScalarProperty Name="Interest_Rent_Term" ColumnName="Interest_Rent_Term" />
+                <ScalarProperty Name="Interest_Rent_Value" ColumnName="Interest_Rent_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Interest_Simple_Credit">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Interest_Simple_Credit">
+              <MappingFragment StoreEntitySet="cat_Interest_Simple_Credit">
+                <ScalarProperty Name="Interest_Simple_Credit_Id" ColumnName="Interest_Simple_Credit_Id" />
+                <ScalarProperty Name="Interest_Simple_Credit_Term" ColumnName="Interest_Simple_Credit_Term" />
+                <ScalarProperty Name="Interest_Simple_Credit_Value" ColumnName="Interest_Simple_Credit_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Mail_Config">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Mail_Config">
+              <MappingFragment StoreEntitySet="cat_Mail_Config">
+                <ScalarProperty Name="Mail_Config_Id" ColumnName="Mail_Config_Id" />
+                <ScalarProperty Name="Mail_Config_Port" ColumnName="Mail_Config_Port" />
+                <ScalarProperty Name="Mail_Config_Host" ColumnName="Mail_Config_Host" />
+                <ScalarProperty Name="Mail_Config_Timeout" ColumnName="Mail_Config_Timeout" />
+                <ScalarProperty Name="Mail_Config_Username" ColumnName="Mail_Config_Username" />
+                <ScalarProperty Name="Mail_Config_Password" ColumnName="Mail_Config_Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Models">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Models">
+              <MappingFragment StoreEntitySet="cat_Models">
+                <ScalarProperty Name="Model_Id" ColumnName="Model_Id" />
+                <ScalarProperty Name="Family_Id" ColumnName="Family_Id" />
+                <ScalarProperty Name="Model_Description" ColumnName="Model_Description" />
+                <ScalarProperty Name="Model_Price" ColumnName="Model_Price" />
+                <ScalarProperty Name="Model_Factor" ColumnName="Model_Factor" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+                <ScalarProperty Name="Model_Image" ColumnName="Model_Image" />
+                <ScalarProperty Name="Model_CAT" ColumnName="Model_CAT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Slider_Text">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Slider_Text">
+              <MappingFragment StoreEntitySet="cat_Slider_Text">
+                <ScalarProperty Name="Slider_Text_Id" ColumnName="Slider_Text_Id" />
+                <ScalarProperty Name="Slider_Text_Content" ColumnName="Slider_Text_Content" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Step_Section">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Step_Section">
+              <MappingFragment StoreEntitySet="cat_Step_Section">
+                <ScalarProperty Name="Step_Section_Id" ColumnName="Step_Section_Id" />
+                <ScalarProperty Name="Step_Section_Title" ColumnName="Step_Section_Title" />
+                <ScalarProperty Name="Step_Section_Content" ColumnName="Step_Section_Content" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_Web_Snippets">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_Web_Snippets">
+              <MappingFragment StoreEntitySet="cat_Web_Snippets">
+                <ScalarProperty Name="Web_Snippet_Id" ColumnName="Web_Snippet_Id" />
+                <ScalarProperty Name="Web_Snippet_Element_Id" ColumnName="Web_Snippet_Element_Id" />
+                <ScalarProperty Name="Web_Snippet_Code" ColumnName="Web_Snippet_Code" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cat_WebAdministrators">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cat_WebAdministrators">
+              <MappingFragment StoreEntitySet="cat_WebAdministrators">
+                <ScalarProperty Name="WebAdministratorId" ColumnName="WebAdministratorId" />
+                <ScalarProperty Name="WebAdministratorUsername" ColumnName="WebAdministratorUsername" />
+                <ScalarProperty Name="WebAdministratorPassword" ColumnName="WebAdministratorPassword" />
+                <ScalarProperty Name="WebAdministratorName" ColumnName="WebAdministratorName" />
+                <ScalarProperty Name="WebAdministratorRole" ColumnName="WebAdministratorRole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="info_CAT">
+            <EntityTypeMapping TypeName="sfiinternationalModel.info_CAT">
+              <MappingFragment StoreEntitySet="info_CAT">
+                <ScalarProperty Name="info_CAT_Id" ColumnName="info_CAT_Id" />
+                <ScalarProperty Name="info_CAT_Value" ColumnName="info_CAT_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WebAdministratorRoles">
+            <EntityTypeMapping TypeName="sfiinternationalModel.WebAdministratorRole">
+              <MappingFragment StoreEntitySet="WebAdministratorRoles">
+                <ScalarProperty Name="WebAdministratorRoleId" ColumnName="WebAdministratorRoleId" />
+                <ScalarProperty Name="WebAdministratorRoleName" ColumnName="WebAdministratorRoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="campanias">
+            <EntityTypeMapping TypeName="sfiinternationalModel.campania">
+              <MappingFragment StoreEntitySet="campanias">
+                <ScalarProperty Name="idcampania" ColumnName="idcampania" />
+                <ScalarProperty Name="titulo" ColumnName="titulo" />
+                <ScalarProperty Name="objetivo" ColumnName="objetivo" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="archivo" ColumnName="archivo" />
+                <ScalarProperty Name="fInicio" ColumnName="fInicio" />
+                <ScalarProperty Name="fFinal" ColumnName="fFinal" />
+                <ScalarProperty Name="id_status" ColumnName="id_status" />
+                <ScalarProperty Name="usuarioAlta" ColumnName="usuarioAlta" />
+                <ScalarProperty Name="usuarioModifica" ColumnName="usuarioModifica" />
+                <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+                <ScalarProperty Name="fModifica" ColumnName="fModifica" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Solicitudes_PaperLess">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Solicitudes_PaperLess">
+              <MappingFragment StoreEntitySet="Solicitudes_PaperLess">
+                <ScalarProperty Name="eSolicitud" ColumnName="eSolicitud" />
+                <ScalarProperty Name="eCliente" ColumnName="eCliente" />
+                <ScalarProperty Name="vCorreo" ColumnName="vCorreo" />
+                <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+                <ScalarProperty Name="fActualiza" ColumnName="fActualiza" />
+                <ScalarProperty Name="eEstatus" ColumnName="eEstatus" />
+                <ScalarProperty Name="BIT_FL_CVE" ColumnName="BIT_FL_CVE" />
+                <ScalarProperty Name="eGestion" ColumnName="eGestion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aclaracionStatus">
+            <EntityTypeMapping TypeName="sfiinternationalModel.aclaracionStatu">
+              <MappingFragment StoreEntitySet="aclaracionStatus">
+                <ScalarProperty Name="id_aStatus" ColumnName="id_aStatus" />
+                <ScalarProperty Name="str_dStatus" ColumnName="str_dStatus" />
+                <ScalarProperty Name="id_sStatus" ColumnName="id_sStatus" />
+                <ScalarProperty Name="str_dColor" ColumnName="str_dColor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bases_Historicas">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Bases_Historicas">
+              <MappingFragment StoreEntitySet="Bases_Historicas">
+                <ScalarProperty Name="id_base" ColumnName="id_base" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="mes" ColumnName="mes" />
+                <ScalarProperty Name="anio" ColumnName="anio" />
+                <ScalarProperty Name="nombrebd" ColumnName="nombrebd" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+                <ScalarProperty Name="fInicioTarjeta" ColumnName="fInicioTarjeta" />
+                <ScalarProperty Name="fFinalTarjeta" ColumnName="fFinalTarjeta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clientes">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cliente">
+              <MappingFragment StoreEntitySet="clientes">
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="rfc" ColumnName="rfc" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="calle" ColumnName="calle" />
+                <ScalarProperty Name="colonia" ColumnName="colonia" />
+                <ScalarProperty Name="codigoPostal" ColumnName="codigoPostal" />
+                <ScalarProperty Name="poblacion" ColumnName="poblacion" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="remindMe" ColumnName="remindMe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clientes_adicional">
+            <EntityTypeMapping TypeName="sfiinternationalModel.clientes_adicional">
+              <MappingFragment StoreEntitySet="clientes_adicional">
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
+                <ScalarProperty Name="respuesta" ColumnName="respuesta" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Confirmacions">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Confirmacion">
+              <MappingFragment StoreEntitySet="Confirmacion">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Campos" ColumnName="Campos" />
+                <ScalarProperty Name="Banco" ColumnName="Banco" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contenidos">
+            <EntityTypeMapping TypeName="sfiinternationalModel.contenido">
+              <MappingFragment StoreEntitySet="contenidos">
+                <ScalarProperty Name="id_contenido" ColumnName="id_contenido" />
+                <ScalarProperty Name="detalle" ColumnName="detalle" />
+                <ScalarProperty Name="contenido1" ColumnName="contenido" />
+                <ScalarProperty Name="pagina" ColumnName="pagina" />
+                <ScalarProperty Name="orden" ColumnName="orden" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CTRL_BITACORA_GRAL">
+            <EntityTypeMapping TypeName="sfiinternationalModel.CTRL_BITACORA_GRAL">
+              <MappingFragment StoreEntitySet="CTRL_BITACORA_GRAL">
+                <ScalarProperty Name="CONS" ColumnName="CONS" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="ACCION" ColumnName="ACCION" />
+                <ScalarProperty Name="PNA_FL_PERSONA" ColumnName="PNA_FL_PERSONA" />
+                <ScalarProperty Name="CTO_FL_CVE" ColumnName="CTO_FL_CVE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="error_log">
+            <EntityTypeMapping TypeName="sfiinternationalModel.error_log">
+              <MappingFragment StoreEntitySet="error_log">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="faqs">
+            <EntityTypeMapping TypeName="sfiinternationalModel.faq">
+              <MappingFragment StoreEntitySet="faq">
+                <ScalarProperty Name="id_faq" ColumnName="id_faq" />
+                <ScalarProperty Name="pregunta" ColumnName="pregunta" />
+                <ScalarProperty Name="respuesta" ColumnName="respuesta" />
+                <ScalarProperty Name="categoria" ColumnName="categoria" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+                <ScalarProperty Name="orden" ColumnName="orden" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="movimientos">
+            <EntityTypeMapping TypeName="sfiinternationalModel.movimiento">
+              <MappingFragment StoreEntitySet="movimientos">
+                <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="banco" ColumnName="banco" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="movimientos_190814">
+            <EntityTypeMapping TypeName="sfiinternationalModel.movimientos_190814">
+              <MappingFragment StoreEntitySet="movimientos_190814">
+                <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="banco" ColumnName="banco" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="operadores">
+            <EntityTypeMapping TypeName="sfiinternationalModel.operadore">
+              <MappingFragment StoreEntitySet="operadores">
+                <ScalarProperty Name="id_oper" ColumnName="id_oper" />
+                <ScalarProperty Name="operador" ColumnName="operador" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pagosBanamexes">
+            <EntityTypeMapping TypeName="sfiinternationalModel.pagosBanamex">
+              <MappingFragment StoreEntitySet="pagosBanamex">
+                <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+                <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="Operacion" ColumnName="Operacion" />
+                <ScalarProperty Name="CTE" ColumnName="CTE" />
+                <ScalarProperty Name="REFER_PGO" ColumnName="REFER_PGO" />
+                <ScalarProperty Name="Importe" ColumnName="Importe" />
+                <ScalarProperty Name="Concepto" ColumnName="Concepto" />
+                <ScalarProperty Name="TPO_ABO" ColumnName="TPO_ABO" />
+                <ScalarProperty Name="AUTORIZA" ColumnName="AUTORIZA" />
+                <ScalarProperty Name="AUTORIZA2" ColumnName="AUTORIZA2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pagosBanamex_190814">
+            <EntityTypeMapping TypeName="sfiinternationalModel.pagosBanamex_190814">
+              <MappingFragment StoreEntitySet="pagosBanamex_190814">
+                <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+                <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="Operacion" ColumnName="Operacion" />
+                <ScalarProperty Name="CTE" ColumnName="CTE" />
+                <ScalarProperty Name="REFER_PGO" ColumnName="REFER_PGO" />
+                <ScalarProperty Name="Importe" ColumnName="Importe" />
+                <ScalarProperty Name="Concepto" ColumnName="Concepto" />
+                <ScalarProperty Name="TPO_ABO" ColumnName="TPO_ABO" />
+                <ScalarProperty Name="AUTORIZA" ColumnName="AUTORIZA" />
+                <ScalarProperty Name="AUTORIZA2" ColumnName="AUTORIZA2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pagosHSBCs">
+            <EntityTypeMapping TypeName="sfiinternationalModel.pagosHSBC">
+              <MappingFragment StoreEntitySet="pagosHSBC">
+                <ScalarProperty Name="id_pago" ColumnName="id_pago" />
+                <ScalarProperty Name="id_movimiento" ColumnName="id_movimiento" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="cveCliente" ColumnName="cveCliente" />
+                <ScalarProperty Name="Operacion" ColumnName="Operacion" />
+                <ScalarProperty Name="StatusBital" ColumnName="StatusBital" />
+                <ScalarProperty Name="MensajeBital" ColumnName="MensajeBital" />
+                <ScalarProperty Name="FolioBital" ColumnName="FolioBital" />
+                <ScalarProperty Name="FRef1" ColumnName="FRef1" />
+                <ScalarProperty Name="FRef2" ColumnName="FRef2" />
+                <ScalarProperty Name="FRef3" ColumnName="FRef3" />
+                <ScalarProperty Name="URLrespuesta" ColumnName="URLrespuesta" />
+                <ScalarProperty Name="FImporte" ColumnName="FImporte" />
+                <ScalarProperty Name="tccmcend" ColumnName="tccmcend" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="parametros">
+            <EntityTypeMapping TypeName="sfiinternationalModel.parametro">
+              <MappingFragment StoreEntitySet="parametros">
+                <ScalarProperty Name="id_con" ColumnName="id_con" />
+                <ScalarProperty Name="parametro1" ColumnName="parametro" />
+                <ScalarProperty Name="valor" ColumnName="valor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="preguntas">
+            <EntityTypeMapping TypeName="sfiinternationalModel.pregunta">
+              <MappingFragment StoreEntitySet="preguntas">
+                <ScalarProperty Name="id_pregunta" ColumnName="id_pregunta" />
+                <ScalarProperty Name="pregunta1" ColumnName="pregunta" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+                <ScalarProperty Name="orden" ColumnName="orden" />
+                <ScalarProperty Name="formato" ColumnName="formato" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reportes">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Reporte">
+              <MappingFragment StoreEntitySet="Reportes">
+                <ScalarProperty Name="id_reporte" ColumnName="id_reporte" />
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+                <ScalarProperty Name="id_servicio" ColumnName="id_servicio" />
+                <ScalarProperty Name="id_subservicio" ColumnName="id_subservicio" />
+                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+                <ScalarProperty Name="id_contrato" ColumnName="id_contrato" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="f_alta" ColumnName="f_alta" />
+                <ScalarProperty Name="id_status" ColumnName="id_status" />
+                <ScalarProperty Name="f_compromiso" ColumnName="f_compromiso" />
+                <ScalarProperty Name="archivos" ColumnName="archivos" />
+                <ScalarProperty Name="f_cierre" ColumnName="f_cierre" />
+                <ScalarProperty Name="comentarioCierre" ColumnName="comentarioCierre" />
+                <ScalarProperty Name="campo1" ColumnName="campo1" />
+                <ScalarProperty Name="campo2" ColumnName="campo2" />
+                <ScalarProperty Name="campo3" ColumnName="campo3" />
+                <ScalarProperty Name="campo4" ColumnName="campo4" />
+                <ScalarProperty Name="campo5" ColumnName="campo5" />
+                <ScalarProperty Name="campo6" ColumnName="campo6" />
+                <ScalarProperty Name="campo7" ColumnName="campo7" />
+                <ScalarProperty Name="campo8" ColumnName="campo8" />
+                <ScalarProperty Name="campo9" ColumnName="campo9" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Servicios">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Servicio">
+              <MappingFragment StoreEntitySet="Servicios">
+                <ScalarProperty Name="id_servicio" ColumnName="id_servicio" />
+                <ScalarProperty Name="Servicio1" ColumnName="Servicio" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="dias" ColumnName="dias" />
+                <ScalarProperty Name="id_padre" ColumnName="id_padre" />
+                <ScalarProperty Name="Servicio_Internet" ColumnName="Servicio_Internet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Status">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Status">
+              <MappingFragment StoreEntitySet="Status">
+                <ScalarProperty Name="id_status" ColumnName="id_status" />
+                <ScalarProperty Name="status1" ColumnName="status" />
+                <ScalarProperty Name="id_actividad" ColumnName="id_actividad" />
+                <ScalarProperty Name="color" ColumnName="color" />
+                <ScalarProperty Name="orden" ColumnName="orden" />
+                <ScalarProperty Name="activo" ColumnName="activo" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="Status_Internet" ColumnName="Status_Internet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Areas">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Area">
+              <MappingFragment StoreEntitySet="Area">
+                <ScalarProperty Name="eArea" ColumnName="eArea" />
+                <ScalarProperty Name="eAreaPadre" ColumnName="eAreaPadre" />
+                <ScalarProperty Name="eTipoArea" ColumnName="eTipoArea" />
+                <ScalarProperty Name="eOrden" ColumnName="eOrden" />
+                <ScalarProperty Name="vDsccArea" ColumnName="vDsccArea" />
+                <ScalarProperty Name="vDscArea" ColumnName="vDscArea" />
+                <ScalarProperty Name="eEstatus" ColumnName="eEstatus" />
+                <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+                <ScalarProperty Name="fModifica" ColumnName="fModifica" />
+                <ScalarProperty Name="vUsuarioAlta" ColumnName="vUsuarioAlta" />
+                <ScalarProperty Name="vUsuarioModifica" ColumnName="vUsuarioModifica" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kcontratoes">
+            <EntityTypeMapping TypeName="sfiinternationalModel.kcontrato">
+              <MappingFragment StoreEntitySet="kcontrato">
+                <ScalarProperty Name="CTO_FG_STATUS" ColumnName="CTO_FG_STATUS" />
+                <ScalarProperty Name="CTO_FL_CVE" ColumnName="CTO_FL_CVE" />
+                <ScalarProperty Name="PNA_FL_PERSONA" ColumnName="PNA_FL_PERSONA" />
+                <ScalarProperty Name="TOP_CL_CVE" ColumnName="TOP_CL_CVE" />
+                <ScalarProperty Name="EMP_FL_CVE" ColumnName="EMP_FL_CVE" />
+                <ScalarProperty Name="CTO_CL_MONEDA" ColumnName="CTO_CL_MONEDA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TContratoes">
+            <EntityTypeMapping TypeName="sfiinternationalModel.TContrato">
+              <MappingFragment StoreEntitySet="TContrato">
+                <ScalarProperty Name="IdContrato" ColumnName="IdContrato" />
+                <ScalarProperty Name="Contrato" ColumnName="Contrato" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="IdTipoCredito" ColumnName="IdTipoCredito" />
+                <ScalarProperty Name="IdEstatusContrato" ColumnName="IdEstatusContrato" />
+                <ScalarProperty Name="Capital" ColumnName="Capital" />
+                <ScalarProperty Name="PorcEnganche" ColumnName="PorcEnganche" />
+                <ScalarProperty Name="Enganche" ColumnName="Enganche" />
+                <ScalarProperty Name="CapitalFinanciado" ColumnName="CapitalFinanciado" />
+                <ScalarProperty Name="IdPeriodicidad" ColumnName="IdPeriodicidad" />
+                <ScalarProperty Name="Plazo" ColumnName="Plazo" />
+                <ScalarProperty Name="IdMoneda" ColumnName="IdMoneda" />
+                <ScalarProperty Name="FecInicioContrato" ColumnName="FecInicioContrato" />
+                <ScalarProperty Name="FecPrimeraRenta" ColumnName="FecPrimeraRenta" />
+                <ScalarProperty Name="FecActivacion" ColumnName="FecActivacion" />
+                <ScalarProperty Name="FecFinContrato" ColumnName="FecFinContrato" />
+                <ScalarProperty Name="IdTasa" ColumnName="IdTasa" />
+                <ScalarProperty Name="TasaBase" ColumnName="TasaBase" />
+                <ScalarProperty Name="PuntosMas" ColumnName="PuntosMas" />
+                <ScalarProperty Name="PuntosPor" ColumnName="PuntosPor" />
+                <ScalarProperty Name="Tasa" ColumnName="Tasa" />
+                <ScalarProperty Name="TasaBaseMora" ColumnName="TasaBaseMora" />
+                <ScalarProperty Name="IdTasaMora" ColumnName="IdTasaMora" />
+                <ScalarProperty Name="PuntosMasMora" ColumnName="PuntosMasMora" />
+                <ScalarProperty Name="PuntosPorMora" ColumnName="PuntosPorMora" />
+                <ScalarProperty Name="FactorMora" ColumnName="FactorMora" />
+                <ScalarProperty Name="TasaMora" ColumnName="TasaMora" />
+                <ScalarProperty Name="SaldoInsoluto" ColumnName="SaldoInsoluto" />
+                <ScalarProperty Name="BallonPayment" ColumnName="BallonPayment" />
+                <ScalarProperty Name="PorcBallonPayment" ColumnName="PorcBallonPayment" />
+                <ScalarProperty Name="ValorResidual" ColumnName="ValorResidual" />
+                <ScalarProperty Name="PorcValorResidual" ColumnName="PorcValorResidual" />
+                <ScalarProperty Name="DepositoEnGarantia" ColumnName="DepositoEnGarantia" />
+                <ScalarProperty Name="PorcDepositoEnGarantia" ColumnName="PorcDepositoEnGarantia" />
+                <ScalarProperty Name="OpcionDeCompra" ColumnName="OpcionDeCompra" />
+                <ScalarProperty Name="PorcOpcionDeCompra" ColumnName="PorcOpcionDeCompra" />
+                <ScalarProperty Name="TasaIva" ColumnName="TasaIva" />
+                <ScalarProperty Name="VersionTabla" ColumnName="VersionTabla" />
+                <ScalarProperty Name="IdTipoCalculoTasaVariable" ColumnName="IdTipoCalculoTasaVariable" />
+                <ScalarProperty Name="DiaCorteDisposiciones" ColumnName="DiaCorteDisposiciones" />
+                <ScalarProperty Name="DiaPagoDisposiciones" ColumnName="DiaPagoDisposiciones" />
+                <ScalarProperty Name="IdPersonaTitular" ColumnName="IdPersonaTitular" />
+                <ScalarProperty Name="IdPersonaRepresentante" ColumnName="IdPersonaRepresentante" />
+                <ScalarProperty Name="CAT" ColumnName="CAT" />
+                <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipo_Operacion_Area">
+            <EntityTypeMapping TypeName="sfiinternationalModel.Tipo_Operacion_Area">
+              <MappingFragment StoreEntitySet="Tipo_Operacion_Area">
+                <ScalarProperty Name="vTipoOperacion" ColumnName="vTipoOperacion" />
+                <ScalarProperty Name="eArea" ColumnName="eArea" />
+                <ScalarProperty Name="eImprime" ColumnName="eImprime" />
+                <ScalarProperty Name="vEtiqueta" ColumnName="vEtiqueta" />
+                <ScalarProperty Name="eEstatus" ColumnName="eEstatus" />
+                <ScalarProperty Name="fAlta" ColumnName="fAlta" />
+                <ScalarProperty Name="fModifica" ColumnName="fModifica" />
+                <ScalarProperty Name="vUsuarioAlta" ColumnName="vUsuarioAlta" />
+                <ScalarProperty Name="vUsuarioModifica" ColumnName="vUsuarioModifica" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TTarjetas">
+            <EntityTypeMapping TypeName="sfiinternationalModel.TTarjeta">
+              <MappingFragment StoreEntitySet="TTarjetas">
+                <ScalarProperty Name="IdTarjeta" ColumnName="IdTarjeta" />
+                <ScalarProperty Name="NumeroTarjeta" ColumnName="NumeroTarjeta" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Activo" ColumnName="Activo" />
+                <ScalarProperty Name="NIP" ColumnName="NIP" />
+                <ScalarProperty Name="Vigencia" ColumnName="Vigencia" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="IdTipoEntregaTarjeta" ColumnName="IdTipoEntregaTarjeta" />
+                <ScalarProperty Name="CartaBienvenida" ColumnName="CartaBienvenida" />
+                <ScalarProperty Name="NombreImpresion" ColumnName="NombreImpresion" />
+                <ScalarProperty Name="IdContrato" ColumnName="IdContrato" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="IdTipoRelacion" ColumnName="IdTipoRelacion" />
+                <ScalarProperty Name="IdEstatusTarjeta" ColumnName="IdEstatusTarjeta" />
+                <ScalarProperty Name="MotivoCancelacion" ColumnName="MotivoCancelacion" />
+                <ScalarProperty Name="FechaCancelacion" ColumnName="FechaCancelacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_Menu_Has_Submenu">
+            <EntityTypeMapping TypeName="sfiinternationalModel.vw_Menu_Has_Submenu">
+              <MappingFragment StoreEntitySet="vw_Menu_Has_Submenu">
+                <ScalarProperty Name="Submenu_Id" ColumnName="Submenu_Id" />
+                <ScalarProperty Name="Submenu_Name" ColumnName="Submenu_Name" />
+                <ScalarProperty Name="Submenu_Name_English" ColumnName="Submenu_Name_English" />
+                <ScalarProperty Name="Submenu_Order" ColumnName="Submenu_Order" />
+                <ScalarProperty Name="Menu_Link" ColumnName="Menu_Link" />
+                <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+                <ScalarProperty Name="Menu_Name_English" ColumnName="Menu_Name_English" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+                <ScalarProperty Name="Submenu_PDF_Folder" ColumnName="Submenu_PDF_Folder" />
+                <ScalarProperty Name="Menu_Submenu" ColumnName="Menu_Submenu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_Submenus">
+            <EntityTypeMapping TypeName="sfiinternationalModel.vw_Submenus">
+              <MappingFragment StoreEntitySet="vw_Submenus">
+                <ScalarProperty Name="Submenu_Id" ColumnName="Submenu_Id" />
+                <ScalarProperty Name="Submenu_Name" ColumnName="Submenu_Name" />
+                <ScalarProperty Name="Submenu_Name_English" ColumnName="Submenu_Name_English" />
+                <ScalarProperty Name="Submenu_Order" ColumnName="Submenu_Order" />
+                <ScalarProperty Name="Menu_Link" ColumnName="Menu_Link" />
+                <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+                <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+                <ScalarProperty Name="Submenu_PDF_Folder" ColumnName="Submenu_PDF_Folder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cPersonas">
+            <EntityTypeMapping TypeName="sfiinternationalModel.cPersona">
+              <MappingFragment StoreEntitySet="cPersona">
+                <ScalarProperty Name="TelFijo" ColumnName="TelFijo" />
+                <ScalarProperty Name="Telcelular" ColumnName="Telcelular" />
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="PNA_FG_STATUS" ColumnName="PNA_FG_STATUS" />
+                <ScalarProperty Name="PNA_DS_EMAIL" ColumnName="PNA_DS_EMAIL" />
+                <ScalarProperty Name="PNA_DS_NOMBRE" ColumnName="PNA_DS_NOMBRE" />
+                <ScalarProperty Name="PNA_CL_RFC" ColumnName="PNA_CL_RFC" />
+                <ScalarProperty Name="PNA_FL_PERSONA" ColumnName="PNA_FL_PERSONA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

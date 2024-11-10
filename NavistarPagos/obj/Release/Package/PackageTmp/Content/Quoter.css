@@ -1,0 +1,578 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#quoting {
+	margin-bottom: 50px;
+	max-width: 100%;
+}
+
+.QuotingHeader img {
+    width: 100%;
+}
+
+.QuotingHeader h1 {
+    /*padding-top: 50px !important;*/
+    margin-left: 50px;
+    color: #fff !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-left {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.top-right {
+    position: absolute;
+    top: 6px;
+    right: 15%;
+}
+
+.mainQuoter {
+    padding-top: 70px !important;
+}
+
+.quoter {
+    max-width: 100%;
+}
+
+.quoter h1 {
+    color: #00355f !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.9em;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.quoter .circle-number {
+    background-color: #00355f;
+    color: #fff;
+    padding: 2px 5px 2px 5px !important;
+    border-radius: 50%;
+}
+
+.table h1 {
+    color: #00355f !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.9em;
+    outline: none;
+    margin-top: -5px !important;
+    margin-bottom: -5px !important;
+}
+
+.table {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.table .circle-number {
+    background-color: #00355f;
+    color: #fff;
+    padding: 2px 5px 2px 5px !important;
+    border-radius: 50%;
+}
+
+.table .text-left {
+    color: #808080 !important;
+    padding-left: 50px;
+}
+
+.quoterForm h1 {
+    display: inline;
+    color: #00355f !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.9em;
+    outline: none;
+    margin-right: 10px !important;
+}
+
+.quoterForm .circle-number {
+    background-color: #00355f;
+    color: #fff;
+    padding: 2px 5px 2px 5px !important;
+    border-radius: 50%;
+}
+
+.quoterForm .disabledButton {
+    background-color: #808080 !important;
+}
+
+.quoterForm a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #00355f !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.textCost {
+    width: 90%;
+    text-align: center;
+    color: #00355f !important;
+}
+
+#FinalPrice {
+    background-color: #00355f !important;
+    color: #fff !important;
+    padding: 10px 0px 10px 0;
+    font-weight: bold !important;
+    font-style: normal !important;
+    width: auto;
+}
+
+.line-menu ul {
+    list-style-type: none;
+    /*padding: 0px;*/
+}
+
+.line-menu li {
+	margin-left: 33%;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 80px;
+	max-width: 33%;
+	border-left: 2px #00355f solid;
+}
+
+.line-menu li:hover, .btn-drop:hover {
+    color: #f47820 !important;
+    border-left: 2px #f47820 solid;
+}
+
+.btn-drop {
+    background-color: transparent !important;
+    color: #00355f !important;
+    border: none !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+}
+
+.dropdown-menu li {
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0px !important;
+    max-width: 100%;
+    border-left: 2px #00355f solid;
+}
+
+#initialPaymment {
+    /*color: http://localhost:50733/Home/Index;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: #00355f;
+    padding: 5px 23px 5px 23px;
+}
+
+#termPaymment {
+    color: #00355f;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: #00355f;
+    padding: 5px 23px 5px 23px;
+}
+
+#TotalPrice {
+    color: #00355f;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: #00355f;
+    padding: 5px 23px 5px 23px;
+}
+
+.optionsQuoter {
+    color: #808080;
+    font-size: 0.6em;
+    margin-bottom: 0px !important;
+}
+
+.optionsQuoter:hover {
+	color: #f47820;
+    cursor: pointer !important;
+}
+
+.quoterLabel {
+	padding-left: 0%;
+    width: 100%;
+	margin-bottom: 30px;
+	color: #a2a2a2 !important;
+	font-weight: bold !important;
+}
+
+.Model-li>li>a>img {
+    display: none;
+}
+
+.Model-li>li>a:hover>img {
+    display: inline;
+    width: 100%;
+    float: right;
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx1:checked + .check svg, #cbx2:checked + .check svg, #cbx3:checked + .check svg, #cbx4:checked + .check svg, 
+#cbx5:checked + .check svg, #cbx6:checked + .check svg, #cbx7:checked + .check svg {
+    stroke: #4285f4;
+}
+
+#cbx1:checked + .check svg path, #cbx2:checked + .check svg path, #cbx3:checked + .check svg path, #cbx4:checked + .check svg path, 
+#cbx5:checked + .check svg path, #cbx6:checked + .check svg path, #cbx7:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx1:checked + .check svg polyline, #cbx2:checked + .check svg polyline, #cbx3:checked + .check svg polyline, 
+#cbx4:checked + .check svg polyline, #cbx5:checked + .check svg polyline, #cbx6:checked + .check svg polyline,
+#cbx7:checked + .check svg polyline{
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.selection-active {
+    color: #f47820 !important;
+    border-left: 2px #f47820 solid !important;
+}
+
+.quoterOptions {
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100% !important;
+}
+
+.checkbox-container {
+	background-color: #00355f;
+	color: #fff;
+}
+
+.checkbox-information {
+	background-color: #fff;
+	color: #00355f;
+	font-weight: bold;
+}
+
+.Model-li li a:hover {
+    color: #00355f !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.quoterForm {
+    font-family: 'Roboto', sans-serif !important;
+    margin-top: 0px;
+    background-color: #fff;
+    color: #00355f;
+    font-weight: bold !important;
+    width: 100% !important;
+}
+
+.quoterForm p {
+    display: inline;
+    text-align: center;
+    font-size: 1.2em !important;
+    font-weight: bold;
+}
+
+.quoterForm input {
+	color: #00355f;
+    width: 250px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.quoterForm select {
+    width: 250px !important;
+    margin-bottom: 10px !important;
+    padding-left: 12px !important;
+}
+
+.quoterForm button {
+    color: #fff !important;
+    background-color: #00355f !important;
+    width: 250px;
+	margin-top: 5px;
+	background: transparent;
+	border: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.quoterForm button:hover{
+    background-color: #f47820;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#approve {
+    	padding-top: 20px;
+    	padding-bottom: 50px;
+  	}
+
+  	#approve img {
+    	padding-top: 15px;
+    	margin-left: auto;
+    	margin-right: auto;
+  	}
+
+    .line-menu li {
+        padding-bottom: 0;
+    }
+
+    .quoterLabel h4 {
+        font-size: 0.9em;
+    }
+
+    .initalLabel h4 span:nth-last-child(n-6) {
+        margin-right: 6%;
+    }
+
+    .temLabel h4 span:nth-last-child(n-6) {
+        margin-right: 13%;
+    }
+
+    #initialPaymment, #termPaymment, #TotalPrice {
+        font-size: 1em;
+    }
+
+    .quoterOptions {
+        margin-top: 10px;
+    }
+
+	.OptionDiv {
+		height: 200px;
+	}
+
+	.checkbox-information {
+		padding-bottom: 20px;
+	}
+
+	.checkbox-information center {
+		margin-top: 12px;
+	}
+
+    .quoterForm {
+        margin-top: 0px;
+    }
+
+    .QuotingHeader h1 {
+        font-size: 0.8em !important;
+    }
+
+    .top-left {
+        position: absolute;
+        top: -8px;
+        left: -15px;
+    }
+}
+
+/* Mobile M */
+@media only screen and (min-width: 375px) {
+    .quoterLabel h4 {
+        font-size: 1.1em;
+    }
+}
+
+/* Mobile L */
+@media only screen and (min-width: 425px) {
+    .quoterLabel h4 {
+        font-size: 1.3em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .initalLabel h4 span:nth-last-child(n-6) {
+        margin-right: 50px;
+    }
+
+    .temLabel h4 span:nth-last-child(n-6) {
+        margin-right: 15%;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#approve img {
+    	padding-top: 15px;
+    	margin-left: auto;
+    	margin-right: auto;
+  	}
+
+  	.approveInfo {
+	  color: #00355f;
+	  font-family: 'Roboto Condensed', sans-serif;
+	  position: relative;
+	  top: 50%;
+	  transform: translateY(10%);
+	}
+
+    .quoterLabel h4 {
+        font-size: 1.5em;
+    }
+
+    .initalLabel h4 span:nth-last-child(n-6) {
+        margin-right: 10%;
+    }
+
+    .temLabel h4 span:nth-last-child(n-6) {
+        margin-right: 16%;
+    }
+
+    .line-menu li {
+        padding-bottom: 0;
+    }
+
+	.quoterOptions {
+		margin-top: 10px;
+	}
+
+	.OptionDiv {
+		height: 180px;
+	}
+
+	.checkbox-information {
+		padding-bottom: 20px;
+	}
+
+	.checkbox-information center {
+		margin-top: 7px;
+	}
+
+    .QuotingHeader h1 {
+        font-size: 2em !important;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.approveInfo {
+	  color: #00355f;
+	  font-family: 'Roboto Condensed', sans-serif;
+	  position: relative;
+	  top: 50%;
+	  transform: translateY(25%);
+	}
+
+    .initalLabel h4 span:nth-last-child(n-6) {
+        margin-right: 55px;
+    }
+
+    .temLabel h4 span:nth-last-child(n-6) {
+        margin-right: 91px;
+    }
+
+	.quoterOptions {
+		margin-top: 20px;
+	}
+
+    .line-menu li {
+        padding-bottom: 70px;
+    }
+
+    .QuotingHeader h1 {
+        font-size: 2.5em !important;
+    }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .QuotingHeader h1 {
+        font-size: 3em !important;
+    }
+}
+
+@media (min-width: 1366px) {
+    .initalLabel h4 span:nth-last-child(n-6) {
+        margin-right: 79px;
+    }
+
+    .temLabel h4 span:nth-last-child(n-6) {
+        margin-right: 117px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+}

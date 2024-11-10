@@ -1,0 +1,60 @@
+﻿/*
+    
+*/
+@media (max-width:375px) {
+    .bc-btn-ancho{
+        width:100px !important;
+    }
+}
+/*
+    Captcha
+*/
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}
+
+.bc-bold{
+    font-weight:bold;
+}
+
+.bc-head{
+    font-weight: bold;
+    background-color:#F3F3F3;
+}
+
+.bc-lnk-pagoTransito a:link {
+    text-decoration: none;
+    color: #FFFFFF !important;
+}
+
+.bc-lnk-pagoTransito a:visited {
+    text-decoration: none;
+    color: #FFFFFF !important;
+}
+
+.bc-lnk-pagoTransito a:hover {
+    text-decoration: underline;
+    color: #FFFFFF !important;
+}
+
+.bc-lnk-pagoTransito a:active {
+    text-decoration: underline;
+    color: #FFFFFF !important;
+}
+
+.bc-lnk-pagoTransito > a {
+    color: #FFFFFF !important;
+}
+
+.bc-montoPagar {
+    text-align: center;
+    background-color: transparent;
+    border: 0px solid;
+}

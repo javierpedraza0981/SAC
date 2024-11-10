@@ -1,0 +1,35 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700i');
+
+.mainLegal h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    color: #003260;
+    margin-bottom: 50px;
+    margin-top: 0px !important;
+}
+
+.contentLegal {
+    background: url('../img/legals.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.contentLegal {
+    color: #fff !important;
+}
+
+.contentLegal p {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    color: #fff !important;
+}
+
+.contentLegal ul li {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    color: #fff;
+}

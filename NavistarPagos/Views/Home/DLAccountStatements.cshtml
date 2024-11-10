@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Estados de Cuenta";
+}
+
+<div class="container text-center" style="margin-top:10px;margin-bottom:5px;">
+    <h1 class="AccountName" style="font-size: 34px;">Bienvenido @ViewBag.Name</h1>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" style="background-color: #03345F; height: 3px; margin-top: 0px;"></div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center" style="padding-left: 0px; padding-right: 0px; background-color: green;">
+        <br />
+        <div class="form-group row" style="margin: 0; background-color: red;">
+            <div class="col-md-12 form-group row" style="margin: 10px 0px 0px 0px; background-color: aqua;">
+                <div class="col-md-3 form-group row" style="background-color: aquamarine;">
+                    <div style="min-width: 90px">
+                        <label class="col-form-label" style="padding-left: 20px; padding-right: 5px;">Fecha inicial: </label>
+                    </div>
+                    <div style="width: auto;">
+                        <input type="date" class="form-control" id="txtFecIni" value="@ViewBag.Fecha" max="@ViewBag.Fecha" />
+                    </div>
+                </div>
+                <div class="col-md-3 form-group row">
+                    <div style="min-width: 40px">
+                        <label class="col-form-label" style="padding-left: 20px; padding-right: 5px;">Fecha final: </label>
+                    </div>
+                    <div style="width: auto;">
+                        <input type="date" class="form-control" id="txtFecFin" value="@ViewBag.Fecha" max="@ViewBag.Fecha" />
+                    </div>
+                </div>
+                <div class="col-md-3 form-group row">
+                    <button type="submit" id="btnBuscar" class="btn-primary-NFCx" style="width: 100px; height: 20px;" onclick="finalizar()">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "ClientCons";
+}
+
+
+<div class="container text-center" style="margin-top:5px;margin-bottom:5px;">
+    <h1 class="AccountName">Bienvenido @ViewBag.Name</h1>
+</div>
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10" style="background-color: #03345F; max-width: 100%; height: 3px; margin-top: 0px;">
+        <h1 class="AccountName">Pagina en construcción.</h1>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div id="ModalResetContrasena" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bs-example-modal-lg" aria-modal="true" style="display: none;" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <input type="hidden" id="empleadoID" name="empleadoID" value="0" />
+                <h4 id="lblAccion" class="swal-title"><span style="font-weight:bold"> Navistar Financial</span></h4>
+                <input type="hidden" id="hfAccionID" name="hfAccionID" value="" />
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            
+                                <div id="add_to_me" class="swal-text" style="margin-top:5px;">
+
+                                </div>
+                                <br />
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2"> </div>
+                    <div class="col-md-6" style="text-align:right;">
+                        <button type="button" class="btn btn-success" id="btnGuardar" onclick="CerrarModal()">Aceptar</button>
+
+                        <button type="button" class="btn btn-danger" id="btnCancelar" onclick="ReturnPageInit()">Cancelar</button>
+                        <br />
+                    </div>
+                    <div class="col-md-1"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"><br /> </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        seleccionarPopupMessage();
+    });
+
+    function desplegarMensaje() {
+
+        seleccionarPopupMessage();
+
+    }
+
+    function seleccionarPopupMessage() {
+        var cve = $("#ddlCliente").val();
+        var action = '@ViewBag.Action';
+
+        //alert(action);
+
+        var dataRq = new Object();
+        dataRq.recurso = rutaAccount + "Home/" + "SeleccionarPopMessage";
+
+
+        $("#AjaxLoader").show("fast");
+        $.ajax({
+            url: "@Url.Action("SeleccionarPopMessage", "ClientCons")",
+            data: { cve: cve, psAction: action },
+            type: 'GET',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (data) {
+                var bSuccess = data.success;
+                var lst = data.lstPop;
+                if (bSuccess) {
+                    //sweetalerts('Navistar Financial', 'Cliente sin contratos', 'warning', 'Aceptar');
+                    $('#add_to_me').empty();
+                    for (const i of lst) {
+                        if (i.Texto !== undefined) {
+                            //$('#cboColonia').append(`<option value="${i.value}">${i.text}</option>`);
+                            $('#add_to_me').append(`${i.Texto} <a class = 'btn-link' href="${i.Url}"> Terminos y condiciones </a> ${i.Texto2} `)
+                        }
+                    }
+                    $('#ModalResetContrasena').modal('show');
+                } else {
+
+                    var urlRef = "/Home/" + action;
+
+                    window.location.href = urlRef;
+
+                    //window.location.href = '@Url.Content("~/Home/ClientFiles")';
+                }
+
+                $("#AjaxLoader").hide("slow");
+            },
+            error: function (xhr, status, error) {
+                var errorText = xhr.responseText.toString();
+                
+                $("#AjaxLoader").hide("slow");
+                //sweetalerts('Runsa', 'Se produjo un error: ' + errorText + ', al realizar la búsqueda', 'error', 'Aceptar');
+            },
+        });
+    }
+
+    function CerrarModal() {
+        RegistraBitacoraMessagePop();
+        $('#ModalResetContrasena').modal('hide');
+    }
+
+    function ReturnPageInit() {
+        var sessionToken = '@Session["tokenUsr_1"]';
+        var urlRef = "/Home/Index"  + '?ntoken=' + sessionToken + "&psAction=ClientCons" ;
+        window.location.href = urlRef;
+        $('#ModalResetContrasena').modal('hide');
+    }
+
+    function RegistraBitacoraMessagePop()
+    {
+        var psVista = 'ClientCons';
+        
+        $.ajax({
+            url: "@Url.Action("RegistraBitacoraPM", "ClientCons")",
+            type: 'POST',
+            data: { psVista: psVista },
+            success: function (data) {
+                var bSuccess = data.success;
+
+                if (bSuccess) {
+                    
+                } else {
+                    
+                }
+
+                
+            },
+            error: function (xhr, status, error) {
+                alert('Error al enviar la solicitud');
+                $("#AjaxLoader").hide("slow");
+            },
+        });
+    }
+
+
+</script>
+

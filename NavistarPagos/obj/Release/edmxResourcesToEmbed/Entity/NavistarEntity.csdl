@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sfiinternationalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cat_Families">
+    <Key>
+      <PropertyRef Name="Family_Id" />
+    </Key>
+    <Property Name="Family_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Family_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Family_Image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="cat_Models" Relationship="Self.FK__cat_Model__Famil__025D5595" FromRole="cat_Families" ToRole="cat_Models" />
+  </EntityType>
+  <EntityType Name="cat_Informative_PDF">
+    <Key>
+      <PropertyRef Name="Informative_PDF_Id" />
+    </Key>
+    <Property Name="Informative_PDF_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Informative_PDF_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Informative_PDF_Binary" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Interest_Financial_Leasing">
+    <Key>
+      <PropertyRef Name="Interest_Financial_Leasing_Id" />
+    </Key>
+    <Property Name="Interest_Financial_Leasing_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Interest_Financial_Leasing_Term" Type="Int32" Nullable="false" />
+    <Property Name="Interest_Financial_Leasing_Value" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Interest_Rent">
+    <Key>
+      <PropertyRef Name="Interest_Rent_Id" />
+    </Key>
+    <Property Name="Interest_Rent_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Interest_Rent_Term" Type="Int32" Nullable="false" />
+    <Property Name="Interest_Rent_Value" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Interest_Simple_Credit">
+    <Key>
+      <PropertyRef Name="Interest_Simple_Credit_Id" />
+    </Key>
+    <Property Name="Interest_Simple_Credit_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Interest_Simple_Credit_Term" Type="Int32" Nullable="false" />
+    <Property Name="Interest_Simple_Credit_Value" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Mail_Config">
+    <Key>
+      <PropertyRef Name="Mail_Config_Id" />
+    </Key>
+    <Property Name="Mail_Config_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mail_Config_Port" Type="Int32" Nullable="false" />
+    <Property Name="Mail_Config_Host" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mail_Config_Timeout" Type="Int32" Nullable="false" />
+    <Property Name="Mail_Config_Username" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mail_Config_Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Models">
+    <Key>
+      <PropertyRef Name="Model_Id" />
+    </Key>
+    <Property Name="Model_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Family_Id" Type="Int32" Nullable="false" />
+    <Property Name="Model_Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model_Price" Type="Double" Nullable="false" />
+    <Property Name="Model_Factor" Type="Double" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <Property Name="Model_Image" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="Model_CAT" Type="Double" />
+    <NavigationProperty Name="cat_Families" Relationship="Self.FK__cat_Model__Famil__025D5595" FromRole="cat_Models" ToRole="cat_Families" />
+  </EntityType>
+  <EntityType Name="cat_Slider_Text">
+    <Key>
+      <PropertyRef Name="Slider_Text_Id" />
+    </Key>
+    <Property Name="Slider_Text_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Slider_Text_Content" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Step_Section">
+    <Key>
+      <PropertyRef Name="Step_Section_Id" />
+    </Key>
+    <Property Name="Step_Section_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Step_Section_Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Step_Section_Content" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Web_Snippets">
+    <Key>
+      <PropertyRef Name="Web_Snippet_Id" />
+    </Key>
+    <Property Name="Web_Snippet_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Web_Snippet_Element_Id" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Web_Snippet_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_WebAdministrators">
+    <Key>
+      <PropertyRef Name="WebAdministratorId" />
+    </Key>
+    <Property Name="WebAdministratorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WebAdministratorUsername" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WebAdministratorPassword" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="WebAdministratorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WebAdministratorRole" Type="Int32" />
+    <NavigationProperty Name="WebAdministratorRole1" Relationship="Self.FK__cat_WebAd__WebAd__1FEDB87C" FromRole="cat_WebAdministrators" ToRole="WebAdministratorRoles" />
+  </EntityType>
+  <EntityType Name="info_CAT">
+    <Key>
+      <PropertyRef Name="info_CAT_Id" />
+    </Key>
+    <Property Name="info_CAT_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="info_CAT_Value" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WebAdministratorRole">
+    <Key>
+      <PropertyRef Name="WebAdministratorRoleId" />
+    </Key>
+    <Property Name="WebAdministratorRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WebAdministratorRoleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="cat_WebAdministrators" Relationship="Self.FK__cat_WebAd__WebAd__1FEDB87C" FromRole="WebAdministratorRoles" ToRole="cat_WebAdministrators" />
+  </EntityType>
+  <EntityType Name="campania">
+    <Key>
+      <PropertyRef Name="idcampania" />
+    </Key>
+    <Property Name="idcampania" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titulo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="objetivo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="link" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="archivo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fFinal" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_status" Type="Int32" Nullable="false" />
+    <Property Name="usuarioAlta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioModifica" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fModifica" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Solicitudes_PaperLess">
+    <Key>
+      <PropertyRef Name="eSolicitud" />
+    </Key>
+    <Property Name="eSolicitud" Type="Int32" Nullable="false" />
+    <Property Name="eCliente" Type="Int32" Nullable="false" />
+    <Property Name="vCorreo" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fActualiza" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="eEstatus" Type="Byte" Nullable="false" />
+    <Property Name="BIT_FL_CVE" Type="Int32" Nullable="false" />
+    <Property Name="eGestion" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aclaracionStatu">
+    <Key>
+      <PropertyRef Name="id_aStatus" />
+      <PropertyRef Name="str_dStatus" />
+      <PropertyRef Name="id_sStatus" />
+    </Key>
+    <Property Name="id_aStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="str_dStatus" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="id_sStatus" Type="Int32" Nullable="false" />
+    <Property Name="str_dColor" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Bases_Historicas">
+    <Key>
+      <PropertyRef Name="id_base" />
+      <PropertyRef Name="descripcion" />
+      <PropertyRef Name="mes" />
+      <PropertyRef Name="anio" />
+      <PropertyRef Name="nombrebd" />
+      <PropertyRef Name="activo" />
+    </Key>
+    <Property Name="id_base" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mes" Type="Int32" Nullable="false" />
+    <Property Name="anio" Type="Int32" Nullable="false" />
+    <Property Name="nombrebd" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="activo" Type="Int32" Nullable="false" />
+    <Property Name="fInicioTarjeta" Type="DateTime" Precision="3" />
+    <Property Name="fFinalTarjeta" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="cliente">
+    <Key>
+      <PropertyRef Name="cveCliente" />
+      <PropertyRef Name="nombre" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="remindMe" />
+    </Key>
+    <Property Name="cveCliente" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Byte" Nullable="false" />
+    <Property Name="rfc" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="calle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="colonia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="codigoPostal" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="poblacion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="remindMe" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="clientes_adicional">
+    <Key>
+      <PropertyRef Name="cveCliente" />
+    </Key>
+    <Property Name="cveCliente" Type="Int64" Nullable="false" />
+    <Property Name="id_pregunta" Type="Int32" />
+    <Property Name="respuesta" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Confirmacion">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Campos" />
+      <PropertyRef Name="Banco" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Campos" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Banco" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="contenido">
+    <Key>
+      <PropertyRef Name="id_contenido" />
+    </Key>
+    <Property Name="id_contenido" Type="Int64" Nullable="false" />
+    <Property Name="detalle" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="contenido1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pagina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="orden" Type="Int32" />
+    <Property Name="url" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tipo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CTRL_BITACORA_GRAL">
+    <Key>
+      <PropertyRef Name="CONS" />
+    </Key>
+    <Property Name="CONS" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FECHA" Type="DateTime" Precision="3" />
+    <Property Name="ACCION" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="PNA_FL_PERSONA" Type="Int32" />
+    <Property Name="CTO_FL_CVE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="error_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="path" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="faq">
+    <Key>
+      <PropertyRef Name="id_faq" />
+    </Key>
+    <Property Name="id_faq" Type="Int64" Nullable="false" />
+    <Property Name="pregunta" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="respuesta" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="orden" Type="Int32" />
+  </EntityType>
+  <EntityType Name="movimiento">
+    <Key>
+      <PropertyRef Name="id_movimiento" />
+    </Key>
+    <Property Name="id_movimiento" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cveCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="banco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Double" />
+  </EntityType>
+  <EntityType Name="movimientos_190814">
+    <Key>
+      <PropertyRef Name="id_movimiento" />
+    </Key>
+    <Property Name="id_movimiento" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cveCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="banco" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Double" />
+  </EntityType>
+  <EntityType Name="operadore">
+    <Key>
+      <PropertyRef Name="id_oper" />
+    </Key>
+    <Property Name="id_oper" Type="Int32" Nullable="false" />
+    <Property Name="operador" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="pass" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="nombre" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pagosBanamex">
+    <Key>
+      <PropertyRef Name="id_pago" />
+    </Key>
+    <Property Name="id_pago" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_movimiento" Type="Int64" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="cveCliente" Type="Int32" />
+    <Property Name="Operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REFER_PGO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Importe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Concepto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TPO_ABO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AUTORIZA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AUTORIZA2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pagosBanamex_190814">
+    <Key>
+      <PropertyRef Name="id_pago" />
+    </Key>
+    <Property Name="id_pago" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_movimiento" Type="Int64" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="cveCliente" Type="Int32" />
+    <Property Name="Operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REFER_PGO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Importe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Concepto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TPO_ABO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AUTORIZA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AUTORIZA2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pagosHSBC">
+    <Key>
+      <PropertyRef Name="id_pago" />
+    </Key>
+    <Property Name="id_pago" Type="Int64" Nullable="false" />
+    <Property Name="id_movimiento" Type="Int64" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="cveCliente" Type="Int32" />
+    <Property Name="Operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="StatusBital" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MensajeBital" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FolioBital" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FRef1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FRef2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FRef3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="URLrespuesta" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FImporte" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tccmcend" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="parametro">
+    <Key>
+      <PropertyRef Name="id_con" />
+    </Key>
+    <Property Name="id_con" Type="Int32" Nullable="false" />
+    <Property Name="parametro1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="valor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pregunta">
+    <Key>
+      <PropertyRef Name="id_pregunta" />
+    </Key>
+    <Property Name="id_pregunta" Type="Int32" Nullable="false" />
+    <Property Name="pregunta1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="orden" Type="Int32" />
+    <Property Name="formato" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Reporte">
+    <Key>
+      <PropertyRef Name="id_reporte" />
+    </Key>
+    <Property Name="id_reporte" Type="Int64" Nullable="false" />
+    <Property Name="id_usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="id_servicio" Type="Int64" />
+    <Property Name="id_subservicio" Type="Int64" />
+    <Property Name="id_cliente" Type="Int64" />
+    <Property Name="id_contrato" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="f_alta" Type="DateTime" Precision="0" />
+    <Property Name="id_status" Type="Int64" />
+    <Property Name="f_compromiso" Type="DateTime" Precision="0" />
+    <Property Name="archivos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="f_cierre" Type="DateTime" Precision="0" />
+    <Property Name="comentarioCierre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="campo1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo5" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo6" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo7" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo8" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="campo9" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Servicio">
+    <Key>
+      <PropertyRef Name="id_servicio" />
+    </Key>
+    <Property Name="id_servicio" Type="Int64" Nullable="false" />
+    <Property Name="Servicio1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="correo" Type="Int32" />
+    <Property Name="dias" Type="Double" />
+    <Property Name="id_padre" Type="Int64" />
+    <Property Name="Servicio_Internet" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="Int64" Nullable="false" />
+    <Property Name="status1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_actividad" Type="Int32" />
+    <Property Name="color" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="orden" Type="Int32" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="correo" Type="Int32" />
+    <Property Name="Status_Internet" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="eArea" />
+      <PropertyRef Name="eAreaPadre" />
+      <PropertyRef Name="eTipoArea" />
+      <PropertyRef Name="eOrden" />
+      <PropertyRef Name="vDsccArea" />
+      <PropertyRef Name="vDscArea" />
+      <PropertyRef Name="eEstatus" />
+      <PropertyRef Name="fAlta" />
+      <PropertyRef Name="fModifica" />
+      <PropertyRef Name="vUsuarioAlta" />
+      <PropertyRef Name="vUsuarioModifica" />
+    </Key>
+    <Property Name="eArea" Type="Int16" Nullable="false" />
+    <Property Name="eAreaPadre" Type="Int16" Nullable="false" />
+    <Property Name="eTipoArea" Type="Byte" Nullable="false" />
+    <Property Name="eOrden" Type="Byte" Nullable="false" />
+    <Property Name="vDsccArea" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vDscArea" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="eEstatus" Type="Byte" Nullable="false" />
+    <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fModifica" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="vUsuarioAlta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vUsuarioModifica" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kcontrato">
+    <Key>
+      <PropertyRef Name="CTO_FL_CVE" />
+      <PropertyRef Name="PNA_FL_PERSONA" />
+      <PropertyRef Name="TOP_CL_CVE" />
+      <PropertyRef Name="EMP_FL_CVE" />
+      <PropertyRef Name="CTO_CL_MONEDA" />
+      <PropertyRef Name="CTO_FG_STATUS" />
+    </Key>
+    <Property Name="CTO_FL_CVE" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PNA_FL_PERSONA" Type="Int32" Nullable="false" />
+    <Property Name="TOP_CL_CVE" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="EMP_FL_CVE" Type="Byte" Nullable="false" />
+    <Property Name="CTO_CL_MONEDA" Type="Byte" Nullable="false" />
+    <Property Name="CTO_FG_STATUS" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TContrato">
+    <Key>
+      <PropertyRef Name="IdContrato" />
+      <PropertyRef Name="IdPeriodicidad" />
+      <PropertyRef Name="IdMoneda" />
+      <PropertyRef Name="IdTasa" />
+      <PropertyRef Name="IdTasaMora" />
+    </Key>
+    <Property Name="IdContrato" Type="Int32" Nullable="false" />
+    <Property Name="Contrato" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="IdPersona" Type="Int32" />
+    <Property Name="IdTipoCredito" Type="Int32" />
+    <Property Name="IdEstatusContrato" Type="Int32" />
+    <Property Name="Capital" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PorcEnganche" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="Enganche" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="CapitalFinanciado" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="IdPeriodicidad" Type="Int32" Nullable="false" />
+    <Property Name="Plazo" Type="Int32" />
+    <Property Name="IdMoneda" Type="Int32" Nullable="false" />
+    <Property Name="FecInicioContrato" Type="DateTime" Precision="3" />
+    <Property Name="FecPrimeraRenta" Type="DateTime" Precision="3" />
+    <Property Name="FecActivacion" Type="DateTime" Precision="3" />
+    <Property Name="FecFinContrato" Type="DateTime" Precision="3" />
+    <Property Name="IdTasa" Type="Int32" Nullable="false" />
+    <Property Name="TasaBase" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="PuntosMas" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="PuntosPor" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="Tasa" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="TasaBaseMora" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="IdTasaMora" Type="Int32" Nullable="false" />
+    <Property Name="PuntosMasMora" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="PuntosPorMora" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="FactorMora" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="TasaMora" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="SaldoInsoluto" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="BallonPayment" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PorcBallonPayment" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="ValorResidual" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PorcValorResidual" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="DepositoEnGarantia" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PorcDepositoEnGarantia" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="OpcionDeCompra" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="PorcOpcionDeCompra" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="TasaIva" Type="Decimal" Precision="7" Scale="4" />
+    <Property Name="VersionTabla" Type="Int32" />
+    <Property Name="IdTipoCalculoTasaVariable" Type="Int32" />
+    <Property Name="DiaCorteDisposiciones" Type="Int32" />
+    <Property Name="DiaPagoDisposiciones" Type="Int32" />
+    <Property Name="IdPersonaTitular" Type="Int32" />
+    <Property Name="IdPersonaRepresentante" Type="Int32" />
+    <Property Name="CAT" Type="Decimal" Precision="8" Scale="6" />
+    <Property Name="FechaCierre" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Tipo_Operacion_Area">
+    <Key>
+      <PropertyRef Name="vTipoOperacion" />
+      <PropertyRef Name="eArea" />
+      <PropertyRef Name="eImprime" />
+      <PropertyRef Name="vEtiqueta" />
+      <PropertyRef Name="eEstatus" />
+      <PropertyRef Name="fAlta" />
+      <PropertyRef Name="fModifica" />
+      <PropertyRef Name="vUsuarioAlta" />
+      <PropertyRef Name="vUsuarioModifica" />
+    </Key>
+    <Property Name="vTipoOperacion" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="eArea" Type="Int16" Nullable="false" />
+    <Property Name="eImprime" Type="Byte" Nullable="false" />
+    <Property Name="vEtiqueta" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="eEstatus" Type="Byte" Nullable="false" />
+    <Property Name="fAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fModifica" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="vUsuarioAlta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vUsuarioModifica" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTarjeta">
+    <Key>
+      <PropertyRef Name="IdTarjeta" />
+      <PropertyRef Name="NumeroTarjeta" />
+      <PropertyRef Name="Descripcion" />
+      <PropertyRef Name="Activo" />
+      <PropertyRef Name="IdTipoEntregaTarjeta" />
+    </Key>
+    <Property Name="IdTarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroTarjeta" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="NIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Vigencia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="IdTipoEntregaTarjeta" Type="Int32" Nullable="false" />
+    <Property Name="CartaBienvenida" Type="Boolean" />
+    <Property Name="NombreImpresion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdContrato" Type="Int32" />
+    <Property Name="IdPersona" Type="Int32" />
+    <Property Name="IdTipoRelacion" Type="Int32" />
+    <Property Name="IdEstatusTarjeta" Type="Int32" />
+    <Property Name="MotivoCancelacion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FechaCancelacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vw_Menu_Has_Submenu">
+    <Key>
+      <PropertyRef Name="Submenu_Id" />
+      <PropertyRef Name="Submenu_Name" />
+      <PropertyRef Name="Submenu_Order" />
+      <PropertyRef Name="Menu_Link" />
+      <PropertyRef Name="Menu_Name" />
+      <PropertyRef Name="Is_Active" />
+      <PropertyRef Name="Menu_Submenu" />
+    </Key>
+    <Property Name="Submenu_Id" Type="Int32" Nullable="false" />
+    <Property Name="Submenu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Submenu_Name_English" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Submenu_Order" Type="Int32" Nullable="false" />
+    <Property Name="Menu_Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Menu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Menu_Name_English" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <Property Name="Submenu_PDF_Folder" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Menu_Submenu" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_Submenus">
+    <Key>
+      <PropertyRef Name="Submenu_Id" />
+      <PropertyRef Name="Submenu_Name" />
+      <PropertyRef Name="Submenu_Order" />
+      <PropertyRef Name="Menu_Link" />
+      <PropertyRef Name="Menu_Name" />
+      <PropertyRef Name="Is_Active" />
+    </Key>
+    <Property Name="Submenu_Id" Type="Int32" Nullable="false" />
+    <Property Name="Submenu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Submenu_Name_English" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Submenu_Order" Type="Int32" Nullable="false" />
+    <Property Name="Menu_Link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Menu_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <Property Name="Submenu_PDF_Folder" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__cat_Model__Famil__025D5595">
+    <End Role="cat_Families" Type="Self.cat_Families" Multiplicity="1" />
+    <End Role="cat_Models" Type="Self.cat_Models" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cat_Families">
+        <PropertyRef Name="Family_Id" />
+      </Principal>
+      <Dependent Role="cat_Models">
+        <PropertyRef Name="Family_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__cat_WebAd__WebAd__1FEDB87C">
+    <End Role="WebAdministratorRoles" Type="Self.WebAdministratorRole" Multiplicity="0..1" />
+    <End Role="cat_WebAdministrators" Type="Self.cat_WebAdministrators" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebAdministratorRoles">
+        <PropertyRef Name="WebAdministratorRoleId" />
+      </Principal>
+      <Dependent Role="cat_WebAdministrators">
+        <PropertyRef Name="WebAdministratorRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sfiinternationalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cat_Families" EntityType="Self.cat_Families" />
+    <EntitySet Name="cat_Informative_PDF" EntityType="Self.cat_Informative_PDF" />
+    <EntitySet Name="cat_Interest_Financial_Leasing" EntityType="Self.cat_Interest_Financial_Leasing" />
+    <EntitySet Name="cat_Interest_Rent" EntityType="Self.cat_Interest_Rent" />
+    <EntitySet Name="cat_Interest_Simple_Credit" EntityType="Self.cat_Interest_Simple_Credit" />
+    <EntitySet Name="cat_Mail_Config" EntityType="Self.cat_Mail_Config" />
+    <EntitySet Name="cat_Models" EntityType="Self.cat_Models" />
+    <EntitySet Name="cat_Slider_Text" EntityType="Self.cat_Slider_Text" />
+    <EntitySet Name="cat_Step_Section" EntityType="Self.cat_Step_Section" />
+    <EntitySet Name="cat_Web_Snippets" EntityType="Self.cat_Web_Snippets" />
+    <EntitySet Name="cat_WebAdministrators" EntityType="Self.cat_WebAdministrators" />
+    <EntitySet Name="info_CAT" EntityType="Self.info_CAT" />
+    <EntitySet Name="WebAdministratorRoles" EntityType="Self.WebAdministratorRole" />
+    <EntitySet Name="campanias" EntityType="Self.campania" />
+    <EntitySet Name="Solicitudes_PaperLess" EntityType="Self.Solicitudes_PaperLess" />
+    <EntitySet Name="aclaracionStatus" EntityType="Self.aclaracionStatu" />
+    <EntitySet Name="Bases_Historicas" EntityType="Self.Bases_Historicas" />
+    <EntitySet Name="clientes" EntityType="Self.cliente" />
+    <EntitySet Name="clientes_adicional" EntityType="Self.clientes_adicional" />
+    <EntitySet Name="Confirmacions" EntityType="Self.Confirmacion" />
+    <EntitySet Name="contenidos" EntityType="Self.contenido" />
+    <EntitySet Name="CTRL_BITACORA_GRAL" EntityType="Self.CTRL_BITACORA_GRAL" />
+    <EntitySet Name="error_log" EntityType="Self.error_log" />
+    <EntitySet Name="faqs" EntityType="Self.faq" />
+    <EntitySet Name="movimientos" EntityType="Self.movimiento" />
+    <EntitySet Name="movimientos_190814" EntityType="Self.movimientos_190814" />
+    <EntitySet Name="operadores" EntityType="Self.operadore" />
+    <EntitySet Name="pagosBanamexes" EntityType="Self.pagosBanamex" />
+    <EntitySet Name="pagosBanamex_190814" EntityType="Self.pagosBanamex_190814" />
+    <EntitySet Name="pagosHSBCs" EntityType="Self.pagosHSBC" />
+    <EntitySet Name="parametros" EntityType="Self.parametro" />
+    <EntitySet Name="preguntas" EntityType="Self.pregunta" />
+    <EntitySet Name="Reportes" EntityType="Self.Reporte" />
+    <EntitySet Name="Servicios" EntityType="Self.Servicio" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="Areas" EntityType="Self.Area" />
+    <EntitySet Name="kcontratoes" EntityType="Self.kcontrato" />
+    <EntitySet Name="TContratoes" EntityType="Self.TContrato" />
+    <EntitySet Name="Tipo_Operacion_Area" EntityType="Self.Tipo_Operacion_Area" />
+    <EntitySet Name="TTarjetas" EntityType="Self.TTarjeta" />
+    <EntitySet Name="vw_Menu_Has_Submenu" EntityType="Self.vw_Menu_Has_Submenu" />
+    <EntitySet Name="vw_Submenus" EntityType="Self.vw_Submenus" />
+    <AssociationSet Name="FK__cat_Model__Famil__025D5595" Association="Self.FK__cat_Model__Famil__025D5595">
+      <End Role="cat_Families" EntitySet="cat_Families" />
+      <End Role="cat_Models" EntitySet="cat_Models" />
+    </AssociationSet>
+    <AssociationSet Name="FK__cat_WebAd__WebAd__1FEDB87C" Association="Self.FK__cat_WebAd__WebAd__1FEDB87C">
+      <End Role="WebAdministratorRoles" EntitySet="WebAdministratorRoles" />
+      <End Role="cat_WebAdministrators" EntitySet="cat_WebAdministrators" />
+    </AssociationSet>
+    <EntitySet Name="cPersonas" EntityType="sfiinternationalModel.cPersona" />
+  </EntityContainer>
+  <EntityType Name="cPersona">
+    <Key>
+      <PropertyRef Name="PNA_FL_PERSONA" />
+      <PropertyRef Name="PNA_CL_RFC" />
+      <PropertyRef Name="PNA_DS_NOMBRE" />
+      <PropertyRef Name="PNA_DS_EMAIL" />
+      <PropertyRef Name="PNA_FG_STATUS" />
+      <PropertyRef Name="Telcelular" />
+      <PropertyRef Name="TelFijo" />
+    </Key>
+    <Property Name="PNA_FL_PERSONA" Type="Int32" Nullable="false" />
+    <Property Name="PNA_CL_RFC" Type="String" Nullable="false" MaxLength="13" FixedLength="true" Unicode="false" />
+    <Property Name="PNA_DS_NOMBRE" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="false" />
+    <Property Name="PNA_DS_EMAIL" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="PNA_FG_STATUS" Type="Byte" Nullable="false" />
+    <Property Name="IdEstado" Type="Int32" />
+    <Property Name="Telcelular" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TelFijo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

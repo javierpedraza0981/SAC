@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Contratos";
+}
+
+<div class="container text-center" style="margin-top:5px;margin-bottom:5px;">
+    <h1 class="AccountName">Bienvenido @ViewBag.Name</h1>
+</div>
+<div class="row" style="margin:0!important; padding:0 !important; max-width:100%;">
+    <div class="col-sm-12 AccountImage1 AccountContent">
+        <h1 class="text-center" style="margin-top:0px;margin-bottom:0px;">Contratos</h1>
+        <div class="container-fluid AccountForm text-center">
+            <p id="ContractP" style="color:black;">@Html.Raw(@ViewBag.LeyendaContratos)</p>
+            <div style="margin-top:35px;">
+                <div style="text-align:right;vertical-align:top;">
+                    <button style='text-align:right;width:180px;height:30px;background-color:#00355f;color:#fff;' disabled>Descargar resumen</button>&nbsp;&nbsp;
+                    <button onclick="clickBTNResumen('pdf')" style='display: inline-flex; vertical-align: top; width: 60px; height: 30px; background-color: #00355f; color: #fff;' data-toggle="tooltip" data-placement="top" title="Descargar PDF">
+                        <i class="fas fa-file-pdf" id="divpdf"></i>&nbsp;<i class="fas fa-spinner fa-spin" id="divProcesandopdf" style="visibility:hidden"></i>
+                    </button>
+                    <button onclick="clickBTNResumen('xlsx')" style='display: inline-flex; vertical-align: top; width: 60px; height: 30px; background-color: #00355f; color: #fff; ' data-toggle="tooltip" data-placement="top" title="Descargar Excel">
+                        <i title="" class="fas fa-file-excel" id="divxlsx"></i>&nbsp;<i class="fas fa-spinner fa-spin" id="divProcesandoxlsx" style="visibility:hidden"></i>
+                    </button>
+                </div>
+                <div class="col-md-12" style="background-color: #fff; max-width: 100%; height: 3px; margin-top: 0px;"></div>
+                <table class="table text-center" style="margin-bottom:2px;">
+                    <thead>
+                        <tr style="background-color:#00355f; color:#fff;">
+                            <th class="text-center">Contrato</th>
+                            <th class="text-center">Fecha de Vencimiento</th>
+                            <th class="text-center" colspan="2">Monto a Pagar</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div style="height:280px;" class="scrollbar">
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <tbody style="font-weight:bold;color:black;" class="scrollbar">
+                            @{
+                                string clientesPagoEnLinea = System.Configuration.ConfigurationManager.AppSettings["clientesPagoEnLinea"];
+                                clientesPagoEnLinea = (clientesPagoEnLinea != "") ? "," + clientesPagoEnLinea + "," : "";
+                            }
+                            @foreach (var contract in ViewBag.Contracts)
+                            {
+                                string moneda = (@contract.moneda).ToLower();
+                                var btn = (moneda == "pesos" || moneda == "mxn") ?
+                                    "<button onclick=\"clickBTNPagoLinea('"
+                                    + @contract.operacion + "','"
+                                    + @contract.referenciaNumerica + "','"
+                                    + @contract.saldoporVenc + "','"
+                                    + @contract.saldoMes + "','"
+                                    + @contract.fecCorte + "','"
+                                    + @contract.fecProxPago + "','"
+                                    + @contract.nombrecliente + "');\" style='width:140px;background-color:#00355f;color:#fff;'/>Pago en línea</button>" : "";
+
+                                btn = (clientesPagoEnLinea == "") ? btn : ((clientesPagoEnLinea.IndexOf("," + contract.idcliente + ",") >= 0) ? btn : "");
+                                var link = "<a href='../AccountCore/pdfimprimepago.aspx?clavePago=" + @contract.ClavePago + "&claveCliente=" + @contract.idcliente + "'>Pago en tránsito</a>";
+                                var strLigaPagoEnTransito = (@contract.PagoEnTransito == 1) ? link : "";
+                            <tr style="border-bottom: none;padding-bottom:2px;">
+                                <td style="vertical-align: middle; padding-bottom: 2px;">@contract.operacion</td>
+                                <td style="vertical-align: middle; padding-bottom: 2px;">@contract.fecProxPago</td>
+                                <td style="vertical-align: middle;padding-bottom:2px;text-align:right" class="toFormatMoney">@contract.saldoporVenc</td>
+                                <td style="vertical-align: middle;padding-bottom:2px;text-align:left;">@contract.moneda</td>
+                            </tr>
+                                <tr style="border-top: none;padding-top: 2px;">
+                                    <td style="border-top:none;padding-top:2px"></td>
+                                    <td style="border-top:none;padding-top: 2px;vertical-align:middle; " class="bc-lnk-pagoTransito">@Html.Raw(strLigaPagoEnTransito)</td>
+                                    <td style="border-top:none;padding-top: 2px;vertical-align:middle; text-align: right" colspan="2">@Html.Raw(btn)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            @*<div id="contactBtn" class="col-sm-12 text-center">
+            <select id="Contract" style="margin-top:40px;">
+                <option value="-1">Contrato</option>
+                @foreach (var contract in ViewBag.Contracts)
+                {
+                    <option value="@contract.operacion">@contract.operacion</option>
+                }
+            </select>
+            <button onclick="buscapdf();">Estado de Cuenta</button>
+            <button onclick="buscapdfresumen();">Resumen</button>
+        </div>*@
+        </div>
+    </div>
+</div>
+<div class="col-md-12" style="background-color: #fff; max-width: 100%; height: 3px; margin-top: 0px;"></div>
+
+<script>
+    $(document).ready(function () {
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    });
+</script>
+<script>
+    (function () {
+        var tfm = document.getElementsByClassName('toFormatMoney');
+        for (var i = 0; i < tfm.length; i++) {
+            tfm[i].innerHTML = "$" + formatMoney(tfm[i].innerHTML, 2, ".", ", ");
+        }
+    }());
+    function formatMoney(n, c, d, t) {
+        var c = isNaN(c = Math.abs(c)) ? 2 : c,
+            d = d == undefined ? "." : d,
+            t = t == undefined ? "," : t,
+            s = n < 0 ? "-" : "",
+            i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+            j = (j = i.length) > 3 ? j % 3 : 0;
+
+        return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+    };
+</script>

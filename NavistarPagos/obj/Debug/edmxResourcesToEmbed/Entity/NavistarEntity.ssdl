@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sfiinternationalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cat_Families">
+    <Key>
+      <PropertyRef Name="Family_Id" />
+    </Key>
+    <Property Name="Family_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Family_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Family_Image" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Informative_PDF">
+    <Key>
+      <PropertyRef Name="Informative_PDF_Id" />
+    </Key>
+    <Property Name="Informative_PDF_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Informative_PDF_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Informative_PDF_Binary" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Interest_Financial_Leasing">
+    <Key>
+      <PropertyRef Name="Interest_Financial_Leasing_Id" />
+    </Key>
+    <Property Name="Interest_Financial_Leasing_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Interest_Financial_Leasing_Term" Type="int" Nullable="false" />
+    <Property Name="Interest_Financial_Leasing_Value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Interest_Rent">
+    <Key>
+      <PropertyRef Name="Interest_Rent_Id" />
+    </Key>
+    <Property Name="Interest_Rent_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Interest_Rent_Term" Type="int" Nullable="false" />
+    <Property Name="Interest_Rent_Value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Interest_Simple_Credit">
+    <Key>
+      <PropertyRef Name="Interest_Simple_Credit_Id" />
+    </Key>
+    <Property Name="Interest_Simple_Credit_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Interest_Simple_Credit_Term" Type="int" Nullable="false" />
+    <Property Name="Interest_Simple_Credit_Value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Mail_Config">
+    <Key>
+      <PropertyRef Name="Mail_Config_Id" />
+    </Key>
+    <Property Name="Mail_Config_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mail_Config_Port" Type="int" Nullable="false" />
+    <Property Name="Mail_Config_Host" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Mail_Config_Timeout" Type="int" Nullable="false" />
+    <Property Name="Mail_Config_Username" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Mail_Config_Password" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Models">
+    <Key>
+      <PropertyRef Name="Model_Id" />
+    </Key>
+    <Property Name="Model_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Family_Id" Type="int" Nullable="false" />
+    <Property Name="Model_Description" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Model_Price" Type="float" Nullable="false" />
+    <Property Name="Model_Factor" Type="float" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+    <Property Name="Model_Image" Type="nvarchar" MaxLength="1024" />
+    <Property Name="Model_CAT" Type="float" />
+  </EntityType>
+  <EntityType Name="cat_Slider_Text">
+    <Key>
+      <PropertyRef Name="Slider_Text_Id" />
+    </Key>
+    <Property Name="Slider_Text_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Slider_Text_Content" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Step_Section">
+    <Key>
+      <PropertyRef Name="Step_Section_Id" />
+    </Key>
+    <Property Name="Step_Section_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Step_Section_Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Step_Section_Content" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_Web_Snippets">
+    <Key>
+      <PropertyRef Name="Web_Snippet_Id" />
+    </Key>
+    <Property Name="Web_Snippet_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Web_Snippet_Element_Id" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Web_Snippet_Code" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cat_WebAdministrators">
+    <Key>
+      <PropertyRef Name="WebAdministratorId" />
+    </Key>
+    <Property Name="WebAdministratorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WebAdministratorUsername" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WebAdministratorPassword" Type="varbinary(max)" Nullable="false" />
+    <Property Name="WebAdministratorName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WebAdministratorRole" Type="int" />
+  </EntityType>
+  <EntityType Name="info_CAT">
+    <Key>
+      <PropertyRef Name="info_CAT_Id" />
+    </Key>
+    <Property Name="info_CAT_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="info_CAT_Value" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WebAdministratorRoles">
+    <Key>
+      <PropertyRef Name="WebAdministratorRoleId" />
+    </Key>
+    <Property Name="WebAdministratorRoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WebAdministratorRoleName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.aclaracionStatus' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="aclaracionStatus">
+    <Key>
+      <PropertyRef Name="id_aStatus" />
+      <PropertyRef Name="str_dStatus" />
+      <PropertyRef Name="id_sStatus" />
+    </Key>
+    <Property Name="id_aStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="str_dStatus" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="id_sStatus" Type="int" Nullable="false" />
+    <Property Name="str_dColor" Type="char" MaxLength="15" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Bases_Historicas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Bases_Historicas">
+    <Key>
+      <PropertyRef Name="id_base" />
+      <PropertyRef Name="descripcion" />
+      <PropertyRef Name="mes" />
+      <PropertyRef Name="anio" />
+      <PropertyRef Name="nombrebd" />
+      <PropertyRef Name="activo" />
+    </Key>
+    <Property Name="id_base" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="mes" Type="int" Nullable="false" />
+    <Property Name="anio" Type="int" Nullable="false" />
+    <Property Name="nombrebd" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="activo" Type="int" Nullable="false" />
+    <Property Name="fInicioTarjeta" Type="datetime" />
+    <Property Name="fFinalTarjeta" Type="datetime" />
+  </EntityType>
+  <EntityType Name="campanias">
+    <Key>
+      <PropertyRef Name="idcampania" />
+    </Key>
+    <Property Name="idcampania" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="objetivo" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="link" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="archivo" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="fInicio" Type="datetime" Nullable="false" />
+    <Property Name="fFinal" Type="datetime" Nullable="false" />
+    <Property Name="id_status" Type="int" Nullable="false" />
+    <Property Name="usuarioAlta" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="usuarioModifica" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="fAlta" Type="datetime" Nullable="false" />
+    <Property Name="fModifica" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.clientes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="cveCliente" />
+      <PropertyRef Name="nombre" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="remindMe" />
+    </Key>
+    <Property Name="cveCliente" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="tinyint" Nullable="false" />
+    <Property Name="rfc" Type="varchar" MaxLength="15" />
+    <Property Name="email" Type="varchar" MaxLength="300" />
+    <Property Name="calle" Type="varchar" MaxLength="100" />
+    <Property Name="colonia" Type="varchar" MaxLength="100" />
+    <Property Name="codigoPostal" Type="varchar" MaxLength="10" />
+    <Property Name="poblacion" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="varchar" MaxLength="100" />
+    <Property Name="remindMe" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.clientes_adicional' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="clientes_adicional">
+    <Key>
+      <PropertyRef Name="cveCliente" />
+    </Key>
+    <Property Name="cveCliente" Type="bigint" Nullable="false" />
+    <Property Name="id_pregunta" Type="int" />
+    <Property Name="respuesta" Type="varchar" MaxLength="250" />
+    <Property Name="correo" Type="varchar" MaxLength="250" />
+    <Property Name="fecha" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Confirmacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Confirmacion">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Campos" />
+      <PropertyRef Name="Banco" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Campos" Type="varchar" MaxLength="8000" Nullable="false" />
+    <Property Name="Banco" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.contenidos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="contenidos">
+    <Key>
+      <PropertyRef Name="id_contenido" />
+    </Key>
+    <Property Name="id_contenido" Type="bigint" Nullable="false" />
+    <Property Name="detalle" Type="varchar" MaxLength="200" />
+    <Property Name="contenido" Type="text" />
+    <Property Name="pagina" Type="varchar" MaxLength="50" />
+    <Property Name="orden" Type="int" />
+    <Property Name="url" Type="varchar" MaxLength="100" />
+    <Property Name="tipo" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.CTRL_BITACORA_GRAL' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="CTRL_BITACORA_GRAL">
+    <Key>
+      <PropertyRef Name="CONS" />
+    </Key>
+    <Property Name="CONS" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FECHA" Type="datetime" />
+    <Property Name="ACCION" Type="varchar" MaxLength="1000" />
+    <Property Name="PNA_FL_PERSONA" Type="int" />
+    <Property Name="CTO_FL_CVE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.error_log' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="error_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="path" Type="varchar" MaxLength="250" />
+    <Property Name="fecha" Type="smalldatetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.faq' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="faq">
+    <Key>
+      <PropertyRef Name="id_faq" />
+    </Key>
+    <Property Name="id_faq" Type="bigint" Nullable="false" />
+    <Property Name="pregunta" Type="varchar" MaxLength="500" />
+    <Property Name="respuesta" Type="text" />
+    <Property Name="categoria" Type="varchar" MaxLength="50" />
+    <Property Name="activo" Type="int" />
+    <Property Name="orden" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.movimientos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="movimientos">
+    <Key>
+      <PropertyRef Name="id_movimiento" />
+    </Key>
+    <Property Name="id_movimiento" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cveCliente" Type="varchar" MaxLength="50" />
+    <Property Name="fecha" Type="smalldatetime" />
+    <Property Name="banco" Type="varchar" MaxLength="20" />
+    <Property Name="cantidad" Type="float" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.movimientos_190814' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="movimientos_190814">
+    <Key>
+      <PropertyRef Name="id_movimiento" />
+    </Key>
+    <Property Name="id_movimiento" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cveCliente" Type="varchar" MaxLength="50" />
+    <Property Name="fecha" Type="smalldatetime" />
+    <Property Name="banco" Type="varchar" MaxLength="20" />
+    <Property Name="cantidad" Type="float" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.operadores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="operadores">
+    <Key>
+      <PropertyRef Name="id_oper" />
+    </Key>
+    <Property Name="id_oper" Type="int" Nullable="false" />
+    <Property Name="operador" Type="varchar" MaxLength="12" />
+    <Property Name="pass" Type="varchar" MaxLength="20" />
+    <Property Name="activo" Type="int" />
+    <Property Name="nombre" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.pagosBanamex' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="pagosBanamex">
+    <Key>
+      <PropertyRef Name="id_pago" />
+    </Key>
+    <Property Name="id_pago" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_movimiento" Type="bigint" />
+    <Property Name="fecha" Type="smalldatetime" />
+    <Property Name="cveCliente" Type="int" />
+    <Property Name="Operacion" Type="varchar" MaxLength="10" />
+    <Property Name="CTE" Type="varchar" MaxLength="50" />
+    <Property Name="REFER_PGO" Type="varchar" MaxLength="50" />
+    <Property Name="Importe" Type="varchar" MaxLength="50" />
+    <Property Name="Concepto" Type="varchar" MaxLength="100" />
+    <Property Name="TPO_ABO" Type="varchar" MaxLength="50" />
+    <Property Name="AUTORIZA" Type="varchar" MaxLength="50" />
+    <Property Name="AUTORIZA2" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.pagosBanamex_190814' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="pagosBanamex_190814">
+    <Key>
+      <PropertyRef Name="id_pago" />
+    </Key>
+    <Property Name="id_pago" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_movimiento" Type="bigint" />
+    <Property Name="fecha" Type="smalldatetime" />
+    <Property Name="cveCliente" Type="int" />
+    <Property Name="Operacion" Type="varchar" MaxLength="10" />
+    <Property Name="CTE" Type="varchar" MaxLength="50" />
+    <Property Name="REFER_PGO" Type="varchar" MaxLength="50" />
+    <Property Name="Importe" Type="varchar" MaxLength="50" />
+    <Property Name="Concepto" Type="varchar" MaxLength="100" />
+    <Property Name="TPO_ABO" Type="varchar" MaxLength="50" />
+    <Property Name="AUTORIZA" Type="varchar" MaxLength="50" />
+    <Property Name="AUTORIZA2" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.pagosHSBC' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="pagosHSBC">
+    <Key>
+      <PropertyRef Name="id_pago" />
+    </Key>
+    <Property Name="id_pago" Type="bigint" Nullable="false" />
+    <Property Name="id_movimiento" Type="bigint" />
+    <Property Name="fecha" Type="smalldatetime" />
+    <Property Name="cveCliente" Type="int" />
+    <Property Name="Operacion" Type="varchar" MaxLength="10" />
+    <Property Name="StatusBital" Type="varchar" MaxLength="100" />
+    <Property Name="MensajeBital" Type="varchar" MaxLength="100" />
+    <Property Name="FolioBital" Type="varchar" MaxLength="50" />
+    <Property Name="FRef1" Type="varchar" MaxLength="50" />
+    <Property Name="FRef2" Type="varchar" MaxLength="50" />
+    <Property Name="FRef3" Type="varchar" MaxLength="50" />
+    <Property Name="URLrespuesta" Type="varchar" MaxLength="100" />
+    <Property Name="FImporte" Type="varchar" MaxLength="50" />
+    <Property Name="tccmcend" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.parametros' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="parametros">
+    <Key>
+      <PropertyRef Name="id_con" />
+    </Key>
+    <Property Name="id_con" Type="int" Nullable="false" />
+    <Property Name="parametro" Type="varchar" MaxLength="50" />
+    <Property Name="valor" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.preguntas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="preguntas">
+    <Key>
+      <PropertyRef Name="id_pregunta" />
+    </Key>
+    <Property Name="id_pregunta" Type="int" Nullable="false" />
+    <Property Name="pregunta" Type="varchar" MaxLength="100" />
+    <Property Name="activo" Type="int" />
+    <Property Name="orden" Type="int" />
+    <Property Name="formato" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Reportes' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Reportes">
+    <Key>
+      <PropertyRef Name="id_reporte" />
+    </Key>
+    <Property Name="id_reporte" Type="bigint" Nullable="false" />
+    <Property Name="id_usuario" Type="varchar" MaxLength="10" />
+    <Property Name="id_servicio" Type="bigint" />
+    <Property Name="id_subservicio" Type="bigint" />
+    <Property Name="id_cliente" Type="bigint" />
+    <Property Name="id_contrato" Type="nvarchar" MaxLength="20" />
+    <Property Name="descripcion" Type="text" />
+    <Property Name="f_alta" Type="smalldatetime" />
+    <Property Name="id_status" Type="bigint" />
+    <Property Name="f_compromiso" Type="smalldatetime" />
+    <Property Name="archivos" Type="text" />
+    <Property Name="f_cierre" Type="smalldatetime" />
+    <Property Name="comentarioCierre" Type="text" />
+    <Property Name="campo1" Type="varchar" MaxLength="200" />
+    <Property Name="campo2" Type="varchar" MaxLength="200" />
+    <Property Name="campo3" Type="varchar" MaxLength="200" />
+    <Property Name="campo4" Type="varchar" MaxLength="200" />
+    <Property Name="campo5" Type="varchar" MaxLength="200" />
+    <Property Name="campo6" Type="varchar" MaxLength="200" />
+    <Property Name="campo7" Type="varchar" MaxLength="200" />
+    <Property Name="campo8" Type="varchar" MaxLength="200" />
+    <Property Name="campo9" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Servicios' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Servicios">
+    <Key>
+      <PropertyRef Name="id_servicio" />
+    </Key>
+    <Property Name="id_servicio" Type="bigint" Nullable="false" />
+    <Property Name="Servicio" Type="varchar" MaxLength="100" />
+    <Property Name="activo" Type="char" MaxLength="1" />
+    <Property Name="correo" Type="int" />
+    <Property Name="dias" Type="float" />
+    <Property Name="id_padre" Type="bigint" />
+    <Property Name="Servicio_Internet" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Solicitudes_PaperLess">
+    <Key>
+      <PropertyRef Name="eSolicitud" />
+    </Key>
+    <Property Name="eSolicitud" Type="int" Nullable="false" />
+    <Property Name="eCliente" Type="int" Nullable="false" />
+    <Property Name="vCorreo" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="fAlta" Type="datetime" Nullable="false" />
+    <Property Name="fActualiza" Type="datetime" Nullable="false" />
+    <Property Name="eEstatus" Type="tinyint" Nullable="false" />
+    <Property Name="BIT_FL_CVE" Type="int" Nullable="false" />
+    <Property Name="eGestion" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Status' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="bigint" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="50" />
+    <Property Name="id_actividad" Type="int" />
+    <Property Name="color" Type="varchar" MaxLength="30" />
+    <Property Name="orden" Type="int" />
+    <Property Name="activo" Type="int" />
+    <Property Name="correo" Type="int" />
+    <Property Name="Status_Internet" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Area' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="eArea" />
+      <PropertyRef Name="eAreaPadre" />
+      <PropertyRef Name="eTipoArea" />
+      <PropertyRef Name="eOrden" />
+      <PropertyRef Name="vDsccArea" />
+      <PropertyRef Name="vDscArea" />
+      <PropertyRef Name="eEstatus" />
+      <PropertyRef Name="fAlta" />
+      <PropertyRef Name="fModifica" />
+      <PropertyRef Name="vUsuarioAlta" />
+      <PropertyRef Name="vUsuarioModifica" />
+    </Key>
+    <Property Name="eArea" Type="smallint" Nullable="false" />
+    <Property Name="eAreaPadre" Type="smallint" Nullable="false" />
+    <Property Name="eTipoArea" Type="tinyint" Nullable="false" />
+    <Property Name="eOrden" Type="tinyint" Nullable="false" />
+    <Property Name="vDsccArea" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vDscArea" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="eEstatus" Type="tinyint" Nullable="false" />
+    <Property Name="fAlta" Type="datetime" Nullable="false" />
+    <Property Name="fModifica" Type="datetime" Nullable="false" />
+    <Property Name="vUsuarioAlta" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="vUsuarioModifica" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.cPersona' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="cPersona">
+    <Key>
+      <PropertyRef Name="PNA_FL_PERSONA" />
+      <PropertyRef Name="PNA_CL_RFC" />
+      <PropertyRef Name="PNA_DS_NOMBRE" />
+      <PropertyRef Name="PNA_DS_EMAIL" />
+      <PropertyRef Name="PNA_FG_STATUS" />
+      <PropertyRef Name="Telcelular" />
+      <PropertyRef Name="TelFijo" />
+    </Key>
+    <Property Name="PNA_FL_PERSONA" Type="int" Nullable="false" />
+    <Property Name="PNA_CL_RFC" Type="char" MaxLength="13" Nullable="false" />
+    <Property Name="PNA_DS_NOMBRE" Type="char" MaxLength="200" Nullable="false" />
+    <Property Name="PNA_DS_EMAIL" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="PNA_FG_STATUS" Type="tinyint" Nullable="false" />
+    <Property Name="IdEstado" Type="int" />
+    <Property Name="Telcelular" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TelFijo" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.kcontrato' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="kcontrato">
+    <Key>
+      <PropertyRef Name="CTO_FL_CVE" />
+      <PropertyRef Name="PNA_FL_PERSONA" />
+      <PropertyRef Name="TOP_CL_CVE" />
+      <PropertyRef Name="EMP_FL_CVE" />
+      <PropertyRef Name="CTO_CL_MONEDA" />
+      <PropertyRef Name="CTO_FG_STATUS" />
+    </Key>
+    <Property Name="CTO_FL_CVE" Type="char" MaxLength="15" Nullable="false" />
+    <Property Name="PNA_FL_PERSONA" Type="int" Nullable="false" />
+    <Property Name="TOP_CL_CVE" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="EMP_FL_CVE" Type="tinyint" Nullable="false" />
+    <Property Name="CTO_CL_MONEDA" Type="tinyint" Nullable="false" />
+    <Property Name="CTO_FG_STATUS" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.TContrato' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TContrato">
+    <Key>
+      <PropertyRef Name="IdContrato" />
+      <PropertyRef Name="IdPeriodicidad" />
+      <PropertyRef Name="IdMoneda" />
+      <PropertyRef Name="IdTasa" />
+      <PropertyRef Name="IdTasaMora" />
+    </Key>
+    <Property Name="IdContrato" Type="int" Nullable="false" />
+    <Property Name="Contrato" Type="varchar" MaxLength="15" />
+    <Property Name="IdPersona" Type="int" />
+    <Property Name="IdTipoCredito" Type="int" />
+    <Property Name="IdEstatusContrato" Type="int" />
+    <Property Name="Capital" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PorcEnganche" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="Enganche" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="CapitalFinanciado" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="IdPeriodicidad" Type="int" Nullable="false" />
+    <Property Name="Plazo" Type="int" />
+    <Property Name="IdMoneda" Type="int" Nullable="false" />
+    <Property Name="FecInicioContrato" Type="datetime" />
+    <Property Name="FecPrimeraRenta" Type="datetime" />
+    <Property Name="FecActivacion" Type="datetime" />
+    <Property Name="FecFinContrato" Type="datetime" />
+    <Property Name="IdTasa" Type="int" Nullable="false" />
+    <Property Name="TasaBase" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="PuntosMas" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="PuntosPor" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="Tasa" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="TasaBaseMora" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="IdTasaMora" Type="int" Nullable="false" />
+    <Property Name="PuntosMasMora" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="PuntosPorMora" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="FactorMora" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="TasaMora" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="SaldoInsoluto" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="BallonPayment" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PorcBallonPayment" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="ValorResidual" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PorcValorResidual" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="DepositoEnGarantia" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PorcDepositoEnGarantia" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="OpcionDeCompra" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="PorcOpcionDeCompra" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="TasaIva" Type="decimal" Precision="7" Scale="4" />
+    <Property Name="VersionTabla" Type="int" />
+    <Property Name="IdTipoCalculoTasaVariable" Type="int" />
+    <Property Name="DiaCorteDisposiciones" Type="int" />
+    <Property Name="DiaPagoDisposiciones" Type="int" />
+    <Property Name="IdPersonaTitular" Type="int" />
+    <Property Name="IdPersonaRepresentante" Type="int" />
+    <Property Name="CAT" Type="decimal" Precision="8" Scale="6" />
+    <Property Name="FechaCierre" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.Tipo_Operacion_Area' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Tipo_Operacion_Area">
+    <Key>
+      <PropertyRef Name="vTipoOperacion" />
+      <PropertyRef Name="eArea" />
+      <PropertyRef Name="eImprime" />
+      <PropertyRef Name="vEtiqueta" />
+      <PropertyRef Name="eEstatus" />
+      <PropertyRef Name="fAlta" />
+      <PropertyRef Name="fModifica" />
+      <PropertyRef Name="vUsuarioAlta" />
+      <PropertyRef Name="vUsuarioModifica" />
+    </Key>
+    <Property Name="vTipoOperacion" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="eArea" Type="smallint" Nullable="false" />
+    <Property Name="eImprime" Type="tinyint" Nullable="false" />
+    <Property Name="vEtiqueta" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="eEstatus" Type="tinyint" Nullable="false" />
+    <Property Name="fAlta" Type="datetime" Nullable="false" />
+    <Property Name="fModifica" Type="datetime" Nullable="false" />
+    <Property Name="vUsuarioAlta" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="vUsuarioModifica" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.dbo.TTarjetas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TTarjetas">
+    <Key>
+      <PropertyRef Name="IdTarjeta" />
+      <PropertyRef Name="NumeroTarjeta" />
+      <PropertyRef Name="Descripcion" />
+      <PropertyRef Name="Activo" />
+      <PropertyRef Name="IdTipoEntregaTarjeta" />
+    </Key>
+    <Property Name="IdTarjeta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroTarjeta" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+    <Property Name="NIP" Type="varchar" MaxLength="10" />
+    <Property Name="Vigencia" Type="varchar" MaxLength="10" />
+    <Property Name="FechaRegistro" Type="datetime" />
+    <Property Name="IdTipoEntregaTarjeta" Type="int" Nullable="false" />
+    <Property Name="CartaBienvenida" Type="bit" />
+    <Property Name="NombreImpresion" Type="varchar" MaxLength="100" />
+    <Property Name="IdContrato" Type="int" />
+    <Property Name="IdPersona" Type="int" />
+    <Property Name="IdTipoRelacion" Type="int" />
+    <Property Name="IdEstatusTarjeta" Type="int" />
+    <Property Name="MotivoCancelacion" Type="varchar" MaxLength="250" />
+    <Property Name="FechaCancelacion" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.rel.vw_Menu_Has_Submenu' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_Menu_Has_Submenu">
+    <Key>
+      <PropertyRef Name="Submenu_Id" />
+      <PropertyRef Name="Submenu_Name" />
+      <PropertyRef Name="Submenu_Order" />
+      <PropertyRef Name="Menu_Link" />
+      <PropertyRef Name="Menu_Name" />
+      <PropertyRef Name="Is_Active" />
+      <PropertyRef Name="Menu_Submenu" />
+    </Key>
+    <Property Name="Submenu_Id" Type="int" Nullable="false" />
+    <Property Name="Submenu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Submenu_Name_English" Type="nvarchar" MaxLength="255" />
+    <Property Name="Submenu_Order" Type="int" Nullable="false" />
+    <Property Name="Menu_Link" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Menu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Menu_Name_English" Type="nvarchar" MaxLength="255" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+    <Property Name="Submenu_PDF_Folder" Type="nvarchar(max)" />
+    <Property Name="Menu_Submenu" Type="nvarchar" MaxLength="512" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'sfiinternational.rel.vw_Submenus' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_Submenus">
+    <Key>
+      <PropertyRef Name="Submenu_Id" />
+      <PropertyRef Name="Submenu_Name" />
+      <PropertyRef Name="Submenu_Order" />
+      <PropertyRef Name="Menu_Link" />
+      <PropertyRef Name="Menu_Name" />
+      <PropertyRef Name="Is_Active" />
+    </Key>
+    <Property Name="Submenu_Id" Type="int" Nullable="false" />
+    <Property Name="Submenu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Submenu_Name_English" Type="nvarchar" MaxLength="255" />
+    <Property Name="Submenu_Order" Type="int" Nullable="false" />
+    <Property Name="Menu_Link" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Menu_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+    <Property Name="Submenu_PDF_Folder" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK__cat_Model__Famil__025D5595">
+    <End Role="cat_Families" Type="Self.cat_Families" Multiplicity="1" />
+    <End Role="cat_Models" Type="Self.cat_Models" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cat_Families">
+        <PropertyRef Name="Family_Id" />
+      </Principal>
+      <Dependent Role="cat_Models">
+        <PropertyRef Name="Family_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__cat_WebAd__WebAd__1940BAED">
+    <End Role="WebAdministratorRoles" Type="Self.WebAdministratorRoles" Multiplicity="0..1" />
+    <End Role="cat_WebAdministrators" Type="Self.cat_WebAdministrators" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebAdministratorRoles">
+        <PropertyRef Name="WebAdministratorRoleId" />
+      </Principal>
+      <Dependent Role="cat_WebAdministrators">
+        <PropertyRef Name="WebAdministratorRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sfiinternationalModelStoreContainer">
+    <EntitySet Name="cat_Families" EntityType="Self.cat_Families" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Informative_PDF" EntityType="Self.cat_Informative_PDF" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Interest_Financial_Leasing" EntityType="Self.cat_Interest_Financial_Leasing" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Interest_Rent" EntityType="Self.cat_Interest_Rent" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Interest_Simple_Credit" EntityType="Self.cat_Interest_Simple_Credit" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Mail_Config" EntityType="Self.cat_Mail_Config" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Models" EntityType="Self.cat_Models" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Slider_Text" EntityType="Self.cat_Slider_Text" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Step_Section" EntityType="Self.cat_Step_Section" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_Web_Snippets" EntityType="Self.cat_Web_Snippets" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="cat_WebAdministrators" EntityType="Self.cat_WebAdministrators" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="info_CAT" EntityType="Self.info_CAT" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="WebAdministratorRoles" EntityType="Self.WebAdministratorRoles" Schema="adm" store:Type="Tables" />
+    <EntitySet Name="campanias" EntityType="Self.campanias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Solicitudes_PaperLess" EntityType="Self.Solicitudes_PaperLess" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aclaracionStatus" EntityType="Self.aclaracionStatus" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [aclaracionStatus].[id_aStatus] AS [id_aStatus], 
+    [aclaracionStatus].[str_dStatus] AS [str_dStatus], 
+    [aclaracionStatus].[id_sStatus] AS [id_sStatus], 
+    [aclaracionStatus].[str_dColor] AS [str_dColor]
+    FROM [dbo].[aclaracionStatus] AS [aclaracionStatus]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Bases_Historicas" EntityType="Self.Bases_Historicas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Bases_Historicas].[id_base] AS [id_base], 
+    [Bases_Historicas].[descripcion] AS [descripcion], 
+    [Bases_Historicas].[mes] AS [mes], 
+    [Bases_Historicas].[anio] AS [anio], 
+    [Bases_Historicas].[nombrebd] AS [nombrebd], 
+    [Bases_Historicas].[activo] AS [activo], 
+    [Bases_Historicas].[fInicioTarjeta] AS [fInicioTarjeta], 
+    [Bases_Historicas].[fFinalTarjeta] AS [fFinalTarjeta]
+    FROM [dbo].[Bases_Historicas] AS [Bases_Historicas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="clientes" EntityType="Self.clientes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [clientes].[cveCliente] AS [cveCliente], 
+    [clientes].[nombre] AS [nombre], 
+    [clientes].[pass] AS [pass], 
+    [clientes].[status] AS [status], 
+    [clientes].[rfc] AS [rfc], 
+    [clientes].[email] AS [email], 
+    [clientes].[calle] AS [calle], 
+    [clientes].[colonia] AS [colonia], 
+    [clientes].[codigoPostal] AS [codigoPostal], 
+    [clientes].[poblacion] AS [poblacion], 
+    [clientes].[estado] AS [estado], 
+    [clientes].[remindMe] AS [remindMe]
+    FROM [dbo].[clientes] AS [clientes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="clientes_adicional" EntityType="Self.clientes_adicional" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [clientes_adicional].[cveCliente] AS [cveCliente], 
+    [clientes_adicional].[id_pregunta] AS [id_pregunta], 
+    [clientes_adicional].[respuesta] AS [respuesta], 
+    [clientes_adicional].[correo] AS [correo], 
+    [clientes_adicional].[fecha] AS [fecha]
+    FROM [dbo].[clientes_adicional] AS [clientes_adicional]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Confirmacion" EntityType="Self.Confirmacion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Confirmacion].[Id] AS [Id], 
+    [Confirmacion].[Campos] AS [Campos], 
+    [Confirmacion].[Banco] AS [Banco], 
+    [Confirmacion].[Fecha] AS [Fecha]
+    FROM [dbo].[Confirmacion] AS [Confirmacion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="contenidos" EntityType="Self.contenidos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [contenidos].[id_contenido] AS [id_contenido], 
+    [contenidos].[detalle] AS [detalle], 
+    [contenidos].[contenido] AS [contenido], 
+    [contenidos].[pagina] AS [pagina], 
+    [contenidos].[orden] AS [orden], 
+    [contenidos].[url] AS [url], 
+    [contenidos].[tipo] AS [tipo]
+    FROM [dbo].[contenidos] AS [contenidos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CTRL_BITACORA_GRAL" EntityType="Self.CTRL_BITACORA_GRAL" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CTRL_BITACORA_GRAL].[CONS] AS [CONS], 
+    [CTRL_BITACORA_GRAL].[FECHA] AS [FECHA], 
+    [CTRL_BITACORA_GRAL].[ACCION] AS [ACCION], 
+    [CTRL_BITACORA_GRAL].[PNA_FL_PERSONA] AS [PNA_FL_PERSONA], 
+    [CTRL_BITACORA_GRAL].[CTO_FL_CVE] AS [CTO_FL_CVE]
+    FROM [dbo].[CTRL_BITACORA_GRAL] AS [CTRL_BITACORA_GRAL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="error_log" EntityType="Self.error_log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [error_log].[id] AS [id], 
+    [error_log].[path] AS [path], 
+    [error_log].[fecha] AS [fecha]
+    FROM [dbo].[error_log] AS [error_log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="faq" EntityType="Self.faq" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [faq].[id_faq] AS [id_faq], 
+    [faq].[pregunta] AS [pregunta], 
+    [faq].[respuesta] AS [respuesta], 
+    [faq].[categoria] AS [categoria], 
+    [faq].[activo] AS [activo], 
+    [faq].[orden] AS [orden]
+    FROM [dbo].[faq] AS [faq]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="movimientos" EntityType="Self.movimientos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [movimientos].[id_movimiento] AS [id_movimiento], 
+    [movimientos].[cveCliente] AS [cveCliente], 
+    [movimientos].[fecha] AS [fecha], 
+    [movimientos].[banco] AS [banco], 
+    [movimientos].[cantidad] AS [cantidad]
+    FROM [dbo].[movimientos] AS [movimientos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="movimientos_190814" EntityType="Self.movimientos_190814" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [movimientos_190814].[id_movimiento] AS [id_movimiento], 
+    [movimientos_190814].[cveCliente] AS [cveCliente], 
+    [movimientos_190814].[fecha] AS [fecha], 
+    [movimientos_190814].[banco] AS [banco], 
+    [movimientos_190814].[cantidad] AS [cantidad]
+    FROM [dbo].[movimientos_190814] AS [movimientos_190814]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="operadores" EntityType="Self.operadores" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [operadores].[id_oper] AS [id_oper], 
+    [operadores].[operador] AS [operador], 
+    [operadores].[pass] AS [pass], 
+    [operadores].[activo] AS [activo], 
+    [operadores].[nombre] AS [nombre]
+    FROM [dbo].[operadores] AS [operadores]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="pagosBanamex" EntityType="Self.pagosBanamex" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [pagosBanamex].[id_pago] AS [id_pago], 
+    [pagosBanamex].[id_movimiento] AS [id_movimiento], 
+    [pagosBanamex].[fecha] AS [fecha], 
+    [pagosBanamex].[cveCliente] AS [cveCliente], 
+    [pagosBanamex].[Operacion] AS [Operacion], 
+    [pagosBanamex].[CTE] AS [CTE], 
+    [pagosBanamex].[REFER_PGO] AS [REFER_PGO], 
+    [pagosBanamex].[Importe] AS [Importe], 
+    [pagosBanamex].[Concepto] AS [Concepto], 
+    [pagosBanamex].[TPO_ABO] AS [TPO_ABO], 
+    [pagosBanamex].[AUTORIZA] AS [AUTORIZA], 
+    [pagosBanamex].[AUTORIZA2] AS [AUTORIZA2]
+    FROM [dbo].[pagosBanamex] AS [pagosBanamex]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="pagosBanamex_190814" EntityType="Self.pagosBanamex_190814" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [pagosBanamex_190814].[id_pago] AS [id_pago], 
+    [pagosBanamex_190814].[id_movimiento] AS [id_movimiento], 
+    [pagosBanamex_190814].[fecha] AS [fecha], 
+    [pagosBanamex_190814].[cveCliente] AS [cveCliente], 
+    [pagosBanamex_190814].[Operacion] AS [Operacion], 
+    [pagosBanamex_190814].[CTE] AS [CTE], 
+    [pagosBanamex_190814].[REFER_PGO] AS [REFER_PGO], 
+    [pagosBanamex_190814].[Importe] AS [Importe], 
+    [pagosBanamex_190814].[Concepto] AS [Concepto], 
+    [pagosBanamex_190814].[TPO_ABO] AS [TPO_ABO], 
+    [pagosBanamex_190814].[AUTORIZA] AS [AUTORIZA], 
+    [pagosBanamex_190814].[AUTORIZA2] AS [AUTORIZA2]
+    FROM [dbo].[pagosBanamex_190814] AS [pagosBanamex_190814]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="pagosHSBC" EntityType="Self.pagosHSBC" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [pagosHSBC].[id_pago] AS [id_pago], 
+    [pagosHSBC].[id_movimiento] AS [id_movimiento], 
+    [pagosHSBC].[fecha] AS [fecha], 
+    [pagosHSBC].[cveCliente] AS [cveCliente], 
+    [pagosHSBC].[Operacion] AS [Operacion], 
+    [pagosHSBC].[StatusBital] AS [StatusBital], 
+    [pagosHSBC].[MensajeBital] AS [MensajeBital], 
+    [pagosHSBC].[FolioBital] AS [FolioBital], 
+    [pagosHSBC].[FRef1] AS [FRef1], 
+    [pagosHSBC].[FRef2] AS [FRef2], 
+    [pagosHSBC].[FRef3] AS [FRef3], 
+    [pagosHSBC].[URLrespuesta] AS [URLrespuesta], 
+    [pagosHSBC].[FImporte] AS [FImporte], 
+    [pagosHSBC].[tccmcend] AS [tccmcend]
+    FROM [dbo].[pagosHSBC] AS [pagosHSBC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="parametros" EntityType="Self.parametros" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [parametros].[id_con] AS [id_con], 
+    [parametros].[parametro] AS [parametro], 
+    [parametros].[valor] AS [valor]
+    FROM [dbo].[parametros] AS [parametros]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="preguntas" EntityType="Self.preguntas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [preguntas].[id_pregunta] AS [id_pregunta], 
+    [preguntas].[pregunta] AS [pregunta], 
+    [preguntas].[activo] AS [activo], 
+    [preguntas].[orden] AS [orden], 
+    [preguntas].[formato] AS [formato]
+    FROM [dbo].[preguntas] AS [preguntas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Reportes" EntityType="Self.Reportes" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Reportes].[id_reporte] AS [id_reporte], 
+    [Reportes].[id_usuario] AS [id_usuario], 
+    [Reportes].[id_servicio] AS [id_servicio], 
+    [Reportes].[id_subservicio] AS [id_subservicio], 
+    [Reportes].[id_cliente] AS [id_cliente], 
+    [Reportes].[id_contrato] AS [id_contrato], 
+    [Reportes].[descripcion] AS [descripcion], 
+    [Reportes].[f_alta] AS [f_alta], 
+    [Reportes].[id_status] AS [id_status], 
+    [Reportes].[f_compromiso] AS [f_compromiso], 
+    [Reportes].[archivos] AS [archivos], 
+    [Reportes].[f_cierre] AS [f_cierre], 
+    [Reportes].[comentarioCierre] AS [comentarioCierre], 
+    [Reportes].[campo1] AS [campo1], 
+    [Reportes].[campo2] AS [campo2], 
+    [Reportes].[campo3] AS [campo3], 
+    [Reportes].[campo4] AS [campo4], 
+    [Reportes].[campo5] AS [campo5], 
+    [Reportes].[campo6] AS [campo6], 
+    [Reportes].[campo7] AS [campo7], 
+    [Reportes].[campo8] AS [campo8], 
+    [Reportes].[campo9] AS [campo9]
+    FROM [dbo].[Reportes] AS [Reportes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Servicios" EntityType="Self.Servicios" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Servicios].[id_servicio] AS [id_servicio], 
+    [Servicios].[Servicio] AS [Servicio], 
+    [Servicios].[activo] AS [activo], 
+    [Servicios].[correo] AS [correo], 
+    [Servicios].[dias] AS [dias], 
+    [Servicios].[id_padre] AS [id_padre], 
+    [Servicios].[Servicio_Internet] AS [Servicio_Internet]
+    FROM [dbo].[Servicios] AS [Servicios]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Status" EntityType="Self.Status" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Status].[id_status] AS [id_status], 
+    [Status].[status] AS [status], 
+    [Status].[id_actividad] AS [id_actividad], 
+    [Status].[color] AS [color], 
+    [Status].[orden] AS [orden], 
+    [Status].[activo] AS [activo], 
+    [Status].[correo] AS [correo], 
+    [Status].[Status_Internet] AS [Status_Internet]
+    FROM [dbo].[Status] AS [Status]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Area" EntityType="Self.Area" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Area].[eArea] AS [eArea], 
+    [Area].[eAreaPadre] AS [eAreaPadre], 
+    [Area].[eTipoArea] AS [eTipoArea], 
+    [Area].[eOrden] AS [eOrden], 
+    [Area].[vDsccArea] AS [vDsccArea], 
+    [Area].[vDscArea] AS [vDscArea], 
+    [Area].[eEstatus] AS [eEstatus], 
+    [Area].[fAlta] AS [fAlta], 
+    [Area].[fModifica] AS [fModifica], 
+    [Area].[vUsuarioAlta] AS [vUsuarioAlta], 
+    [Area].[vUsuarioModifica] AS [vUsuarioModifica]
+    FROM [dbo].[Area] AS [Area]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="cPersona" EntityType="Self.cPersona" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [cPersona].[PNA_FL_PERSONA] AS [PNA_FL_PERSONA], 
+    [cPersona].[PNA_CL_RFC] AS [PNA_CL_RFC], 
+    [cPersona].[PNA_DS_NOMBRE] AS [PNA_DS_NOMBRE], 
+    [cPersona].[PNA_DS_EMAIL] AS [PNA_DS_EMAIL], 
+    [cPersona].[PNA_FG_STATUS] AS [PNA_FG_STATUS], 
+    [cPersona].[IdEstado] AS [IdEstado], 
+    [cPersona].[Telcelular] AS [Telcelular], 
+    [cPersona].[TelFijo] AS [TelFijo]
+    FROM [dbo].[cPersona] AS [cPersona]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kcontrato" EntityType="Self.kcontrato" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [kcontrato].[CTO_FL_CVE] AS [CTO_FL_CVE], 
+    [kcontrato].[PNA_FL_PERSONA] AS [PNA_FL_PERSONA], 
+    [kcontrato].[TOP_CL_CVE] AS [TOP_CL_CVE], 
+    [kcontrato].[EMP_FL_CVE] AS [EMP_FL_CVE], 
+    [kcontrato].[CTO_CL_MONEDA] AS [CTO_CL_MONEDA], 
+    [kcontrato].[CTO_FG_STATUS] AS [CTO_FG_STATUS]
+    FROM [dbo].[kcontrato] AS [kcontrato]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TContrato" EntityType="Self.TContrato" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TContrato].[IdContrato] AS [IdContrato], 
+    [TContrato].[Contrato] AS [Contrato], 
+    [TContrato].[IdPersona] AS [IdPersona], 
+    [TContrato].[IdTipoCredito] AS [IdTipoCredito], 
+    [TContrato].[IdEstatusContrato] AS [IdEstatusContrato], 
+    [TContrato].[Capital] AS [Capital], 
+    [TContrato].[PorcEnganche] AS [PorcEnganche], 
+    [TContrato].[Enganche] AS [Enganche], 
+    [TContrato].[CapitalFinanciado] AS [CapitalFinanciado], 
+    [TContrato].[IdPeriodicidad] AS [IdPeriodicidad], 
+    [TContrato].[Plazo] AS [Plazo], 
+    [TContrato].[IdMoneda] AS [IdMoneda], 
+    [TContrato].[FecInicioContrato] AS [FecInicioContrato], 
+    [TContrato].[FecPrimeraRenta] AS [FecPrimeraRenta], 
+    [TContrato].[FecActivacion] AS [FecActivacion], 
+    [TContrato].[FecFinContrato] AS [FecFinContrato], 
+    [TContrato].[IdTasa] AS [IdTasa], 
+    [TContrato].[TasaBase] AS [TasaBase], 
+    [TContrato].[PuntosMas] AS [PuntosMas], 
+    [TContrato].[PuntosPor] AS [PuntosPor], 
+    [TContrato].[Tasa] AS [Tasa], 
+    [TContrato].[TasaBaseMora] AS [TasaBaseMora], 
+    [TContrato].[IdTasaMora] AS [IdTasaMora], 
+    [TContrato].[PuntosMasMora] AS [PuntosMasMora], 
+    [TContrato].[PuntosPorMora] AS [PuntosPorMora], 
+    [TContrato].[FactorMora] AS [FactorMora], 
+    [TContrato].[TasaMora] AS [TasaMora], 
+    [TContrato].[SaldoInsoluto] AS [SaldoInsoluto], 
+    [TContrato].[BallonPayment] AS [BallonPayment], 
+    [TContrato].[PorcBallonPayment] AS [PorcBallonPayment], 
+    [TContrato].[ValorResidual] AS [ValorResidual], 
+    [TContrato].[PorcValorResidual] AS [PorcValorResidual], 
+    [TContrato].[DepositoEnGarantia] AS [DepositoEnGarantia], 
+    [TContrato].[PorcDepositoEnGarantia] AS [PorcDepositoEnGarantia], 
+    [TContrato].[OpcionDeCompra] AS [OpcionDeCompra], 
+    [TContrato].[PorcOpcionDeCompra] AS [PorcOpcionDeCompra], 
+    [TContrato].[TasaIva] AS [TasaIva], 
+    [TContrato].[VersionTabla] AS [VersionTabla], 
+    [TContrato].[IdTipoCalculoTasaVariable] AS [IdTipoCalculoTasaVariable], 
+    [TContrato].[DiaCorteDisposiciones] AS [DiaCorteDisposiciones], 
+    [TContrato].[DiaPagoDisposiciones] AS [DiaPagoDisposiciones], 
+    [TContrato].[IdPersonaTitular] AS [IdPersonaTitular], 
+    [TContrato].[IdPersonaRepresentante] AS [IdPersonaRepresentante], 
+    [TContrato].[CAT] AS [CAT], 
+    [TContrato].[FechaCierre] AS [FechaCierre]
+    FROM [dbo].[TContrato] AS [TContrato]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Tipo_Operacion_Area" EntityType="Self.Tipo_Operacion_Area" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tipo_Operacion_Area].[vTipoOperacion] AS [vTipoOperacion], 
+    [Tipo_Operacion_Area].[eArea] AS [eArea], 
+    [Tipo_Operacion_Area].[eImprime] AS [eImprime], 
+    [Tipo_Operacion_Area].[vEtiqueta] AS [vEtiqueta], 
+    [Tipo_Operacion_Area].[eEstatus] AS [eEstatus], 
+    [Tipo_Operacion_Area].[fAlta] AS [fAlta], 
+    [Tipo_Operacion_Area].[fModifica] AS [fModifica], 
+    [Tipo_Operacion_Area].[vUsuarioAlta] AS [vUsuarioAlta], 
+    [Tipo_Operacion_Area].[vUsuarioModifica] AS [vUsuarioModifica]
+    FROM [dbo].[Tipo_Operacion_Area] AS [Tipo_Operacion_Area]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TTarjetas" EntityType="Self.TTarjetas" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TTarjetas].[IdTarjeta] AS [IdTarjeta], 
+    [TTarjetas].[NumeroTarjeta] AS [NumeroTarjeta], 
+    [TTarjetas].[Descripcion] AS [Descripcion], 
+    [TTarjetas].[Activo] AS [Activo], 
+    [TTarjetas].[NIP] AS [NIP], 
+    [TTarjetas].[Vigencia] AS [Vigencia], 
+    [TTarjetas].[FechaRegistro] AS [FechaRegistro], 
+    [TTarjetas].[IdTipoEntregaTarjeta] AS [IdTipoEntregaTarjeta], 
+    [TTarjetas].[CartaBienvenida] AS [CartaBienvenida], 
+    [TTarjetas].[NombreImpresion] AS [NombreImpresion], 
+    [TTarjetas].[IdContrato] AS [IdContrato], 
+    [TTarjetas].[IdPersona] AS [IdPersona], 
+    [TTarjetas].[IdTipoRelacion] AS [IdTipoRelacion], 
+    [TTarjetas].[IdEstatusTarjeta] AS [IdEstatusTarjeta], 
+    [TTarjetas].[MotivoCancelacion] AS [MotivoCancelacion], 
+    [TTarjetas].[FechaCancelacion] AS [FechaCancelacion]
+    FROM [dbo].[TTarjetas] AS [TTarjetas]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_Menu_Has_Submenu" EntityType="Self.vw_Menu_Has_Submenu" store:Type="Views" store:Schema="rel">
+      <DefiningQuery>SELECT 
+    [vw_Menu_Has_Submenu].[Submenu_Id] AS [Submenu_Id], 
+    [vw_Menu_Has_Submenu].[Submenu_Name] AS [Submenu_Name], 
+    [vw_Menu_Has_Submenu].[Submenu_Name_English] AS [Submenu_Name_English], 
+    [vw_Menu_Has_Submenu].[Submenu_Order] AS [Submenu_Order], 
+    [vw_Menu_Has_Submenu].[Menu_Link] AS [Menu_Link], 
+    [vw_Menu_Has_Submenu].[Menu_Name] AS [Menu_Name], 
+    [vw_Menu_Has_Submenu].[Menu_Name_English] AS [Menu_Name_English], 
+    [vw_Menu_Has_Submenu].[Is_Active] AS [Is_Active], 
+    [vw_Menu_Has_Submenu].[Submenu_PDF_Folder] AS [Submenu_PDF_Folder], 
+    [vw_Menu_Has_Submenu].[Menu_Submenu] AS [Menu_Submenu]
+    FROM [rel].[vw_Menu_Has_Submenu] AS [vw_Menu_Has_Submenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_Submenus" EntityType="Self.vw_Submenus" store:Type="Views" store:Schema="rel">
+      <DefiningQuery>SELECT 
+    [vw_Submenus].[Submenu_Id] AS [Submenu_Id], 
+    [vw_Submenus].[Submenu_Name] AS [Submenu_Name], 
+    [vw_Submenus].[Submenu_Name_English] AS [Submenu_Name_English], 
+    [vw_Submenus].[Submenu_Order] AS [Submenu_Order], 
+    [vw_Submenus].[Menu_Link] AS [Menu_Link], 
+    [vw_Submenus].[Menu_Name] AS [Menu_Name], 
+    [vw_Submenus].[Is_Active] AS [Is_Active], 
+    [vw_Submenus].[Submenu_PDF_Folder] AS [Submenu_PDF_Folder]
+    FROM [rel].[vw_Submenus] AS [vw_Submenus]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__cat_Model__Famil__025D5595" Association="Self.FK__cat_Model__Famil__025D5595">
+      <End Role="cat_Families" EntitySet="cat_Families" />
+      <End Role="cat_Models" EntitySet="cat_Models" />
+    </AssociationSet>
+    <AssociationSet Name="FK__cat_WebAd__WebAd__1940BAED" Association="Self.FK__cat_WebAd__WebAd__1940BAED">
+      <End Role="WebAdministratorRoles" EntitySet="WebAdministratorRoles" />
+      <End Role="cat_WebAdministrators" EntitySet="cat_WebAdministrators" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

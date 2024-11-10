@@ -1,0 +1,872 @@
+15/05/2024 11:21:46 p. m. - 1
+15/05/2024 11:21:46 p. m. - 2
+15/05/2024 11:21:46 p. m. - 3
+15/05/2024 11:21:46 p. m. - 4
+15/05/2024 11:21:46 p. m. - 5
+15/05/2024 11:21:46 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+15/05/2024 11:21:46 p. m. - 6
+15/05/2024 11:21:46 p. m. - 7
+15/05/2024 11:21:46 p. m. - inicio forech
+15/05/2024 11:21:46 p. m. - inicio forech
+15/05/2024 11:21:52 p. m. - inicio forech
+15/05/2024 11:21:52 p. m. - inicio forech
+15/05/2024 11:22:00 p. m. - inicio forech
+16/05/2024 01:43:39 p. m. - 1
+16/05/2024 01:43:39 p. m. - 2
+16/05/2024 01:43:39 p. m. - 3
+16/05/2024 01:43:39 p. m. - 4
+16/05/2024 01:43:39 p. m. - 5
+20/05/2024 11:33:23 p. m. - 1
+20/05/2024 11:33:23 p. m. - 2
+20/05/2024 11:33:23 p. m. - 3
+20/05/2024 11:33:23 p. m. - 4
+20/05/2024 11:33:23 p. m. - 5
+20/05/2024 11:33:23 p. m. - 088
+20/05/2024 11:33:23 p. m. - 099
+20/05/2024 11:33:23 p. m. - 010
+20/05/2024 11:33:23 p. m. - 011
+20/05/2024 11:33:23 p. m. - 012
+20/05/2024 11:33:23 p. m. - 013
+20/05/2024 11:33:23 p. m. - 014
+20/05/2024 11:33:23 p. m. - 015
+20/05/2024 11:33:23 p. m. - 8
+20/05/2024 11:33:27 p. m. - 9
+20/05/2024 11:33:29 p. m. - 10
+20/05/2024 11:33:30 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+20/05/2024 11:33:58 p. m. - 6
+20/05/2024 11:33:58 p. m. - longitud 5532
+20/05/2024 11:33:58 p. m. - 7
+20/05/2024 11:33:58 p. m. - inicio forech
+20/05/2024 11:33:58 p. m. - inicio forech
+20/05/2024 11:33:59 p. m. - inicio forech
+20/05/2024 11:34:00 p. m. - inicio forech
+20/05/2024 11:34:01 p. m. - inicio forech
+20/05/2024 11:34:03 p. m. - inicio forech
+20/05/2024 11:34:04 p. m. - inicio forech
+20/05/2024 11:34:05 p. m. - inicio forech
+20/05/2024 11:34:06 p. m. - inicio forech
+20/05/2024 11:34:07 p. m. - inicio forech
+20/05/2024 11:34:08 p. m. - inicio forech
+20/05/2024 11:34:09 p. m. - inicio forech
+20/05/2024 11:34:11 p. m. - inicio forech
+20/05/2024 11:34:12 p. m. - inicio forech
+20/05/2024 11:34:13 p. m. - inicio forech
+20/05/2024 11:34:14 p. m. - inicio forech
+20/05/2024 11:34:15 p. m. - inicio forech
+20/05/2024 11:34:16 p. m. - inicio forech
+20/05/2024 11:34:17 p. m. - inicio forech
+20/05/2024 11:34:18 p. m. - inicio forech
+20/05/2024 11:34:20 p. m. - inicio forech
+20/05/2024 11:34:21 p. m. - inicio forech
+20/05/2024 11:34:22 p. m. - inicio forech
+20/05/2024 11:34:23 p. m. - inicio forech
+20/05/2024 11:34:24 p. m. - inicio forech
+20/05/2024 11:34:25 p. m. - inicio forech
+20/05/2024 11:34:27 p. m. - inicio forech
+20/05/2024 11:34:28 p. m. - inicio forech
+20/05/2024 11:34:29 p. m. - inicio forech
+20/05/2024 11:34:37 p. m. - inicio forech
+20/05/2024 11:34:42 p. m. - inicio forech
+20/05/2024 11:34:57 p. m. - inicio forech
+20/05/2024 11:35:01 p. m. - inicio forech
+20/05/2024 11:35:13 p. m. - inicio forech
+20/05/2024 11:35:50 p. m. - inicio forech
+20/05/2024 11:35:52 p. m. - inicio forech
+20/05/2024 11:35:55 p. m. - inicio forech
+20/05/2024 11:35:56 p. m. - inicio forech
+20/05/2024 11:35:57 p. m. - inicio forech
+20/05/2024 11:35:58 p. m. - inicio forech
+20/05/2024 11:35:59 p. m. - inicio forech
+20/05/2024 11:36:00 p. m. - inicio forech
+20/05/2024 11:36:02 p. m. - inicio forech
+20/05/2024 11:36:03 p. m. - inicio forech
+20/05/2024 11:36:04 p. m. - inicio forech
+20/05/2024 11:36:05 p. m. - inicio forech
+20/05/2024 11:36:06 p. m. - inicio forech
+20/05/2024 11:36:07 p. m. - inicio forech
+20/05/2024 11:36:08 p. m. - inicio forech
+20/05/2024 11:36:09 p. m. - inicio forech
+20/05/2024 11:36:11 p. m. - inicio forech
+20/05/2024 11:36:12 p. m. - inicio forech
+20/05/2024 11:36:13 p. m. - inicio forech
+20/05/2024 11:36:14 p. m. - inicio forech
+20/05/2024 11:36:15 p. m. - inicio forech
+20/05/2024 11:36:16 p. m. - inicio forech
+20/05/2024 11:36:17 p. m. - inicio forech
+20/05/2024 11:36:19 p. m. - inicio forech
+20/05/2024 11:36:20 p. m. - inicio forech
+20/05/2024 11:36:21 p. m. - inicio forech
+20/05/2024 11:36:22 p. m. - inicio forech
+20/05/2024 11:36:23 p. m. - inicio forech
+20/05/2024 11:36:24 p. m. - inicio forech
+20/05/2024 11:36:25 p. m. - inicio forech
+20/05/2024 11:36:26 p. m. - inicio forech
+20/05/2024 11:36:28 p. m. - inicio forech
+20/05/2024 11:36:29 p. m. - inicio forech
+20/05/2024 11:36:30 p. m. - inicio forech
+20/05/2024 11:36:31 p. m. - inicio forech
+20/05/2024 11:36:32 p. m. - inicio forech
+20/05/2024 11:36:33 p. m. - inicio forech
+20/05/2024 11:36:34 p. m. - inicio forech
+20/05/2024 11:36:36 p. m. - inicio forech
+20/05/2024 11:36:37 p. m. - inicio forech
+20/05/2024 11:36:38 p. m. - inicio forech
+20/05/2024 11:36:39 p. m. - inicio forech
+20/05/2024 11:36:40 p. m. - inicio forech
+20/05/2024 11:36:41 p. m. - inicio forech
+20/05/2024 11:36:43 p. m. - inicio forech
+20/05/2024 11:36:44 p. m. - inicio forech
+20/05/2024 11:36:45 p. m. - inicio forech
+20/05/2024 11:36:46 p. m. - inicio forech
+20/05/2024 11:36:47 p. m. - inicio forech
+20/05/2024 11:36:48 p. m. - inicio forech
+20/05/2024 11:38:47 p. m. - 1
+20/05/2024 11:38:48 p. m. - 2
+20/05/2024 11:38:48 p. m. - 3
+20/05/2024 11:38:48 p. m. - 4
+20/05/2024 11:38:48 p. m. - 5
+20/05/2024 11:38:48 p. m. - 088
+20/05/2024 11:38:48 p. m. - 099
+20/05/2024 11:38:48 p. m. - 010
+20/05/2024 11:38:48 p. m. - 011
+20/05/2024 11:38:48 p. m. - 012
+20/05/2024 11:38:48 p. m. - 013
+20/05/2024 11:38:48 p. m. - 014
+20/05/2024 11:38:48 p. m. - 015
+20/05/2024 11:38:48 p. m. - 8
+20/05/2024 11:38:54 p. m. - 9
+20/05/2024 11:38:54 p. m. - 10
+20/05/2024 11:38:54 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+20/05/2024 11:38:55 p. m. - 6
+20/05/2024 11:38:56 p. m. - longitud 5532
+20/05/2024 11:38:56 p. m. - 7
+20/05/2024 11:38:59 p. m. - inicio forech
+20/05/2024 11:38:59 p. m. - inicio forech
+20/05/2024 11:39:10 p. m. - inicio forech
+21/05/2024 10:48:03 a. m. - 1
+21/05/2024 10:48:03 a. m. - 2
+21/05/2024 10:48:03 a. m. - 3
+21/05/2024 10:48:03 a. m. - 4
+21/05/2024 10:48:03 a. m. - 5
+21/05/2024 10:48:04 a. m. - 088
+21/05/2024 10:48:04 a. m. - 099
+21/05/2024 10:48:04 a. m. - 010
+21/05/2024 10:48:04 a. m. - 011
+21/05/2024 10:48:04 a. m. - 012
+21/05/2024 10:48:04 a. m. - 013
+21/05/2024 10:48:04 a. m. - 014
+21/05/2024 10:48:04 a. m. - 015
+21/05/2024 10:48:04 a. m. - 8
+21/05/2024 10:48:07 a. m. - 9
+21/05/2024 10:48:07 a. m. - 10
+21/05/2024 10:48:07 a. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+21/05/2024 10:48:07 a. m. - 6
+21/05/2024 10:48:07 a. m. - longitud 5532
+21/05/2024 10:48:07 a. m. - 7
+21/05/2024 10:48:07 a. m. - inicio forech
+21/05/2024 10:48:07 a. m. - inicio forech con poliza 2700311180
+21/05/2024 10:48:16 a. m. - inicio forech con poliza 2700329460
+21/05/2024 10:48:21 a. m. - inicio forech con poliza 2700328379
+21/05/2024 10:48:29 a. m. - inicio forech con poliza 2700322542
+21/05/2024 10:48:35 a. m. - inicio forech con poliza 2700316261
+21/05/2024 10:48:41 a. m. - inicio forech con poliza 2700316259
+21/05/2024 10:48:47 a. m. - inicio forech con poliza 2700316260
+21/05/2024 10:48:52 a. m. - inicio forech con poliza 2700316272
+21/05/2024 10:48:57 a. m. - inicio forech con poliza 2700329218
+21/05/2024 10:49:01 a. m. - inicio forech con poliza 2700311199
+21/05/2024 10:49:08 a. m. - inicio forech con poliza 2700316243
+21/05/2024 10:49:16 a. m. - inicio forech con poliza 2700328353
+21/05/2024 10:49:24 a. m. - inicio forech con poliza 2700328354
+21/05/2024 10:49:32 a. m. - inicio forech con poliza 600324149
+21/05/2024 10:49:33 a. m. - inicio forech con poliza 2700326701
+21/05/2024 10:49:40 a. m. - inicio forech con poliza 2700322118
+21/05/2024 10:49:48 a. m. - inicio forech con poliza 2700322117
+21/05/2024 10:49:52 a. m. - inicio forech con poliza 2700323714
+21/05/2024 10:49:57 a. m. - inicio forech con poliza 2700329757
+21/05/2024 10:50:01 a. m. - inicio forech con poliza 2700327995
+21/05/2024 10:50:05 a. m. - inicio forech con poliza 2700315969
+21/05/2024 10:50:14 a. m. - inicio forech con poliza 2700329674
+21/05/2024 10:50:20 a. m. - inicio forech con poliza 2700321975
+21/05/2024 10:50:25 a. m. - inicio forech con poliza 2700318752
+21/05/2024 10:50:31 a. m. - inicio forech con poliza 2700326607
+21/05/2024 10:50:37 a. m. - inicio forech con poliza 2700326608
+21/05/2024 10:50:43 a. m. - inicio forech con poliza 2700326494-PC
+21/05/2024 10:50:44 a. m. - inicio forech con poliza 2700326493-PC
+21/05/2024 10:50:45 a. m. - inicio forech con poliza 2700312300
+21/05/2024 10:50:53 a. m. - inicio forech con poliza 2700329502
+21/05/2024 10:50:59 a. m. - inicio forech con poliza 2700312301
+21/05/2024 10:51:05 a. m. - inicio forech con poliza 2700329503
+21/05/2024 10:51:09 a. m. - inicio forech con poliza 2700312302
+21/05/2024 10:51:16 a. m. - inicio forech con poliza 2700329504
+21/05/2024 10:51:23 a. m. - inicio forech con poliza 2700312292
+21/05/2024 10:51:31 a. m. - inicio forech con poliza 2700329496
+21/05/2024 10:51:35 a. m. - inicio forech con poliza 2700312291
+21/05/2024 10:51:41 a. m. - inicio forech con poliza 2700329495
+21/05/2024 10:51:48 a. m. - inicio forech con poliza 2700312299
+21/05/2024 10:51:55 a. m. - inicio forech con poliza 2700329501
+21/05/2024 10:52:01 a. m. - inicio forech con poliza 2700312298
+21/05/2024 10:52:06 a. m. - inicio forech con poliza 2700329500
+21/05/2024 10:52:13 a. m. - inicio forech con poliza 2700312296
+21/05/2024 10:52:20 a. m. - inicio forech con poliza 2700329498
+21/05/2024 10:52:27 a. m. - inicio forech con poliza 2700312295
+21/05/2024 10:52:38 a. m. - inicio forech con poliza 2700329497
+21/05/2024 10:52:42 a. m. - inicio forech con poliza 2700312297
+21/05/2024 10:52:49 a. m. - inicio forech con poliza 2700329499
+21/05/2024 10:52:55 a. m. - inicio forech con poliza 2700324113
+21/05/2024 10:53:00 a. m. - inicio forech con poliza 2700324115
+21/05/2024 10:53:06 a. m. - inicio forech con poliza 2700324117
+21/05/2024 10:53:12 a. m. - inicio forech con poliza 2700324114
+21/05/2024 10:53:18 a. m. - inicio forech con poliza 2700324116
+21/05/2024 10:53:25 a. m. - inicio forech con poliza 2700324119
+21/05/2024 10:53:34 a. m. - inicio forech con poliza 2700324118
+21/05/2024 10:53:40 a. m. - inicio forech con poliza 2700324122
+21/05/2024 10:53:50 a. m. - inicio forech con poliza 2700324120
+21/05/2024 10:53:57 a. m. - inicio forech con poliza 2700324121
+21/05/2024 10:54:03 a. m. - inicio forech con poliza 2700324108
+21/05/2024 10:54:11 a. m. - inicio forech con poliza 2700324112
+21/05/2024 10:54:18 a. m. - inicio forech con poliza 2700324109
+21/05/2024 10:54:26 a. m. - inicio forech con poliza 2700324110
+21/05/2024 10:54:33 a. m. - inicio forech con poliza 2700324111
+21/05/2024 10:54:39 a. m. - inicio forech con poliza 2700328277
+21/05/2024 10:54:44 a. m. - inicio forech con poliza 2700328278
+21/05/2024 10:54:49 a. m. - inicio forech con poliza 2700328279
+21/05/2024 10:54:57 a. m. - inicio forech con poliza 2700328280
+21/05/2024 10:55:04 a. m. - inicio forech con poliza 2700328276
+21/05/2024 10:55:08 a. m. - inicio forech con poliza 2700328272
+21/05/2024 10:55:15 a. m. - inicio forech con poliza 2700328273
+21/05/2024 10:55:21 a. m. - inicio forech con poliza 2700328274
+21/05/2024 11:17:23 a. m. - 1
+21/05/2024 11:17:23 a. m. - 2
+21/05/2024 11:17:23 a. m. - 3
+21/05/2024 11:17:23 a. m. - 4
+21/05/2024 11:17:23 a. m. - 5
+21/05/2024 11:17:23 a. m. - 088
+21/05/2024 11:17:23 a. m. - 099
+21/05/2024 11:17:23 a. m. - 010
+21/05/2024 11:17:23 a. m. - 011
+21/05/2024 11:17:23 a. m. - 012
+21/05/2024 11:17:23 a. m. - 013
+21/05/2024 11:17:23 a. m. - 014
+21/05/2024 11:17:23 a. m. - 015
+21/05/2024 11:17:23 a. m. - 8
+21/05/2024 11:17:23 a. m. - 9
+21/05/2024 11:17:23 a. m. - 10
+21/05/2024 11:17:23 a. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+21/05/2024 11:17:23 a. m. - 6
+21/05/2024 11:17:23 a. m. - longitud 5532
+21/05/2024 11:17:23 a. m. - 7
+21/05/2024 11:17:23 a. m. - inicio forech
+21/05/2024 11:18:33 a. m. - inicio forech con poliza 2700311180
+21/05/2024 11:18:38 a. m. - inicio forech con poliza 2700329460
+21/05/2024 11:18:45 a. m. - inicio forech con poliza 2700328379
+21/05/2024 11:18:52 a. m. - inicio forech con poliza 2700322542
+21/05/2024 11:18:56 a. m. - inicio forech con poliza 2700316261
+21/05/2024 11:19:06 a. m. - inicio forech con poliza 2700316259
+21/05/2024 11:19:12 a. m. - inicio forech con poliza 2700316260
+21/05/2024 11:19:18 a. m. - inicio forech con poliza 2700316272
+21/05/2024 11:19:25 a. m. - inicio forech con poliza 2700329218
+21/05/2024 11:19:32 a. m. - inicio forech con poliza 2700311199
+21/05/2024 11:19:39 a. m. - inicio forech con poliza 2700316243
+21/05/2024 11:19:48 a. m. - inicio forech con poliza 2700328353
+21/05/2024 11:19:54 a. m. - inicio forech con poliza 2700328354
+21/05/2024 11:20:02 a. m. - inicio forech con poliza 600324149
+21/05/2024 11:20:03 a. m. - inicio forech con poliza 2700326701
+21/05/2024 11:20:11 a. m. - inicio forech con poliza 2700322118
+21/05/2024 11:20:19 a. m. - inicio forech con poliza 2700322117
+21/05/2024 11:20:36 a. m. - Error en foreach al procesar la póliza 2700322117:: Error al recibir la respuesta HTTP a http://qbcenter.qualitas.com.mx/QBCImpresion/Service.asmx. Puede deberse a que el enlace del extremo de servicio no usa el protocolo HTTP. También puede deberse a que el servidor anula un contexto de solicitud HTTP (posiblemente por el cierre del servicio). Consulte los registros del servidor para obtener más información. InnerException:: System.Net.WebException: Se ha terminado la conexión: Error inesperado de recepción. ---> System.IO.IOException: No se puede escribir datos de en la conexión de transporte: Se ha forzado la interrupción de una conexión existente por el host remoto. ---> System.Net.Sockets.SocketException: Se ha forzado la interrupción de una conexión existente por el host remoto
+   en System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   en System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   en System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   en System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.HttpWebRequest.GetResponse()
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+21/05/2024 11:20:39 a. m. - inicio forech con poliza 2700323714
+21/05/2024 11:22:28 a. m. - inicio forech con poliza 2700329757
+21/05/2024 11:22:35 a. m. - inicio forech con poliza 2700327995
+21/05/2024 11:22:40 a. m. - inicio forech con poliza 2700315969
+21/05/2024 11:22:48 a. m. - inicio forech con poliza 2700329674
+21/05/2024 11:22:53 a. m. - inicio forech con poliza 2700321975
+21/05/2024 11:23:01 a. m. - inicio forech con poliza 2700318752
+21/05/2024 11:23:08 a. m. - inicio forech con poliza 2700326607
+21/05/2024 11:23:14 a. m. - inicio forech con poliza 2700326608
+21/05/2024 11:23:21 a. m. - inicio forech con poliza 2700326494-PC
+21/05/2024 11:23:22 a. m. - inicio forech con poliza 2700326493-PC
+21/05/2024 11:23:23 a. m. - inicio forech con poliza 2700312300
+21/05/2024 11:23:32 a. m. - inicio forech con poliza 2700329502
+21/05/2024 11:23:38 a. m. - inicio forech con poliza 2700312301
+21/05/2024 11:23:47 a. m. - inicio forech con poliza 2700329503
+21/05/2024 11:23:53 a. m. - inicio forech con poliza 2700312302
+21/05/2024 11:24:03 a. m. - inicio forech con poliza 2700329504
+21/05/2024 11:24:09 a. m. - inicio forech con poliza 2700312292
+21/05/2024 03:38:57 p. m. - 1
+21/05/2024 03:38:57 p. m. - 2
+21/05/2024 03:38:57 p. m. - 3
+21/05/2024 03:38:57 p. m. - 4
+21/05/2024 03:38:57 p. m. - 5
+21/05/2024 03:38:57 p. m. - 088
+21/05/2024 03:38:57 p. m. - 099
+21/05/2024 03:38:57 p. m. - 010
+21/05/2024 03:38:57 p. m. - 011
+21/05/2024 03:38:57 p. m. - 012
+21/05/2024 03:38:57 p. m. - 013
+21/05/2024 03:38:57 p. m. - 014
+21/05/2024 03:38:57 p. m. - 015
+21/05/2024 03:38:57 p. m. - 8
+21/05/2024 03:38:57 p. m. - 9
+21/05/2024 03:38:57 p. m. - 10
+21/05/2024 03:38:57 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+21/05/2024 03:38:57 p. m. - 6
+21/05/2024 03:38:57 p. m. - longitud 5532
+21/05/2024 03:38:57 p. m. - 7
+21/05/2024 03:38:57 p. m. - inicio forech
+21/05/2024 03:38:57 p. m. - inicio forech con poliza 2700311180
+22/05/2024 06:27:59 p. m. - 1
+22/05/2024 06:27:59 p. m. - 2
+22/05/2024 06:27:59 p. m. - 3
+22/05/2024 06:27:59 p. m. - 4
+22/05/2024 06:27:59 p. m. - 5
+22/05/2024 06:27:59 p. m. - 088
+22/05/2024 06:27:59 p. m. - 099
+22/05/2024 06:27:59 p. m. - 010
+22/05/2024 06:27:59 p. m. - 011
+22/05/2024 06:27:59 p. m. - 012
+22/05/2024 06:27:59 p. m. - 013
+22/05/2024 06:27:59 p. m. - 014
+22/05/2024 06:27:59 p. m. - 015
+22/05/2024 06:27:59 p. m. - 8
+22/05/2024 06:27:59 p. m. - 9
+22/05/2024 06:27:59 p. m. - 10
+22/05/2024 06:27:59 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+22/05/2024 06:27:59 p. m. - 6
+22/05/2024 06:27:59 p. m. - longitud 4938
+22/05/2024 06:27:59 p. m. - 7
+22/05/2024 06:27:59 p. m. - inicio forech
+22/05/2024 06:27:59 p. m. - inicio forech con poliza 2700311180
+11/06/2024 11:30:02 p. m. - 1
+11/06/2024 11:30:02 p. m. - 2
+11/06/2024 11:30:02 p. m. - 3
+11/06/2024 11:30:02 p. m. - 4
+11/06/2024 11:30:02 p. m. - 5
+11/06/2024 11:30:02 p. m. - 088
+11/06/2024 11:30:02 p. m. - 099
+11/06/2024 11:30:02 p. m. - 010
+11/06/2024 11:30:02 p. m. - 011
+11/06/2024 11:30:02 p. m. - 012
+11/06/2024 11:30:02 p. m. - 013
+11/06/2024 11:30:02 p. m. - 014
+11/06/2024 11:30:02 p. m. - 015
+11/06/2024 11:30:02 p. m. - 8
+11/06/2024 11:30:02 p. m. - 9
+11/06/2024 11:30:02 p. m. - 10
+11/06/2024 11:30:02 p. m. - 11 -- Invalid column name 'Contrata'.
+Invalid column name 'IdAseguradora'.
+11/06/2024 11:30:06 p. m. - 6
+11/06/2024 11:30:07 p. m. - longitud 0
+11/06/2024 11:30:07 p. m. - 7
+11/06/2024 11:30:07 p. m. - inicio forech
+11/06/2024 11:30:18 p. m. - fin forech
+11/06/2024 11:30:18 p. m. - close
+11/06/2024 11:31:06 p. m. - 1
+11/06/2024 11:31:06 p. m. - 2
+11/06/2024 11:31:06 p. m. - 3
+11/06/2024 11:31:06 p. m. - 4
+11/06/2024 11:31:06 p. m. - 5
+11/06/2024 11:31:06 p. m. - 088
+11/06/2024 11:31:06 p. m. - 099
+11/06/2024 11:31:06 p. m. - 010
+11/06/2024 11:31:06 p. m. - 011
+11/06/2024 11:31:06 p. m. - 012
+11/06/2024 11:31:06 p. m. - 013
+11/06/2024 11:31:06 p. m. - 014
+11/06/2024 11:31:06 p. m. - 015
+11/06/2024 11:31:06 p. m. - 8
+11/06/2024 11:31:06 p. m. - 9
+11/06/2024 11:31:06 p. m. - 10
+11/06/2024 11:31:06 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+11/06/2024 11:31:10 p. m. - 6
+11/06/2024 11:31:11 p. m. - longitud 4940
+11/06/2024 11:31:11 p. m. - 7
+11/06/2024 11:31:11 p. m. - inicio forech
+11/06/2024 11:31:13 p. m. - inicio forech con poliza 4559324
+11/06/2024 11:32:05 p. m. - inicio forech con poliza 4559326
+11/06/2024 11:37:31 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p0004559326.pdf - C:\Ruta\Polizas\4559326
+11/06/2024 11:38:19 p. m. - inicio forech con poliza 910480933
+11/06/2024 11:38:30 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p0910480933.pdf - C:\Ruta\Polizas\910480933
+20/06/2024 07:35:37 a. m. - 1
+20/06/2024 07:35:37 a. m. - 2
+20/06/2024 07:35:37 a. m. - 3
+20/06/2024 07:35:37 a. m. - 4
+20/06/2024 07:35:37 a. m. - 5
+20/06/2024 07:35:37 a. m. - 088
+20/06/2024 07:35:37 a. m. - 099
+20/06/2024 07:35:37 a. m. - 010
+20/06/2024 07:35:37 a. m. - 011
+20/06/2024 07:35:37 a. m. - 012
+20/06/2024 07:35:37 a. m. - 013
+20/06/2024 07:35:37 a. m. - 014
+20/06/2024 07:35:37 a. m. - 015
+20/06/2024 07:35:37 a. m. - 8
+20/06/2024 07:35:37 a. m. - 9
+20/06/2024 07:35:37 a. m. - 10
+20/06/2024 07:35:37 a. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+20/06/2024 07:35:37 a. m. - 6
+20/06/2024 07:35:37 a. m. - longitud 4938
+20/06/2024 07:35:37 a. m. - 7
+20/06/2024 07:35:37 a. m. - inicio forech
+20/06/2024 07:35:37 a. m. - inicio forech con poliza 0910508105-PC
+20/06/2024 07:35:39 a. m. - inicio forech con poliza 2700150619
+20/06/2024 07:35:43 a. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+20/06/2024 07:35:44 a. m. - inicio forech con poliza 2700151211
+25/06/2024 04:04:49 p. m. - 1
+25/06/2024 04:04:49 p. m. - 2
+25/06/2024 04:04:49 p. m. - 3
+25/06/2024 04:04:49 p. m. - 4
+25/06/2024 04:04:49 p. m. - 5
+25/06/2024 04:04:49 p. m. - 088
+25/06/2024 04:04:49 p. m. - 099
+25/06/2024 04:04:49 p. m. - 010
+25/06/2024 04:04:49 p. m. - 011
+25/06/2024 04:04:49 p. m. - 012
+25/06/2024 04:04:49 p. m. - 013
+25/06/2024 04:04:49 p. m. - 014
+25/06/2024 04:04:49 p. m. - 015
+25/06/2024 04:04:49 p. m. - 8
+25/06/2024 04:04:49 p. m. - 9
+25/06/2024 04:04:49 p. m. - 10
+25/06/2024 04:04:50 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+25/06/2024 04:04:50 p. m. - 6
+25/06/2024 04:04:50 p. m. - longitud 4938
+25/06/2024 04:04:50 p. m. - 7
+25/06/2024 04:04:50 p. m. - inicio forech
+25/06/2024 04:05:08 p. m. - inicio forech con poliza 2700319020
+25/06/2024 04:06:14 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/r2700319020.pdf - C:\Ruta\Polizas\2700319020
+25/06/2024 04:06:23 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/a2700319020.pdf - C:\Ruta\Polizas\2700319020
+25/06/2024 04:06:31 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700319020.pdf - C:\Ruta\Polizas\2700319020
+26/06/2024 09:43:51 p. m. - 1
+26/06/2024 09:43:52 p. m. - 2
+26/06/2024 09:43:52 p. m. - 3
+26/06/2024 09:43:52 p. m. - 4
+26/06/2024 09:43:52 p. m. - 5
+26/06/2024 09:43:52 p. m. - 088
+26/06/2024 09:43:52 p. m. - 099
+26/06/2024 09:43:52 p. m. - 010
+26/06/2024 09:43:52 p. m. - 011
+26/06/2024 09:43:52 p. m. - 012
+26/06/2024 09:43:52 p. m. - 013
+26/06/2024 09:43:52 p. m. - 014
+26/06/2024 09:43:52 p. m. - 015
+26/06/2024 09:43:52 p. m. - 8
+26/06/2024 09:43:52 p. m. - 9
+26/06/2024 09:43:52 p. m. - 10
+26/06/2024 09:43:52 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 09:43:52 p. m. - 6
+26/06/2024 09:43:52 p. m. - longitud 4938
+26/06/2024 09:43:52 p. m. - 7
+26/06/2024 09:43:52 p. m. - inicio forech
+26/06/2024 09:44:22 p. m. - inicio forech con poliza 2700319020
+26/06/2024 10:02:01 p. m. - 1
+26/06/2024 10:02:01 p. m. - 2
+26/06/2024 10:02:01 p. m. - 3
+26/06/2024 10:02:01 p. m. - 4
+26/06/2024 10:02:01 p. m. - 5
+26/06/2024 10:02:01 p. m. - 088
+26/06/2024 10:02:01 p. m. - 099
+26/06/2024 10:02:01 p. m. - 010
+26/06/2024 10:02:01 p. m. - 011
+26/06/2024 10:02:01 p. m. - 012
+26/06/2024 10:02:01 p. m. - 013
+26/06/2024 10:02:01 p. m. - 014
+26/06/2024 10:02:01 p. m. - 015
+26/06/2024 10:02:01 p. m. - 8
+26/06/2024 10:02:01 p. m. - 9
+26/06/2024 10:02:01 p. m. - 10
+26/06/2024 10:02:01 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:02:01 p. m. - 6
+26/06/2024 10:02:01 p. m. - longitud 4938
+26/06/2024 10:02:01 p. m. - 7
+26/06/2024 10:02:01 p. m. - inicio forech
+26/06/2024 10:27:41 p. m. - 1
+26/06/2024 10:27:41 p. m. - 2
+26/06/2024 10:27:41 p. m. - 3
+26/06/2024 10:27:41 p. m. - 4
+26/06/2024 10:27:41 p. m. - 5
+26/06/2024 10:27:41 p. m. - 088
+26/06/2024 10:27:41 p. m. - 099
+26/06/2024 10:27:41 p. m. - 010
+26/06/2024 10:27:41 p. m. - 011
+26/06/2024 10:27:41 p. m. - 012
+26/06/2024 10:27:41 p. m. - 013
+26/06/2024 10:27:41 p. m. - 014
+26/06/2024 10:27:41 p. m. - 015
+26/06/2024 10:27:41 p. m. - 8
+26/06/2024 10:27:41 p. m. - 9
+26/06/2024 10:27:41 p. m. - 10
+26/06/2024 10:27:41 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:27:41 p. m. - 6
+26/06/2024 10:27:41 p. m. - longitud 4938
+26/06/2024 10:27:41 p. m. - 7
+26/06/2024 10:27:41 p. m. - inicio forech
+26/06/2024 10:27:52 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:27:55 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:28:00 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:28:21 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:30:22 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:32:31 p. m. - 1
+26/06/2024 10:32:31 p. m. - 2
+26/06/2024 10:32:31 p. m. - 3
+26/06/2024 10:32:31 p. m. - 4
+26/06/2024 10:32:31 p. m. - 5
+26/06/2024 10:32:31 p. m. - 088
+26/06/2024 10:32:31 p. m. - 099
+26/06/2024 10:32:31 p. m. - 010
+26/06/2024 10:32:31 p. m. - 011
+26/06/2024 10:32:31 p. m. - 012
+26/06/2024 10:32:31 p. m. - 013
+26/06/2024 10:32:31 p. m. - 014
+26/06/2024 10:32:31 p. m. - 015
+26/06/2024 10:32:31 p. m. - 8
+26/06/2024 10:32:31 p. m. - 9
+26/06/2024 10:32:31 p. m. - 10
+26/06/2024 10:32:31 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:32:31 p. m. - 6
+26/06/2024 10:32:31 p. m. - longitud 4938
+26/06/2024 10:32:31 p. m. - 7
+26/06/2024 10:32:31 p. m. - inicio forech
+26/06/2024 10:32:33 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:32:35 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:32:40 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:33:06 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:35:21 p. m. - 1
+26/06/2024 10:35:21 p. m. - 2
+26/06/2024 10:35:21 p. m. - 3
+26/06/2024 10:35:21 p. m. - 4
+26/06/2024 10:35:21 p. m. - 5
+26/06/2024 10:35:21 p. m. - 088
+26/06/2024 10:35:21 p. m. - 099
+26/06/2024 10:35:21 p. m. - 010
+26/06/2024 10:35:21 p. m. - 011
+26/06/2024 10:35:21 p. m. - 012
+26/06/2024 10:35:22 p. m. - 013
+26/06/2024 10:35:22 p. m. - 014
+26/06/2024 10:35:22 p. m. - 015
+26/06/2024 10:35:22 p. m. - 8
+26/06/2024 10:35:22 p. m. - 9
+26/06/2024 10:35:22 p. m. - 10
+26/06/2024 10:35:22 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:35:22 p. m. - 6
+26/06/2024 10:35:22 p. m. - longitud 4938
+26/06/2024 10:35:22 p. m. - 7
+26/06/2024 10:35:22 p. m. - inicio forech
+26/06/2024 10:35:24 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:35:26 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:35:30 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:36:42 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:36:57 p. m. - AgregarLogoPdf - Error:: No se puede encontrar una parte de la ruta de acceso 'C:\Ruta\Polizas\2700150619_1\p2700150619.pdf'. InnerException:: 
+26/06/2024 10:38:32 p. m. - 1
+26/06/2024 10:38:32 p. m. - 2
+26/06/2024 10:38:32 p. m. - 3
+26/06/2024 10:38:32 p. m. - 4
+26/06/2024 10:38:32 p. m. - 5
+26/06/2024 10:38:32 p. m. - 088
+26/06/2024 10:38:32 p. m. - 099
+26/06/2024 10:38:32 p. m. - 010
+26/06/2024 10:38:32 p. m. - 011
+26/06/2024 10:38:32 p. m. - 012
+26/06/2024 10:38:32 p. m. - 013
+26/06/2024 10:38:32 p. m. - 014
+26/06/2024 10:38:32 p. m. - 015
+26/06/2024 10:38:32 p. m. - 8
+26/06/2024 10:38:32 p. m. - 9
+26/06/2024 10:38:32 p. m. - 10
+26/06/2024 10:38:33 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:38:33 p. m. - 6
+26/06/2024 10:38:33 p. m. - longitud 4938
+26/06/2024 10:38:33 p. m. - 7
+26/06/2024 10:38:33 p. m. - inicio forech
+26/06/2024 10:38:34 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:38:36 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:38:41 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:38:59 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:41:54 p. m. - 1
+26/06/2024 10:41:54 p. m. - 2
+26/06/2024 10:41:54 p. m. - 3
+26/06/2024 10:41:54 p. m. - 4
+26/06/2024 10:41:54 p. m. - 5
+26/06/2024 10:41:54 p. m. - 088
+26/06/2024 10:41:54 p. m. - 099
+26/06/2024 10:41:54 p. m. - 010
+26/06/2024 10:41:54 p. m. - 011
+26/06/2024 10:41:54 p. m. - 012
+26/06/2024 10:41:54 p. m. - 013
+26/06/2024 10:41:54 p. m. - 014
+26/06/2024 10:41:54 p. m. - 015
+26/06/2024 10:41:54 p. m. - 8
+26/06/2024 10:41:54 p. m. - 9
+26/06/2024 10:41:54 p. m. - 10
+26/06/2024 10:41:54 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:41:54 p. m. - 6
+26/06/2024 10:41:54 p. m. - longitud 4938
+26/06/2024 10:41:54 p. m. - 7
+26/06/2024 10:41:54 p. m. - inicio forech
+26/06/2024 10:41:56 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:41:58 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:42:04 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:42:38 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:42:58 p. m. - 1
+26/06/2024 10:42:58 p. m. - 2
+26/06/2024 10:42:58 p. m. - 3
+26/06/2024 10:42:58 p. m. - 4
+26/06/2024 10:42:58 p. m. - 5
+26/06/2024 10:42:58 p. m. - 088
+26/06/2024 10:42:58 p. m. - 099
+26/06/2024 10:42:58 p. m. - 010
+26/06/2024 10:42:58 p. m. - 011
+26/06/2024 10:42:58 p. m. - 012
+26/06/2024 10:42:58 p. m. - 013
+26/06/2024 10:42:58 p. m. - 014
+26/06/2024 10:42:58 p. m. - 015
+26/06/2024 10:42:58 p. m. - 8
+26/06/2024 10:42:58 p. m. - 9
+26/06/2024 10:42:58 p. m. - 10
+26/06/2024 10:42:58 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:42:58 p. m. - 6
+26/06/2024 10:42:58 p. m. - longitud 4938
+26/06/2024 10:42:58 p. m. - 7
+26/06/2024 10:42:58 p. m. - inicio forech
+26/06/2024 10:42:59 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:43:01 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:43:06 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:43:21 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:47:57 p. m. - 1
+26/06/2024 10:47:57 p. m. - 2
+26/06/2024 10:47:57 p. m. - 3
+26/06/2024 10:47:57 p. m. - 4
+26/06/2024 10:47:57 p. m. - 5
+26/06/2024 10:47:57 p. m. - 088
+26/06/2024 10:47:57 p. m. - 099
+26/06/2024 10:47:57 p. m. - 010
+26/06/2024 10:47:57 p. m. - 011
+26/06/2024 10:47:57 p. m. - 012
+26/06/2024 10:47:57 p. m. - 013
+26/06/2024 10:47:57 p. m. - 014
+26/06/2024 10:47:57 p. m. - 015
+26/06/2024 10:47:57 p. m. - 8
+26/06/2024 10:47:57 p. m. - 9
+26/06/2024 10:47:57 p. m. - 10
+26/06/2024 10:47:57 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:47:57 p. m. - 6
+26/06/2024 10:47:57 p. m. - longitud 4938
+26/06/2024 10:47:57 p. m. - 7
+26/06/2024 10:47:57 p. m. - inicio forech
+26/06/2024 10:47:58 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:48:01 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:48:06 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:48:19 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:49:17 p. m. - 1
+26/06/2024 10:49:17 p. m. - 2
+26/06/2024 10:49:17 p. m. - 3
+26/06/2024 10:49:17 p. m. - 4
+26/06/2024 10:49:17 p. m. - 5
+26/06/2024 10:49:17 p. m. - 088
+26/06/2024 10:49:17 p. m. - 099
+26/06/2024 10:49:17 p. m. - 010
+26/06/2024 10:49:17 p. m. - 011
+26/06/2024 10:49:17 p. m. - 012
+26/06/2024 10:49:17 p. m. - 013
+26/06/2024 10:49:17 p. m. - 014
+26/06/2024 10:49:17 p. m. - 015
+26/06/2024 10:49:17 p. m. - 8
+26/06/2024 10:49:17 p. m. - 9
+26/06/2024 10:49:17 p. m. - 10
+26/06/2024 10:49:17 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:49:17 p. m. - 6
+26/06/2024 10:49:17 p. m. - longitud 4938
+26/06/2024 10:49:17 p. m. - 7
+26/06/2024 10:49:17 p. m. - inicio forech
+26/06/2024 10:49:18 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:49:20 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:49:25 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:49:27 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:53:22 p. m. - 1
+26/06/2024 10:53:22 p. m. - 2
+26/06/2024 10:53:22 p. m. - 3
+26/06/2024 10:53:22 p. m. - 4
+26/06/2024 10:53:22 p. m. - 5
+26/06/2024 10:53:22 p. m. - 088
+26/06/2024 10:53:22 p. m. - 099
+26/06/2024 10:53:22 p. m. - 010
+26/06/2024 10:53:22 p. m. - 011
+26/06/2024 10:53:22 p. m. - 012
+26/06/2024 10:53:22 p. m. - 013
+26/06/2024 10:53:22 p. m. - 014
+26/06/2024 10:53:22 p. m. - 015
+26/06/2024 10:53:22 p. m. - 8
+26/06/2024 10:53:22 p. m. - 9
+26/06/2024 10:53:22 p. m. - 10
+26/06/2024 10:53:23 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:53:23 p. m. - 6
+26/06/2024 10:53:23 p. m. - longitud 4938
+26/06/2024 10:53:23 p. m. - 7
+26/06/2024 10:53:23 p. m. - inicio forech
+26/06/2024 10:53:24 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:53:26 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:53:31 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:53:33 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:53:33 p. m. - AgregarLogoPdf - Error:: El proceso no puede obtener acceso al archivo 'C:\Ruta\Polizas\2700150619\p2700150619.pdf' porque está siendo utilizado en otro proceso. InnerException:: 
+26/06/2024 10:53:37 p. m. - inicio forech con poliza 2700151211
+26/06/2024 10:53:42 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700151211.pdf - C:\Ruta\Polizas\2700151211
+26/06/2024 10:53:44 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:53:44 p. m. - AgregarLogoPdf - Error:: El proceso no puede obtener acceso al archivo 'C:\Ruta\Polizas\2700151211\p2700151211.pdf' porque está siendo utilizado en otro proceso. InnerException:: 
+26/06/2024 10:53:55 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:53:55 p. m. - AgregarLogoPdf - Error:: El proceso no puede obtener acceso al archivo 'C:\Ruta\Polizas\2700151211\p2700151211.pdf' porque está siendo utilizado en otro proceso. InnerException:: 
+26/06/2024 10:53:59 p. m. - inicio forech con poliza 2700165183
+26/06/2024 10:54:04 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700165183.pdf - C:\Ruta\Polizas\2700165183
+26/06/2024 10:54:21 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:54:21 p. m. - AgregarLogoPdf - Error:: El proceso no puede obtener acceso al archivo 'C:\Ruta\Polizas\2700165183\p2700165183.pdf' porque está siendo utilizado en otro proceso. InnerException:: 
+26/06/2024 10:54:23 p. m. - inicio forech con poliza 2700165382
+26/06/2024 10:54:25 p. m. - inicio forech con poliza 2700169856
+26/06/2024 10:54:29 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700169856.pdf - C:\Ruta\Polizas\2700169856
+26/06/2024 10:54:31 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:54:31 p. m. - AgregarLogoPdf - Error:: El proceso no puede obtener acceso al archivo 'C:\Ruta\Polizas\2700169856\p2700169856.pdf' porque está siendo utilizado en otro proceso. InnerException:: 
+26/06/2024 10:54:33 p. m. - inicio forech con poliza 2700178636
+26/06/2024 10:54:37 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700178636.pdf - C:\Ruta\Polizas\2700178636
+26/06/2024 10:54:41 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:54:58 p. m. - AgregarLogoPdf - Error:: El proceso no puede obtener acceso al archivo 'C:\Ruta\Polizas\2700178636\p2700178636.pdf' porque está siendo utilizado en otro proceso. InnerException:: 
+26/06/2024 10:54:58 p. m. - inicio forech con poliza 2700202883
+26/06/2024 10:55:00 p. m. - inicio forech con poliza 2700204219
+26/06/2024 10:55:05 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700204219.pdf - C:\Ruta\Polizas\2700204219
+26/06/2024 10:55:23 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 10:55:28 p. m. - AgregarLogoPdf - Error:: No se puede encontrar una parte de la ruta de acceso 'C:\Ruta\Polizas\2700204219_1\p2700204219.pdf'. InnerException:: 
+26/06/2024 10:55:39 p. m. - 1
+26/06/2024 10:55:39 p. m. - 2
+26/06/2024 10:55:39 p. m. - 3
+26/06/2024 10:55:39 p. m. - 4
+26/06/2024 10:55:39 p. m. - 5
+26/06/2024 10:55:39 p. m. - 088
+26/06/2024 10:55:39 p. m. - 099
+26/06/2024 10:55:39 p. m. - 010
+26/06/2024 10:55:39 p. m. - 011
+26/06/2024 10:55:39 p. m. - 012
+26/06/2024 10:55:39 p. m. - 013
+26/06/2024 10:55:39 p. m. - 014
+26/06/2024 10:55:39 p. m. - 015
+26/06/2024 10:55:39 p. m. - 8
+26/06/2024 10:55:39 p. m. - 9
+26/06/2024 10:55:39 p. m. - 10
+26/06/2024 10:55:39 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 10:55:39 p. m. - 6
+26/06/2024 10:55:39 p. m. - longitud 4938
+26/06/2024 10:55:39 p. m. - 7
+26/06/2024 10:55:39 p. m. - inicio forech
+26/06/2024 10:55:40 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 10:55:43 p. m. - inicio forech con poliza 2700150619
+26/06/2024 10:55:48 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 10:56:36 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 11:00:56 p. m. - 1
+26/06/2024 11:00:56 p. m. - 2
+26/06/2024 11:00:56 p. m. - 3
+26/06/2024 11:00:56 p. m. - 4
+26/06/2024 11:00:56 p. m. - 5
+26/06/2024 11:00:56 p. m. - 088
+26/06/2024 11:00:56 p. m. - 099
+26/06/2024 11:00:56 p. m. - 010
+26/06/2024 11:00:56 p. m. - 011
+26/06/2024 11:00:56 p. m. - 012
+26/06/2024 11:00:56 p. m. - 013
+26/06/2024 11:00:56 p. m. - 014
+26/06/2024 11:00:56 p. m. - 015
+26/06/2024 11:00:56 p. m. - 8
+26/06/2024 11:00:56 p. m. - 9
+26/06/2024 11:00:56 p. m. - 10
+26/06/2024 11:00:56 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 11:00:56 p. m. - 6
+26/06/2024 11:00:56 p. m. - longitud 4938
+26/06/2024 11:00:56 p. m. - 7
+26/06/2024 11:00:56 p. m. - inicio forech
+26/06/2024 11:01:00 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 11:01:04 p. m. - inicio forech con poliza 2700150619
+26/06/2024 11:01:09 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 11:01:29 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 11:03:56 p. m. - 1
+26/06/2024 11:03:56 p. m. - 2
+26/06/2024 11:03:56 p. m. - 3
+26/06/2024 11:03:56 p. m. - 4
+26/06/2024 11:03:56 p. m. - 5
+26/06/2024 11:03:56 p. m. - 088
+26/06/2024 11:03:56 p. m. - 099
+26/06/2024 11:03:56 p. m. - 010
+26/06/2024 11:03:56 p. m. - 011
+26/06/2024 11:03:56 p. m. - 012
+26/06/2024 11:03:56 p. m. - 013
+26/06/2024 11:03:56 p. m. - 014
+26/06/2024 11:03:56 p. m. - 015
+26/06/2024 11:03:56 p. m. - 8
+26/06/2024 11:03:56 p. m. - 9
+26/06/2024 11:03:56 p. m. - 10
+26/06/2024 11:03:56 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+26/06/2024 11:03:56 p. m. - 6
+26/06/2024 11:03:56 p. m. - longitud 4938
+26/06/2024 11:03:56 p. m. - 7
+26/06/2024 11:03:56 p. m. - inicio forech
+26/06/2024 11:03:59 p. m. - inicio forech con poliza 0910508105-PC
+26/06/2024 11:04:16 p. m. - inicio forech con poliza 2700150619
+26/06/2024 11:04:20 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+26/06/2024 11:04:38 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+26/06/2024 11:05:12 p. m. - inicio forech con poliza 2700151211
+26/06/2024 11:05:16 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700151211.pdf - C:\Ruta\Polizas\2700151211
+26/06/2024 11:05:32 p. m. - projectRoot - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas - relativePath - Resources
+27/06/2024 07:58:02 p. m. - 1
+27/06/2024 07:58:03 p. m. - 2
+27/06/2024 07:58:03 p. m. - 3
+27/06/2024 07:58:03 p. m. - 4
+27/06/2024 07:58:03 p. m. - 5
+27/06/2024 07:58:03 p. m. - 088
+27/06/2024 07:58:03 p. m. - 099
+27/06/2024 07:58:03 p. m. - 010
+27/06/2024 07:58:03 p. m. - 011
+27/06/2024 07:58:03 p. m. - 012
+27/06/2024 07:58:03 p. m. - 013
+27/06/2024 07:58:03 p. m. - 014
+27/06/2024 07:58:03 p. m. - 015
+27/06/2024 07:58:03 p. m. - 8
+27/06/2024 07:58:03 p. m. - 9
+27/06/2024 07:58:03 p. m. - 10
+27/06/2024 07:58:03 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+27/06/2024 07:58:03 p. m. - 6
+27/06/2024 07:58:03 p. m. - longitud 4938
+27/06/2024 07:58:03 p. m. - 7
+27/06/2024 07:58:03 p. m. - inicio forech
+27/06/2024 07:58:08 p. m. - inicio forech con poliza 0910508105-PC
+27/06/2024 07:58:11 p. m. - inicio forech con poliza 2700150619
+27/06/2024 07:58:15 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+27/06/2024 07:58:31 p. m. - C:\Users\NS-656\Documents
+27/06/2024 07:58:34 p. m. - inicio forech con poliza 2700151211
+27/06/2024 07:58:37 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700151211.pdf - C:\Ruta\Polizas\2700151211
+27/06/2024 07:59:36 p. m. - 1
+27/06/2024 07:59:36 p. m. - 2
+27/06/2024 07:59:36 p. m. - 3
+27/06/2024 07:59:36 p. m. - 4
+27/06/2024 07:59:36 p. m. - 5
+27/06/2024 07:59:36 p. m. - 088
+27/06/2024 07:59:36 p. m. - 099
+27/06/2024 07:59:36 p. m. - 010
+27/06/2024 07:59:36 p. m. - 011
+27/06/2024 07:59:36 p. m. - 012
+27/06/2024 07:59:36 p. m. - 013
+27/06/2024 07:59:36 p. m. - 014
+27/06/2024 07:59:36 p. m. - 015
+27/06/2024 07:59:36 p. m. - 8
+27/06/2024 07:59:36 p. m. - 9
+27/06/2024 07:59:36 p. m. - 10
+27/06/2024 07:59:36 p. m. - Server=DESKTOP-HA68KCO\SQLEXPRESS;Database=sfiinternational;User Id=sa; cadconex
+27/06/2024 07:59:36 p. m. - 6
+27/06/2024 07:59:36 p. m. - longitud 4938
+27/06/2024 07:59:36 p. m. - 7
+27/06/2024 07:59:36 p. m. - inicio forech
+27/06/2024 07:59:42 p. m. - inicio forech con poliza 0910508105-PC
+27/06/2024 07:59:46 p. m. - inicio forech con poliza 2700150619
+27/06/2024 07:59:49 p. m. - Move PDF - http://qbcenter.qualitas.com.mx/poliza/p2700150619.pdf - C:\Ruta\Polizas\2700150619
+27/06/2024 07:59:59 p. m. - C:\Proyectos\NavistarPagos19032024\NavistarPolizasQualitas\Resources\LogotipoQualitas-1.png

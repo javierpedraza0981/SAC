@@ -1,0 +1,427 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700i');
+
+.AccountName {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #00355f;
+}
+
+.AccountMenu {
+    background-color: #00355f;
+    height: 640px !important;
+}
+
+.AccountMenu h1 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#PolicyP {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+.FormFacturation {
+    margin-top: 50px;
+}
+
+.line-menu-account ul {
+    list-style-type: none;
+    /*padding: 0px;*/
+}
+
+.line-menu-account li {
+    margin-left: 33%;
+    padding-left: 10px;
+    padding-top: 20px !important;
+    padding-bottom: 20px;
+    max-width: 100%;
+    border-left: 2px #fff solid;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 1.3em;
+}
+
+.line-menu-account li a {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    text-decoration: none !important;
+}
+
+.line-menu-account li:hover {
+	color: #808080;
+	border-left: 2px #808080 solid;
+    cursor: pointer !important;
+}
+
+.line-menu-account li a:hover {
+	color: #808080 !important;
+    cursor: pointer !important;
+}
+
+.AccountActive a {
+    color: #808080 !important;
+}
+
+.AccountActive {
+    border-left: 2px #808080 solid !important;
+}
+
+tbody {
+    color: #fff;
+}
+
+.AccountImage1 {
+    background-image: url("../img/account_c1.png");
+    height: 640px !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.AccountImage2 {
+    background-image: url("../img/account_f1.png");
+    height: 640px !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.AccountImage3 {
+    background-image: url("../img/account_c2.png");
+    height: 640px !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.AccountForm {
+    background: white;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.AccountContent h1 {
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.AccountContent p {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: auto;
+}
+
+.AccountContent input {
+    background-image: url("../img/caret-down-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
+    background-color: transparent;
+    /*background: transparent;*/
+    border: none;
+    color: #fff;
+    border-bottom: solid #fff 2px;
+}
+
+.AccountContent select {
+    background-position: 100% 0px;
+    background-color: transparent;
+    /*background: transparent;*/
+    border: none;
+    color: #fff;
+    border-bottom: solid #fff 2px;
+}
+
+.AccountContent select option {
+    color: #00355f;
+}
+
+.AccountContent button {
+    background: #fff;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    width: 160px;
+    color: #00355f;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.AccountContent button:active {
+    color: #808080 !important;
+}
+
+.AccountContent button:focus {
+    color: #808080 !important;
+}
+
+.navfacturation {
+    margin-top: -60px;
+    margin-left: 2% !important;
+    margin-bottom: 15%;
+}
+
+.navfacturation div {
+    width: auto !important;
+    color: #fff;
+    background-color: #00355f;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 0.9em;
+    width: 155px !important;
+}
+
+.ContractLink {
+    color: #fff;
+    font-weight: bold;
+}
+
+.ContractLink:hover {
+    cursor:pointer;
+}
+
+.contractLabel {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.informative-info img {
+    width: 100%;
+}
+
+.informative-info p {
+    margin-top: 15px;
+    color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .AccountName {
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+
+    .AccountMenu h1 {
+        padding-top: 20px;
+    }
+
+    .AccountImage img {
+        height: auto !important;
+    }
+
+    .AccountImage1 {
+        height: auto !important;
+    }
+
+    .AccountImage2 {
+        height: auto !important;
+    }
+
+    .AccountImage3 {
+        height: auto !important;
+    }
+}
+
+/* Mobile M */
+@media only screen and (min-width: 320px) {
+    .AccountContent p {
+        margin-bottom: 5px;
+    }
+
+    #contactBtn button {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile L */
+@media only screen and (min-width: 425px) {
+    #contactBtn button {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #contactBtn button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .AccountName {
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+
+    .AccountMenu {
+        height: 640px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .AccountMenu {
+        height: 500px !important;
+    }
+}
+
+@media (max-width: 768px) {  
+    .AccountForm {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .FormFacturation {
+        margin-top: 65px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .AccountForm {
+        background: white;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+
+    .AccountContent input {
+        background-image: url("../img/caret-down-solid.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 0px;
+        background-color: transparent;
+        /*background: transparent;*/
+        margin-top: 120px !important;
+        border: none;
+        color: #fff;
+        border-bottom: solid #fff 2px;
+        max-width:120px;
+    }
+
+    .navfacturation {
+        margin-top: -60px;
+        margin-left: 16% !important;
+        margin-bottom: 15%;
+    }
+
+    .navfacturation div {
+        width: auto !important;
+        color: #fff;
+        background-color: #00355f;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        font-size: 0.9em;
+        width: auto !important;
+    }
+
+    #ContractP {
+        margin-bottom: -50px;
+    }
+
+    #PolicyP {
+        margin-bottom: -50px;
+    }
+
+    .AccountName {
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navfacturation {
+        margin-top: -60px;
+        margin-left: 7% !important;
+        margin-bottom: 15%;
+    }
+
+    .navfacturation div {
+        width: auto !important;
+        color: #fff;
+        background-color: #00355f;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        font-size: 0.9em !important;
+        width: 155px !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .AccountForm {
+        background: white;
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
+
+    .AccountContent h1 {
+        color: #fff;
+        font-size: 2.8em;
+        font-weight: 700;
+    }
+
+    .AccountContent p {
+        color: #fff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        font-size: 1.2em !important;
+        margin-bottom: -40px !important;
+        margin-top: 60px !important;
+        width: auto !important;
+    }
+
+    .AccountContent input {
+        background-image: url("../img/caret-down-solid.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 0px;
+        background-color: transparent;
+        /*background: transparent;*/
+        border: none;
+        color: #fff;
+        border-bottom: solid #fff 2px;
+    }
+
+    .navfacturation {
+        margin-top: -60px;
+        margin-left: 2% !important;
+        margin-bottom: 15%;
+    }
+
+    .navfacturation div {
+        width: auto !important;
+        color: #fff;
+        background-color: #00355f;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        font-size: 0.9em !important;
+        width: 155px !important;
+    }
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RecuperaImpresion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLRecibo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLTextos" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Inciso" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpPol" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpRec" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpAnexo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ramo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaPol" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaRec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaAnexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Endoso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NoNegocio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Agente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaImpresionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperaImpresionResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLRecibo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLTextos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaImpresionPrueba">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLRecibo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLTextos" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Inciso" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpPol" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpRec" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpAnexo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ramo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaPol" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaRec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaAnexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Endoso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NoNegocio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Agente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaImpresionPruebaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperaImpresionPruebaResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLRecibo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLTextos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaImpresionM15">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLRecibo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLTextos" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Inciso" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpPol" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpRec" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImpAnexo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ramo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaPol" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaRec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="formaAnexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Endoso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NoNegocio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Agente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaImpresionM15Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperaImpresionM15Result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLPoliza" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLRecibo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URLTextos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RecuperaImpresionSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperaImpresion" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaImpresionSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperaImpresionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaImpresionPruebaSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperaImpresionPrueba" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaImpresionPruebaSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperaImpresionPruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaImpresionM15SoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperaImpresionM15" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaImpresionM15SoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperaImpresionM15Response" />
+  </wsdl:message>
+  <wsdl:portType name="entradaSoap">
+    <wsdl:operation name="RecuperaImpresion">
+      <wsdl:input message="tns:RecuperaImpresionSoapIn" />
+      <wsdl:output message="tns:RecuperaImpresionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaImpresionPrueba">
+      <wsdl:input message="tns:RecuperaImpresionPruebaSoapIn" />
+      <wsdl:output message="tns:RecuperaImpresionPruebaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaImpresionM15">
+      <wsdl:input message="tns:RecuperaImpresionM15SoapIn" />
+      <wsdl:output message="tns:RecuperaImpresionM15SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="entradaSoap" type="tns:entradaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperaImpresion">
+      <soap:operation soapAction="http://tempuri.org/RecuperaImpresion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaImpresionPrueba">
+      <soap:operation soapAction="http://tempuri.org/RecuperaImpresionPrueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaImpresionM15">
+      <soap:operation soapAction="http://tempuri.org/RecuperaImpresionM15" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="entradaSoap12" type="tns:entradaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperaImpresion">
+      <soap12:operation soapAction="http://tempuri.org/RecuperaImpresion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaImpresionPrueba">
+      <soap12:operation soapAction="http://tempuri.org/RecuperaImpresionPrueba" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaImpresionM15">
+      <soap12:operation soapAction="http://tempuri.org/RecuperaImpresionM15" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="entrada">
+    <wsdl:port name="entradaSoap" binding="tns:entradaSoap">
+      <soap:address location="http://qbcenter.qualitas.com.mx/QBCImpresion/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="entradaSoap12" binding="tns:entradaSoap12">
+      <soap12:address location="http://qbcenter.qualitas.com.mx/QBCImpresion/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

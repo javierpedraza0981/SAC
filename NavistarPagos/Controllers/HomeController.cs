@@ -29,7 +29,6 @@ namespace NavistarPagos.Controllers
         {
             try
             {
-
                 string urlOk = "";
                 string urlError = "";
                 string urlCancela = "";
@@ -41,12 +40,6 @@ namespace NavistarPagos.Controllers
                 string llaveJWT = System.Configuration.ConfigurationManager.AppSettings["llaveJWT"];
                 List<cPersona> listaPersonas = new List<cPersona>();
 
-                //if (ntoken == null)
-                //{
-                //    token = appEncriptaJWT.EncriptaJWT(0, "leticia", "leticia.mozqueda@navistar.com", llaveJWT, "", "", "");
-                //    token = appEncriptaJWT.EncriptaJWT(0, "TRANSPAC, S.A. DE C.V.", "ricardo.duran@unne.com.mx", llaveJWT, "", "", "");
-                //    token = appEncriptaJWT.EncriptaJWT(0, "Generico", "la3e_1625@hotmail.com", llaveJWT, "", "", "");
-                //}
                 if (token != "" && token != null)
                 {
                     appEncriptaJWT.DesencriptaJWT(token, llaveJWT);
@@ -58,31 +51,39 @@ namespace NavistarPagos.Controllers
                     urlCancela = appEncriptaJWT.GetClaim("urlCancela");
                     if (urlOk == "") urlOk = Request.Url.OriginalString;
                     if (urlError == "") urlError = urlOk;
-                    //if (urlCancela == "") urlCancela = urlOk;
                     Session["urlOk"] = ((urlOk != null) ? urlOk : "");
                     Session["urlError"] = ((urlError != null) ? urlError : "");
                     Session["urlCancela"] = ((urlCancela != null) ? urlCancela : "");
                 }
+
                 if (cve == 0 && correo != "")
                 {
-                    
-                    listaPersonas = recuperaPersonaEmail(correo, "1"); //Entity.cPersonas.Where(x => x.PNA_DS_EMAIL == correo && x.PNA_FG_STATUS == 1).OrderBy(o => o.PNA_DS_NOMBRE).ToList();
+                    listaPersonas = recuperaPersonaEmail(correo, "1");
+
+                    if (listaPersonas.Count > 0)
+                    {
+                        foreach (var persona in listaPersonas)
+                        {
+                            // Lógica o procesamiento con cada persona en listaPersonas
+                        }
+                    }
+                    else
+                    {
+                        return RedirectToAction("Error", "Home", new { psError = "No hay clientes con esa información" });
+                    }
+
                     if (listaPersonas.Count == 1)
                     {
                         cve = listaPersonas[0].PNA_FL_PERSONA;
                     }
                     else if (listaPersonas.Count > 1)
                     {
-                        // Tiene que presentar la lista de personas para que seleccione
                         ViewBag.Clientes = listaPersonas;
                         ViewBag.Action = psAction;
                         return View();
                     }
-                    else
-                    {
-                        return RedirectToAction("Error", "Home", new { psError = "No hay clientes con esa información" });
-                    }
                 }
+
                 if (cve > 0)
                 {
                     if (psAction == "ClientFiles" && !ValidaContratos(cve))
@@ -91,10 +92,8 @@ namespace NavistarPagos.Controllers
                         ViewBag.Action = psAction;
                         return View();
                     }
-                    mod.Log_Diario("IniciaSesionExterna -> ", "94");
                     IniciaSesionExterna(cve);
-                    mod.Log_Diario("IniciaSesionExterna -> ", "96 " + psAction);
-                    return RedirectToAction(psAction, "Home");
+                    return RedirectToAction(psAction, psAction);
                 }
 
                 return View();
@@ -102,11 +101,12 @@ namespace NavistarPagos.Controllers
             catch (Exception ex)
             {
                 string sEx = ex.Message;
-
                 mod.Log_Diario("Index(Ex)", "Token: " + ntoken + "\nAction: " + psAction + "\nError: " + sEx);
                 return RedirectToAction("Error", "Home", new { psError = "Index" });
             }
         }
+
+
 
         public bool IniciaSesionExterna(int cve = 0)
         {
@@ -122,20 +122,17 @@ namespace NavistarPagos.Controllers
 
                 //Cliente = Entity.cPersonas.Where(x => x.PNA_FL_PERSONA == cveCliente).FirstOrDefault();
                 string nCadena = "";
-                List<cPersona> cliente =  recuperaPersona(cve,ref nCadena);
-                mod.Log_Diario("SALE DE recuperaPersona-> ", cliente.Count.ToString());
+                List<cPersona> cliente = recuperaPersona(cve, ref nCadena);
 
                 paso += ". Recupero Cliente";
-                
+
                 if (Cliente == null)
                 {
                     paso = "No encontró el cliente " + cveCliente;
-                    mod.Log_Diario("IniciaSesionExterna -> ", "No encontró el cliente");
                 }
                 else
                 {
                     paso = " Inicia actualiza sesión";
-                    mod.Log_Diario("IniciaSesionExterna -> ", "Hay Datos en cliente si actualiza sesion");
                     try
                     {
                         Session["Name"] = cliente.FirstOrDefault().PNA_DS_NOMBRE;
@@ -143,13 +140,12 @@ namespace NavistarPagos.Controllers
                         Session["rfc"] = cliente.FirstOrDefault().PNA_CL_RFC;
                         Session["correo"] = cliente.FirstOrDefault().PNA_DS_EMAIL;
                         paso = " Actualiza ViewBag";
-                        
+
                         if (ViewBag != null)
                         {
                             ViewBag.Name = Session["Name"];
                             ViewBag.IdCliente = Session["cveCliente"];
                             paso += ". ViewBag";
-                            mod.Log_Diario("IniciaSesionExterna -> ", "Si ViewBag es vacio llena con sesion");
                         }
                         paso += ". Actualiza sesión B";
                     }
@@ -157,7 +153,6 @@ namespace NavistarPagos.Controllers
                     {
                         string sEx = ex.Message;
 
-                        mod.Log_Diario("IniciaSesionExterna(Ex)", "Cve: " + cve + "\nPaso: " + paso + "\nError: " + sEx);
                         throw new Exception("En IniciaSesionExterna., " + paso + ", Error: [" + ex.Message + ((ex.InnerException != null) ? "- " + ex.InnerException.Message : "") + "]");
                     }
                 }
@@ -166,12 +161,12 @@ namespace NavistarPagos.Controllers
             {
                 string sEx = ex.Message;
 
-                mod.Log_Diario("IniciaSesionExterna(Ex2)", "Cve: " + cve + "\nPaso: " + paso + "\nError: " + sEx);
                 throw new Exception("En IniciaSesionExterna, " + paso + ", Error: [" + ex.Message + ((ex.InnerException != null) ? "- " + ex.InnerException.Message : "") + "]");
             }
 
             return true;
         }
+
 
         public ActionResult SeleccionarCliente(int cve, string psAction)
         {
@@ -495,21 +490,20 @@ namespace NavistarPagos.Controllers
             DataSet ds = new DataSet();
 
             try
-            {                
-                mod.Log_Diario("Registramos Persona id previo spConsultaPersonaPorFlPersona -> ", cvePersona.ToString());
+            {
                 sSQL = "spConsultaPersonaPorFlPersona";
                 paramArray = new SqlParameter[1];
                 paramArray[0] = BaseDatos.BDatos.NewParameter("@pna_fl_persona", cvePersona, "");
-                ds = conector.RunProcedure(sSQL, paramArray, "tblcPersona");                
+                ds = conector.RunProcedure(sSQL, paramArray, "tblcPersona");
                 tbl = ds.Tables[0];
                 if (tbl != null && tbl.Rows.Count > 0)
                 {
                     foreach (DataRow item in tbl.Rows)
                     {
                         cPersona.Add(new cPersona
-                        {                            
-                             PNA_DS_NOMBRE = item["PNA_DS_NOMBRE"].ToString().Trim(),
-                             PNA_FL_PERSONA = int.Parse(item["PNA_FL_PERSONA"].ToString().Trim()) ,
+                        {
+                            PNA_DS_NOMBRE = item["PNA_DS_NOMBRE"].ToString().Trim(),
+                            PNA_FL_PERSONA = int.Parse(item["PNA_FL_PERSONA"].ToString().Trim()),
                             PNA_CL_RFC = item["PNA_CL_RFC"].ToString().Trim(),
                             PNA_DS_EMAIL = item["PNA_DS_EMAIL"].ToString().Trim(),
                         });
@@ -518,30 +512,12 @@ namespace NavistarPagos.Controllers
             }
             catch (Exception ex)
             {
+                mod.Log_Diario("Clase HomeController Metodo recuperaPersona Error", ex.Message);
                 string sEx = ex.Message;
-
-                mod.Log_Diario("RecuperaDatos(Ex)", "Cve: " + cvePersona + "\nError: " + sEx);
             }
 
-            mod.Log_Diario(" CPERSONA  ", " Imprime valores previo a return ");
-            // Registrar todos los valores de la tabla antes del return
-            if (cPersona.Count > 0)
-            {
-                foreach (var persona in cPersona)
-                {
-                    mod.Log_Diario("Persona:",
-                        $"Nombre: {persona.PNA_DS_NOMBRE}, " +
-                        $"ID Persona: {persona.PNA_FL_PERSONA}, " +
-                        $"RFC: {persona.PNA_CL_RFC}, " +
-                        $"Email: {persona.PNA_DS_EMAIL}");
-                }
-            }
-            else { mod.Log_Diario(" Previo a Return obketo cPersona vacio ", " Vacio "); }
-
-            
             return cPersona;
         }
-
 
         public List<cPersona> recuperaPersonaEmail(string email, string status)
         {

@@ -243,20 +243,17 @@ public abstract class DataBase
         try
         {
             DataSet dataSet = new DataSet();
-            Connection.Open();
-            mod.Log_Diario("DataBase", Connection.ConnectionString);
+            Connection.Open();            
             SqlDataAdapter sqlDA = new SqlDataAdapter();
 
             sqlDA.SelectCommand = BuildQueryCommand(storedProcName, parameters);
-
-            mod.Log_Diario("DataBase", storedProcName);
             sqlDA.Fill(dataSet, tableName);
             return dataSet;
         }
         catch (SqlException ex)
         {
             //InsertaError(storedProcName, parameters, ex);
-            mod.Log_Diario("RunProcedure Error", ex.Message);
+            mod.Log_Diario("Clase DataBase Metodo RunProcedure Error", ex.Message);
             throw new Exception(ex.Message);
         }
         finally

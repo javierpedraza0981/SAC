@@ -32,7 +32,7 @@ namespace NavistarPagos.Controllers
 
         public ActionResult Index(string ntoken)
         {
-
+            mod.Log_Diario("ClientEstadosCuentaController", "Inicio Index");
             return RedirectToAction("Index", "Home", new { ntoken = ntoken, psAction = "ClientEstadosCuenta" });
 
         }

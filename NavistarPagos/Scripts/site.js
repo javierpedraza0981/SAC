@@ -29,7 +29,7 @@ if (ham && hmenuCanvasBackground) {
     });
 }
 else {
-    console.error('Element not found');
+    /*console.error('Element not found');*/
 }
 
 //Funcion para mandar un mensaje personalizado
@@ -85,7 +85,7 @@ function sweetAlertConfirm(tit, txt, ico, booldanger, btnCancel) {
             title: tit,
             text: txt,
             icon: ico,
-            buttons: {                
+            buttons: {
                 confirm: "Aceptar",
                 cancel: "Cancelar"
             },
@@ -112,7 +112,7 @@ const _formatterPiezas = new Intl.NumberFormat('es-MX')
 
 // DataTables
 
-function _cargaTabla(_idTable, _columnsDefs, _isLengthChange, _isFilter, _isSort, _isPaginate, _isAutoWidth, _sScrollY , _isScrollColapse, _isInfo, _result, _columns, _createRow) {
+function _cargaTabla(_idTable, _columnsDefs, _isLengthChange, _isFilter, _isSort, _isPaginate, _isAutoWidth, _sScrollY, _isScrollColapse, _isInfo, _result, _columns, _createRow) {
     var _table = $(_idTable).DataTable(
         {
             'select': true,

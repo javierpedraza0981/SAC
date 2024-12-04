@@ -186,7 +186,7 @@ public class PDFPago
             // Ahora la tabla
             fontBlanco.Size = 7.0f;
             anchos = new float[12] { 6.0f, 6.4f, 5.0f, 6.2f, 6.2f, 13.0f, 12.0f, 12.0f, 14.0f, 7.0f, 7.0f, 6.0f };
-            string[] titulos = { "Contrato", "Monto a pagar", "Moneda", "Fecha de pago", "Servicio de domiciliación", "Beneficiario", "Pago a cuenta BANAMEX", "Pago a cuenta BBVA", "Transferencia electrónica a BBVA", "Referencia Bancaria", "Status Contrato", "FechaFinMovimiento" };
+            string[] titulos = { "Contrato", "Monto a pagar", "Moneda", "Fecha de pago", "Servicio de domiciliación", "Beneficiario", "Pago a cuenta BANCO CITI MÉXICO", "Pago a cuenta BBVA", "Transferencia electrónica a BBVA", "Referencia Bancaria", "Status Contrato", "FechaFinMovimiento" };
 
             datos = new PdfPTable(anchos.Length);
             datos.SetWidths(anchos);

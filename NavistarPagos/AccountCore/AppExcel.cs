@@ -60,7 +60,7 @@ public class AppExcel
 
                 int rng = 6;
                 int col = 0;
-                string[] titulos = { "Contrato", "Monto a pagar", "Moneda", "Fecha de pago", "Servicio de domiciliación", "Beneficiario", "Pago a cuenta BANAMEX", "Pago a cuenta BBVA", "Transferencia electrónica a BBVA", "Referencia Bancaria", "Status Contrato", "Fecha FinMov" };
+                string[] titulos = { "Contrato", "Monto a pagar", "Moneda", "Fecha de pago", "Servicio de domiciliación", "Beneficiario", "Pago a cuenta BANCO CITI MÉXICO", "Pago a cuenta BBVA", "Transferencia electrónica a BBVA", "Referencia Bancaria", "Status Contrato", "Fecha FinMov" };
                 for (int i = 0; i < titulos.Length; i++)
                 {
                     ws.SetValue(rng, col + 1, titulos[i]);

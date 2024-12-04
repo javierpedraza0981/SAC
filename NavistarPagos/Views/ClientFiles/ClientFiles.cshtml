@@ -16,7 +16,7 @@
                     <div class="col-sm-6 col-sm-offset-3">
                         <br /><br />
                         <input onclick="descargaArchivosCliente()" type="submit" name="login-submit" id="login-submit" tabindex="4" class="btn-primary-NFCx" value="Descargar Resumen en PDF y Excel (xlsx)">
-                        
+
                         <i class="fas fa-spinner fa-spin" id="divProcesandopdf" style="visibility:hidden"></i>
                         <i class="fas fa-spinner fa-spin" id="divProcesandoxlsx" style="visibility:hidden"></i>
                     </div>
@@ -66,25 +66,25 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div class="scrollable-table-wrapper" style="width: 100%; max-height: 600px;">
-                    <table class="table text-left">
+                <div class="scrollable-table-wrapper" style="width: 100%; max-height: 600px; overflow-x: auto; border: 1px solid #ccc;">
+                    <table class="table text-left" style="width: 100%; border-collapse: collapse;">
                         <thead style="color: white; background-color: #03345F; text-align: center;">
-                            <tr style="text-align: center;">
-                                <th>Contrato</th>
-                                <th>Monto a pagar</th>
-                                <th>Moneda</th>
-                                <th>Fecha de pago</th>
-                                <th>Servicio de domiciliación</th>
-                                <th>Beneficiario</th>
-                                <th>Pago a cuenta BANAMEX</th>
-                                <th>Pago a cuenta BBVA</th>
-                                <th>Transferencia electrónica a BBVA</th>
-                                <th>Referencia Bancaria</th>
-                                <th>Estatus Contrato</th>
-                                <th>Fecha Término</th>
+                            <tr>
+                                <th style="width: auto; text-align: center;">Contrato</th>
+                                <th style="width: auto; text-align: center;">Monto a pagar</th>
+                                <th style="width: auto; text-align: center;">Moneda</th>
+                                <th style="width: auto; text-align: center;">Fecha de pago</th>
+                                <th style="width: auto; text-align: center;">Servicio de domiciliación</th>
+                                <th style="width: auto; text-align: center;">Beneficiario</th>
+                                <th style="width: 150px; text-align: center;">Pago a cuenta BANCO CITI MÉXICO</th>
+                                <th style="width: auto; text-align: center;">Pago a cuenta BBVA</th>
+                                <th style="width: auto; text-align: center;">Transferencia electrónica a BBVA</th>
+                                <th style="width: auto; text-align: center;">Referencia Bancaria</th>
+                                <th style="width: auto; text-align: center;">Estatus Contrato</th>
+                                <th style="width: auto; text-align: center;">Fecha Término</th>
                             </tr>
                         </thead>
-                        <tbody style="color: black; font-size:small;">
+                        <tbody style="color: black; font-size: small;">
                             @foreach (var contract in ViewBag.Contracts)
                             {
                                 <tr>
@@ -94,18 +94,18 @@
                                     <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.FechaPago</td>
                                     <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.Domiciliado</td>
                                     <td style="text-align: left; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.Beneficiario</td>
-                                    <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.PagoCuentaBanamex</td>
+                                    <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black; width: 150px;">@contract.PagoCuentaBanamex</td>
                                     <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.PagoCuentaBBVA</td>
                                     <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.TransferenciaBBVA</td>
                                     <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.Referencia</td>
                                     <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black;">@contract.Status_Contrato</td>
-                                    <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;"> @contract.Fechafinmov</td>
-
+                                    <td style="text-align: center; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;">@contract.Fechafinmov</td>
                                 </tr>
                             }
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </div>
 
